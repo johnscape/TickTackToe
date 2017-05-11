@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1494257167 source:d:\atandra\prog\c++\ticktacktoe\main.cpp
+	"graphics.hpp"
+	"NeuralNetwork/NeuralNetwork.h"
+	"Level.h"
+	"MinMax.h"
+	<iostream>
+
+1494248055 d:\atandra\prog\c++\ticktacktoe\include\graphics.hpp
+	<string>
+
+1494243785 d:\atandra\prog\c++\ticktacktoe\include\neuralnetwork\neuralnetwork.h
+	"Matrix.h"
+	"ActivationFunction.h"
+
+1493893233 d:\atandra\prog\c++\ticktacktoe\include\neuralnetwork\matrix.h
+
+1494245640 d:\atandra\prog\c++\ticktacktoe\include\neuralnetwork\activationfunction.h
+
+1494256010 source:d:\atandra\prog\c++\ticktacktoe\src\level.cpp
+	"Level.h"
+	<fstream>
+
+1494253496 d:\atandra\prog\c++\ticktacktoe\include\level.h
+	<fstream>
+
+1494249802 source:d:\atandra\prog\c++\ticktacktoe\src\neuralnetwork\activationfunction.cpp
+	"NeuralNetwork/ActivationFunction.h"
+
+1494249825 source:d:\atandra\prog\c++\ticktacktoe\src\neuralnetwork\backpropagation.cpp
+	"NeuralNetwork/Backpropagation.h"
+	"NeuralNetwork/NeuralNetwork.h"
+	"NeuralNetwork/DataSet.h"
+	<cstddef>
+
+1494233423 d:\atandra\prog\c++\ticktacktoe\include\neuralnetwork\backpropagation.h
+	"NeuralNetwork.h"
+	"DataSet.h"
+
+1493976379 d:\atandra\prog\c++\ticktacktoe\include\neuralnetwork\dataset.h
+
+1494249831 source:d:\atandra\prog\c++\ticktacktoe\src\neuralnetwork\dataset.cpp
+	"NeuralNetwork/DataSet.h"
+
+1494249837 source:d:\atandra\prog\c++\ticktacktoe\src\neuralnetwork\geneticalgorithm.cpp
+	"NeuralNetwork/GeneticAlgorithm.h"
+	<random>
+
+1494245770 d:\atandra\prog\c++\ticktacktoe\include\neuralnetwork\geneticalgorithm.h
+	"NeuralNetwork.h"
+
+1494249847 source:d:\atandra\prog\c++\ticktacktoe\src\neuralnetwork\matrix.cpp
+	"NeuralNetwork/Matrix.h"
+	<random>
+
+1494249853 source:d:\atandra\prog\c++\ticktacktoe\src\neuralnetwork\neuralnetwork.cpp
+	"NeuralNetwork/NeuralNetwork.h"
+
+1494249859 source:d:\atandra\prog\c++\ticktacktoe\src\neuralnetwork\tanhfunction.cpp
+	"NeuralNetwork/TanhFunction.h"
+	<math.h>
+
+1494245645 d:\atandra\prog\c++\ticktacktoe\include\neuralnetwork\tanhfunction.h
+	"ActivationFunction.h"
+
+1494259150 source:d:\atandra\prog\c++\ticktacktoe\src\minmax.cpp
+	"MinMax.h"
+	<iostream>
+	<fstream>
+
+1494253508 d:\atandra\prog\c++\ticktacktoe\include\minmax.h
+	"Level.h"
+	<fstream>
+
