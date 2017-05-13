@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
+					<Add directory="include/Widgets" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -26,6 +27,7 @@
 					<Add option="-O2" />
 					<Add option="-g" />
 					<Add directory="include" />
+					<Add directory="include/Widgets" />
 				</Compiler>
 			</Target>
 		</Build>
@@ -42,6 +44,7 @@
 			<Add library="lib/libSDLmain.a" />
 			<Add directory="lib" />
 		</Linker>
+		<Unit filename="include/GameHandler.h" />
 		<Unit filename="include/Level.h" />
 		<Unit filename="include/MinMax.h" />
 		<Unit filename="include/NeuralNetwork/ActivationFunction.h" />
@@ -51,7 +54,17 @@
 		<Unit filename="include/NeuralNetwork/Matrix.h" />
 		<Unit filename="include/NeuralNetwork/NeuralNetwork.h" />
 		<Unit filename="include/NeuralNetwork/TanhFunction.h" />
+		<Unit filename="include/Widgets/Button.h" />
+		<Unit filename="include/Widgets/Colour.h" />
+		<Unit filename="include/Widgets/GUIHandler.h" />
+		<Unit filename="include/Widgets/Label.h" />
+		<Unit filename="include/Widgets/NumberInput.h" />
+		<Unit filename="include/Widgets/RadioButton.h" />
+		<Unit filename="include/Widgets/RadioButtonHolder.h" />
+		<Unit filename="include/Widgets/SelectionBox.h" />
+		<Unit filename="include/Widgets/Widget.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/GameHandler.cpp" />
 		<Unit filename="src/Level.cpp" />
 		<Unit filename="src/MinMax.cpp" />
 		<Unit filename="src/NeuralNetwork/ActivationFunction.cpp" />
@@ -61,6 +74,15 @@
 		<Unit filename="src/NeuralNetwork/Matrix.cpp" />
 		<Unit filename="src/NeuralNetwork/NeuralNetwork.cpp" />
 		<Unit filename="src/NeuralNetwork/TanhFunction.cpp" />
+		<Unit filename="src/Widgets/Button.cpp" />
+		<Unit filename="src/Widgets/Colour.cpp" />
+		<Unit filename="src/Widgets/GUIHandler.cpp" />
+		<Unit filename="src/Widgets/Label.cpp" />
+		<Unit filename="src/Widgets/NumberInput.cpp" />
+		<Unit filename="src/Widgets/RadioButton.cpp" />
+		<Unit filename="src/Widgets/RadioButtonHolder.cpp" />
+		<Unit filename="src/Widgets/SelectionBox.cpp" />
+		<Unit filename="src/Widgets/Widget.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

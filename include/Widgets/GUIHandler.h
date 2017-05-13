@@ -37,6 +37,9 @@ class GUIHandler
         */
         void RemoveWidget(Widget* w);
 
+
+        void DeleteAllWidget();
+
         /**
         * Ez a függvény indítja el a fõ ciklust ami kezeli az inputot és a widgeteket
         * @param exitOnEscape ha igazra van állitva a grafikus felületbõl ki lehet lépni az Esc billentyû lenyomásával

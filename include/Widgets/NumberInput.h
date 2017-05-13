@@ -100,6 +100,8 @@ class NumberInput : public Label
         */
         void SetButtonOnClickColour(int r, int g, int b);
 
+        int GetCurrentValue();
+
     protected:
 
     private:

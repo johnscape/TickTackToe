@@ -2,6 +2,8 @@
 #define GAMEHANDLER_H
 #include "Widgets/GUIHandler.h"
 #include "Level.h"
+#include "RadioButtonHolder.h"
+#include "NumberInput.h"
 
 
 class GameHandler
@@ -16,7 +18,11 @@ class GameHandler
         GUIHandler * handler;
         Level * level;
         int gameState;
-        void LoadMainMenu();
+
+
+        NumberInput * levelSize;
+        RadioButtonHolder * gameModeSelector;
+        RadioButtonHolder * firstPlayerSelector;
 };
 
 #endif // GAMEHANDLER_H

@@ -105,3 +105,11 @@ void GUIHandler::Start(bool exitOnEscape, int timer)
         }
     }
 }
+
+void GUIHandler::DeleteAllWidget()
+{
+    for (Widget* w : Widgets)
+        delete w;
+
+    Widgets.clear();
+}

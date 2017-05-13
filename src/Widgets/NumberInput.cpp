@@ -210,4 +210,8 @@ void NumberInput::SetButtonOnClickColour(int r, int g, int b)
     buttonClickColour->SetColour(r, g, b);
 }
 
+int NumberInput::GetCurrentValue()
+{
+    return CurrentNumber;
+}
 

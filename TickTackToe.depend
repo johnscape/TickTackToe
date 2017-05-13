@@ -126,11 +126,7 @@
 1494245645 d:\atandra\prog\git\ticktacktoe\include\neuralnetwork\tanhfunction.h
 	"ActivationFunction.h"
 
-1494680856 source:d:\atandra\prog\git\ticktacktoe\main.cpp
-	"graphics.hpp"
-	"NeuralNetwork/NeuralNetwork.h"
-	"Level.h"
-	"MinMax.h"
+1494701702 source:d:\atandra\prog\git\ticktacktoe\main.cpp
 	"GameHandler.h"
 	<iostream>
 
@@ -149,11 +145,13 @@
 	<stdio.h>
 	<random>
 
-1494679420 d:\atandra\prog\git\ticktacktoe\include\gamehandler.h
+1494709226 d:\atandra\prog\git\ticktacktoe\include\gamehandler.h
 	"Widgets/GUIHandler.h"
 	"Level.h"
+	"RadioButtonHolder.h"
+	"NumberInput.h"
 
-1492731490 d:\atandra\prog\git\ticktacktoe\include\widgets\guihandler.h
+1494703066 d:\atandra\prog\git\ticktacktoe\include\widgets\guihandler.h
 	"graphics.hpp"
 	<vector>
 	<iostream>
@@ -166,11 +164,13 @@
 
 1492731094 d:\atandra\prog\git\ticktacktoe\include\widgets\colour.h
 
-1494679726 source:d:\atandra\prog\git\ticktacktoe\src\gamehandler.cpp
+1494701879 source:d:\atandra\prog\git\ticktacktoe\src\gamehandler.cpp
 	<string>
 	"GameHandler.h"
 	"Widgets/Label.h"
 	"Widgets/NumberInput.h"
+	"RadioButtonHolder.h"
+	"RadioButton.h"
 
 1492731905 d:\atandra\prog\git\ticktacktoe\include\widgets\label.h
 	"Colour.h"
@@ -182,7 +182,7 @@
 	"Widgets/Colour.h"
 	"graphics.hpp"
 
-1494678006 source:d:\atandra\prog\git\ticktacktoe\src\widgets\guihandler.cpp
+1494703101 source:d:\atandra\prog\git\ticktacktoe\src\widgets\guihandler.cpp
 	"Widgets/Colour.h"
 	"Widgets/GUIHandler.h"
 	"graphics.hpp"
@@ -199,7 +199,7 @@
 	<iostream>
 	<fstream>
 
-1492732671 d:\atandra\prog\git\ticktacktoe\include\widgets\numberinput.h
+1494708718 d:\atandra\prog\git\ticktacktoe\include\widgets\numberinput.h
 	"graphics.hpp"
 	"Label.h"
 	"Colour.h"
@@ -223,15 +223,15 @@
 1494679883 source:d:\atandra\prog\git\ticktacktoe\src\widgets\widget.cpp
 	"Widgets/Widget.h"
 
-1494692732 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobutton.cpp
+1494704026 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobutton.cpp
 	"RadioButton.h"
 
-1494699969 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobutton.h
+1494704093 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobutton.h
 	<string>
 	"Label.h"
 	"Colour.h"
 
-1494697969 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobuttonholder.cpp
+1494702056 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobuttonholder.cpp
 	"RadioButtonHolder.h"
 
 1494696937 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobuttonholder.h

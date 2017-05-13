@@ -25,9 +25,16 @@ void RadioButtonHolder::Handle(genv::event ev)
     for (RadioButton* r : radioButtons)
     {
         if (r->IsInLine(ev.pos_x, ev.pos_y))
+        {
             r->Handle(ev);
-        else
-            r->SetSelection(false);
+            for (RadioButton* r1 : radioButtons)
+            {
+                if (r != r1)
+                    r1->SetSelection(false);
+            }
+            break;
+        }
+
     }
 }
 
