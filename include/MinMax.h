@@ -4,6 +4,14 @@
 #include "Level.h"
 #include <fstream>
 
+struct StepData
+{
+    StepData(){};
+    StepData(int a) : point(a){x = 0; y = 0;}
+    int x;
+    int y;
+    int point;
+};
 
 class MinMax
 {
@@ -21,7 +29,7 @@ class MinMax
         int MaxSteps;
         int MapSize;
 
-        int NextStep(int x, int y, int deep);
+        StepData NextStep(int deep, bool isAI);
         void CopyLevels();
         std::ofstream Writer;
 };

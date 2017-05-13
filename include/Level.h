@@ -1,7 +1,7 @@
 #ifndef LEVEL_H
 #define LEVEL_H
 
-#include <fstream>
+#include <iostream>
 
 class Level
 {
@@ -15,8 +15,12 @@ class Level
         void Place(int x, int y, bool xVal);
         int IsGameWon();
         void RemoveValue(int x, int y);
+        bool IsAreaEmpty(int x, int y);
+        bool IsLevelEmpty();
+        void Recount();
+        void Reset();
 
-        void WriteCurrentPosition(std::ofstream& writer);
+        void WriteCurrentPosition(std::ostream& writer);
 
     protected:
 
@@ -24,6 +28,9 @@ class Level
         int** LevelData;
         int Size;
         int NeedToWin;
+
+        int XCount;
+        int OCount;
 
         int CheckArea(int x, int y, int LookFor);
 };

@@ -1,5 +1,5 @@
 #include "Level.h"
-#include <fstream>
+#include <iostream>
 
 Level::Level(int levelSize, int win)
 {
@@ -13,6 +13,9 @@ Level::Level(int levelSize, int win)
         for (int k = 0; k < levelSize; k++)
             LevelData[i][k] = 0;
     }
+
+    XCount = 0;
+    OCount = 0;
 }
 
 Level::~Level()
@@ -47,36 +50,48 @@ void Level::Place(int x, int y, bool xVal)
     if (x >= 0 && x < Size && y >= 0 && y < Size)
     {
         if (xVal)
+        {
             LevelData[x][y] = 1;
+            XCount++;
+        }
         else
+        {
             LevelData[x][y] = 2;
+            OCount++;
+        }
     }
 }
 
 int Level::IsGameWon()
 {
-    int isWon = 0;
+    int isWon = -1;
+    int spaces = Size * Size;
     for (int x = 0; x < Size; x++)
     {
         for (int y = 0; y < Size; y++)
         {
             if (LevelData[x][y] != 0)
             {
+                spaces--;
                 int isWon = CheckArea(x, y, LevelData[x][y]);
                 if (isWon > 0)
                     return isWon;
             }
         }
     }
-    return isWon;
+
+    if (spaces <= 0 && isWon == -1)
+        return 0;
+    else
+        return isWon;
 }
 
 int Level::CheckArea(int x, int y, int LookFor)
 {
     int score = 0;
-    if (x + NeedToWin < Size)
+    if (x + NeedToWin - 1 < Size)
     {
-        for (int i = x; i <= x + NeedToWin; i++)
+        for (int i = x; i <= x + NeedToWin - 1; i++)
         {
             if (LevelData[i][y] == LookFor)
                 score++;
@@ -85,9 +100,9 @@ int Level::CheckArea(int x, int y, int LookFor)
             return LookFor;
     }
     score = 0;
-    if (y + NeedToWin < Size)
+    if (y + NeedToWin - 1 < Size)
     {
-        for (int i = y; i <= y + NeedToWin; i++)
+        for (int i = y; i <= y + NeedToWin - 1; i++)
         {
             if (LevelData[x][i] == LookFor)
                 score++;
@@ -96,7 +111,7 @@ int Level::CheckArea(int x, int y, int LookFor)
             return LookFor;
     }
     score = 0;
-    if (x + NeedToWin < Size && y + NeedToWin < Size)
+    if (x + NeedToWin - 1 < Size && y + NeedToWin - 1 < Size)
     {
         for (int i = 0; i < NeedToWin; i++)
         {
@@ -115,7 +130,7 @@ int Level::GetSize()
     return Size;
 }
 
-void Level::WriteCurrentPosition(std::ofstream& writer)
+void Level::WriteCurrentPosition(std::ostream& writer)
 {
     for (int x = 0; x < Size; x++)
     {
@@ -142,5 +157,57 @@ void Level::WriteCurrentPosition(std::ofstream& writer)
     {
         writer << "O won!" << std::endl;
         writer << "---------------------------------" << std::endl;
+    }
+}
+
+bool Level::IsAreaEmpty(int x, int y)
+{
+    if (x >= 0 && x < Size && y >= 0 && y < Size)
+    {
+        for (int xx = x - NeedToWin / 2; xx < x + NeedToWin / 2; xx++)
+        {
+            for (int yy = y - NeedToWin / 2; yy < y + NeedToWin / 2; yy++)
+            {
+                if (yy >= 0 && yy < Size && xx >= 0 && xx < Size)
+                {
+                    if (LevelData[xx][yy] != 0)
+                        return false;
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
+void Level::Recount()
+{
+    for (int x = 0; x < Size; x++)
+    {
+        for (int y = 0; y < Size; y++)
+        {
+            if (LevelData[x][y] == 1)
+                XCount++;
+            else if (LevelData[x][y] == 2)
+                OCount++;
+        }
+    }
+}
+
+bool Level::IsLevelEmpty()
+{
+    if (XCount == 0 && OCount == 0)
+        return true;
+    return false;
+}
+
+void Level::Reset()
+{
+    for (int x = 0; x < Size; x++)
+    {
+        for (int y = 0; y < Size; y++)
+        {
+            LevelData[x][y] = 0;
+        }
     }
 }
