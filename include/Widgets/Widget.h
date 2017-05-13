@@ -56,6 +56,10 @@ class Widget
         */
         void SetFrontColour(int r, int g, int b);
 
+        void SetEnable(bool value);
+
+        void SetVisible(bool value);
+
     protected:
         int X; /**< A widget X koordinátája */
         int Y; /**< A widget Y koordinátája */
@@ -66,6 +70,9 @@ class Widget
 
         int borderThickness; /**< A margó vastagsága */
         bool Selected; /**< Ki van-e választva a widget */
+
+        bool IsEnabled;
+        bool IsVisible;
 
     private:
 

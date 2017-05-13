@@ -1,7 +1,7 @@
 #include <vector>
 #include <string>
-#include "SelectionBox.h"
-#include "Colour.h"
+#include "Widgets/SelectionBox.h"
+#include "Widgets/SelectionBox.h"
 #include "graphics.hpp"
 #include <iostream>
 #include <fstream>

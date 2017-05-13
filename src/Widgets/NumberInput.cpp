@@ -1,5 +1,5 @@
 #include <sstream>
-#include "NumberInput.h"
+#include "Widgets/NumberInput.h"
 #include "graphics.hpp"
 #include <iostream>
 #include <fstream>

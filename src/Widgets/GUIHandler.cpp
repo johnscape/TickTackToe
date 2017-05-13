@@ -1,4 +1,5 @@
-#include "GUIHandler.h"
+#include "Widgets/Colour.h"
+#include "Widgets/GUIHandler.h"
 #include "graphics.hpp"
 
 using namespace genv;

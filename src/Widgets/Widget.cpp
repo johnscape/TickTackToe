@@ -1,4 +1,4 @@
-#include "Widget.h"
+#include "Widgets/Widget.h"
 
 Widget::Widget(int x, int y, int xSize, int ySize)
 {
@@ -13,6 +13,9 @@ Widget::Widget(int x, int y, int xSize, int ySize)
     frontColor = new Colour(255, 255, 255);
 
     Selected = false;
+
+    IsEnabled = true;
+    IsVisible = true;
 }
 
 Widget::~Widget()
@@ -34,4 +37,14 @@ void Widget::SetBackgroundColour(int r, int g, int b)
 void Widget::SetFrontColour(int r, int g, int b)
 {
     frontColor->SetColour(r, g, b);
+}
+
+void Widget::SetEnable(bool value)
+{
+    IsEnabled = value;
+}
+
+void Widget::SetVisible(bool value)
+{
+    IsVisible = value;
 }

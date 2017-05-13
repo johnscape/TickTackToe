@@ -1,4 +1,4 @@
-#include "Colour.h"
+#include "Widgets/Colour.h"
 #include "graphics.hpp"
 
 Colour::Colour()

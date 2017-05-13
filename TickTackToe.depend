@@ -72,9 +72,9 @@
 	"Level.h"
 	<fstream>
 
-1494495185 source:d:\atandra\prog\git\ticktacktoe\src\level.cpp
+1494672694 source:d:\atandra\prog\git\ticktacktoe\src\level.cpp
 	"Level.h"
-	<fstream>
+	<iostream>
 
 1494672714 d:\atandra\prog\git\ticktacktoe\include\level.h
 	<iostream>
@@ -126,11 +126,12 @@
 1494245645 d:\atandra\prog\git\ticktacktoe\include\neuralnetwork\tanhfunction.h
 	"ActivationFunction.h"
 
-1494672666 source:d:\atandra\prog\git\ticktacktoe\main.cpp
+1494680856 source:d:\atandra\prog\git\ticktacktoe\main.cpp
 	"graphics.hpp"
 	"NeuralNetwork/NeuralNetwork.h"
 	"Level.h"
 	"MinMax.h"
+	"GameHandler.h"
 	<iostream>
 
 1494248055 d:\atandra\prog\git\ticktacktoe\include\graphics.hpp
@@ -140,8 +141,101 @@
 	"Level.h"
 	<fstream>
 
-1494494009 source:d:\atandra\prog\git\ticktacktoe\src\minmax.cpp
+1494672681 source:d:\atandra\prog\git\ticktacktoe\src\minmax.cpp
 	"MinMax.h"
 	<iostream>
 	<fstream>
+	<vector>
+	<stdio.h>
+	<random>
+
+1494679420 d:\atandra\prog\git\ticktacktoe\include\gamehandler.h
+	"Widgets/GUIHandler.h"
+	"Level.h"
+
+1492731490 d:\atandra\prog\git\ticktacktoe\include\widgets\guihandler.h
+	"graphics.hpp"
+	<vector>
+	<iostream>
+	<fstream>
+	"Widget.h"
+
+1494679848 d:\atandra\prog\git\ticktacktoe\include\widgets\widget.h
+	"graphics.hpp"
+	"Colour.h"
+
+1492731094 d:\atandra\prog\git\ticktacktoe\include\widgets\colour.h
+
+1494679726 source:d:\atandra\prog\git\ticktacktoe\src\gamehandler.cpp
+	<string>
+	"GameHandler.h"
+	"Widgets/Label.h"
+	"Widgets/NumberInput.h"
+
+1492731905 d:\atandra\prog\git\ticktacktoe\include\widgets\label.h
+	"Colour.h"
+	"graphics.hpp"
+	"Widget.h"
+	<string.h>
+
+1494677985 source:d:\atandra\prog\git\ticktacktoe\src\widgets\colour.cpp
+	"Widgets/Colour.h"
+	"graphics.hpp"
+
+1494678006 source:d:\atandra\prog\git\ticktacktoe\src\widgets\guihandler.cpp
+	"Widgets/Colour.h"
+	"Widgets/GUIHandler.h"
+	"graphics.hpp"
+
+1494679365 source:d:\atandra\prog\git\ticktacktoe\src\widgets\label.cpp
+	"Widgets/Label.h"
+	<string.h>
+	"graphics.hpp"
+
+1494678022 source:d:\atandra\prog\git\ticktacktoe\src\widgets\numberinput.cpp
+	<sstream>
+	"Widgets/NumberInput.h"
+	"graphics.hpp"
+	<iostream>
+	<fstream>
+
+1492732671 d:\atandra\prog\git\ticktacktoe\include\widgets\numberinput.h
+	"graphics.hpp"
+	"Label.h"
+	"Colour.h"
+
+1494678033 source:d:\atandra\prog\git\ticktacktoe\src\widgets\selectionbox.cpp
+	<vector>
+	<string>
+	"Widgets/SelectionBox.h"
+	"Widgets/SelectionBox.h"
+	"graphics.hpp"
+	<iostream>
+	<fstream>
+
+1492733199 d:\atandra\prog\git\ticktacktoe\include\widgets\selectionbox.h
+	<vector>
+	<string>
+	"Label.h"
+	"Colour.h"
+	"graphics.hpp"
+
+1494679883 source:d:\atandra\prog\git\ticktacktoe\src\widgets\widget.cpp
+	"Widgets/Widget.h"
+
+1494692732 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobutton.cpp
+	"RadioButton.h"
+
+1494699969 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobutton.h
+	<string>
+	"Label.h"
+	"Colour.h"
+
+1494697969 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobuttonholder.cpp
+	"RadioButtonHolder.h"
+
+1494696937 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobuttonholder.h
+	"Widget.h"
+	"RadioButton.h"
+	<vector>
 

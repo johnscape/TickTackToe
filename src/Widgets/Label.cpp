@@ -1,4 +1,4 @@
-#include "Label.h"
+#include "Widgets/Label.h"
 #include <string.h>
 #include "graphics.hpp"
 
@@ -28,7 +28,7 @@ void Label::Draw()
     bgColor->SetThisColour();
     gout << move_to(X, Y) << box(XSize, YSize);
     frontColor->SetThisColour();
-    gout << move_to(X + borderThickness, Y + borderThickness) << box(XSize - borderThickness, YSize - borderThickness);
+    gout << move_to(X + borderThickness, Y + borderThickness) << box(XSize - 2 * borderThickness, YSize - 2 * borderThickness);
     if (IsTextFits())
     {
         fontColor->SetThisColour();
