@@ -47,6 +47,10 @@ class GUIHandler
         */
         void Start(bool exitOnEscape, int timer);
 
+        void Exit();
+        bool GetIsRunning();
+        int GetWidgetNumber(Widget* a);
+
     protected:
 
     private:
@@ -56,6 +60,8 @@ class GUIHandler
         Colour* bgColour; /**< Ez az ablak háttérszínét adja meg*/
         int WindowX; /**< Ebben tárolom az ablak szélességét*/
         int WindowY; /**< Ebben tárolom az ablak magasságát*/
+        bool Exiting;
+        bool IsRunning;
 
         bool isEscapeExit; /**< Ezzel ellenõrzöm, hogy ki kell-e lépni az Esc billentyû lenyomására*/
 

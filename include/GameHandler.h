@@ -4,7 +4,8 @@
 #include "Level.h"
 #include "RadioButtonHolder.h"
 #include "NumberInput.h"
-
+#include "Area.h"
+#include "MinMax.h"
 
 class GameHandler
 {
@@ -15,6 +16,8 @@ class GameHandler
     protected:
 
     private:
+        bool IsXTurn;
+        bool IsPlayerX;
         GUIHandler * handler;
         Level * level;
         bool player1X;
@@ -22,8 +25,19 @@ class GameHandler
         int NeedToWin;
         int LevelSize;
 
+        Area *** Areas;
+        Label * turnDisplay;
+
+        MinMax * ai;
+
         void LoadMainMenu();
         void LoadGame();
+        void PlaceAt(int x, int y);
+        void DeleteAreas();
+        void DisableAreas();
+        void EnableAreas();
+        void DoAIStep();
+        void ShowWinWindow(std::string text);
 };
 
 #endif // GAMEHANDLER_H

@@ -72,11 +72,11 @@
 	"Level.h"
 	<fstream>
 
-1494672694 source:d:\atandra\prog\git\ticktacktoe\src\level.cpp
+1494788864 source:d:\atandra\prog\git\ticktacktoe\src\level.cpp
 	"Level.h"
 	<iostream>
 
-1494672714 d:\atandra\prog\git\ticktacktoe\include\level.h
+1494783399 d:\atandra\prog\git\ticktacktoe\include\level.h
 	<iostream>
 
 1494249802 source:d:\atandra\prog\git\ticktacktoe\src\neuralnetwork\activationfunction.cpp
@@ -126,7 +126,7 @@
 1494245645 d:\atandra\prog\git\ticktacktoe\include\neuralnetwork\tanhfunction.h
 	"ActivationFunction.h"
 
-1494701702 source:d:\atandra\prog\git\ticktacktoe\main.cpp
+1494778535 source:d:\atandra\prog\git\ticktacktoe\main.cpp
 	"GameHandler.h"
 	<iostream>
 
@@ -137,7 +137,7 @@
 	"Level.h"
 	<fstream>
 
-1494672681 source:d:\atandra\prog\git\ticktacktoe\src\minmax.cpp
+1494784784 source:d:\atandra\prog\git\ticktacktoe\src\minmax.cpp
 	"MinMax.h"
 	<iostream>
 	<fstream>
@@ -145,13 +145,15 @@
 	<stdio.h>
 	<random>
 
-1494769821 d:\atandra\prog\git\ticktacktoe\include\gamehandler.h
+1494788118 d:\atandra\prog\git\ticktacktoe\include\gamehandler.h
 	"Widgets/GUIHandler.h"
 	"Level.h"
 	"RadioButtonHolder.h"
 	"NumberInput.h"
+	"Area.h"
+	"MinMax.h"
 
-1494703066 d:\atandra\prog\git\ticktacktoe\include\widgets\guihandler.h
+1494787791 d:\atandra\prog\git\ticktacktoe\include\widgets\guihandler.h
 	"graphics.hpp"
 	<vector>
 	<iostream>
@@ -164,7 +166,7 @@
 
 1492731094 d:\atandra\prog\git\ticktacktoe\include\widgets\colour.h
 
-1494769890 source:d:\atandra\prog\git\ticktacktoe\src\gamehandler.cpp
+1494788120 source:d:\atandra\prog\git\ticktacktoe\src\gamehandler.cpp
 	<string>
 	"GameHandler.h"
 	"Widgets/Label.h"
@@ -172,6 +174,7 @@
 	"RadioButtonHolder.h"
 	"RadioButton.h"
 	"Button.h"
+	"Area.h"
 
 1492731905 d:\atandra\prog\git\ticktacktoe\include\widgets\label.h
 	"Colour.h"
@@ -183,7 +186,7 @@
 	"Widgets/Colour.h"
 	"graphics.hpp"
 
-1494768505 source:d:\atandra\prog\git\ticktacktoe\src\widgets\guihandler.cpp
+1494787844 source:d:\atandra\prog\git\ticktacktoe\src\widgets\guihandler.cpp
 	"Widgets/Colour.h"
 	"Widgets/GUIHandler.h"
 	"graphics.hpp"
@@ -233,10 +236,10 @@
 	"Label.h"
 	"Colour.h"
 
-1494769683 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobuttonholder.cpp
+1494784207 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobuttonholder.cpp
 	"RadioButtonHolder.h"
 
-1494769701 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobuttonholder.h
+1494783773 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobuttonholder.h
 	"Widget.h"
 	"RadioButton.h"
 	<vector>
@@ -250,4 +253,12 @@
 
 1494768719 source:d:\atandra\prog\git\ticktacktoe\src\widgets\button.cpp
 	"Button.h"
+
+1494779442 source:d:\atandra\prog\git\ticktacktoe\src\area.cpp
+	"Area.h"
+	"math.h"
+
+1494774269 d:\atandra\prog\git\ticktacktoe\include\area.h
+	"Widget.h"
+	<functional>
 

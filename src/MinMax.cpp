@@ -44,7 +44,6 @@ void MinMax::Step()
     CopyLevels();
     StepData s = NextStep(0, true);
     playingLevel->Place(s.x, s.y, IsX);
-
 }
 
 StepData MinMax::NextStep(int deep, bool isAI)
