@@ -19,6 +19,8 @@ class Level
         bool IsLevelEmpty();
         void Recount();
         void Reset();
+        int GetLastX();
+        int GetLastY();
 
         void WriteCurrentPosition(std::ostream& writer);
 
@@ -31,6 +33,9 @@ class Level
 
         int XCount;
         int OCount;
+
+        int LastX;
+        int LastY;
 
         int CheckArea(int x, int y, int LookFor);
 };

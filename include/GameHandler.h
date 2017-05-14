@@ -17,6 +17,7 @@ class GameHandler
 
     private:
         bool IsXTurn;
+        bool IsPlayerX;
         GUIHandler * handler;
         Level * level;
         bool player1X;
@@ -33,6 +34,9 @@ class GameHandler
         void LoadGame();
         void PlaceAt(int x, int y);
         void DeleteAreas();
+        void DisableAreas();
+        void EnableAreas();
+        void DoAIStep();
         void ShowWinWindow(std::string text);
 };
 

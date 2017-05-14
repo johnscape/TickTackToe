@@ -6,7 +6,6 @@
 #include "RadioButton.h"
 #include "Button.h"
 #include "Area.h"
-
 GameHandler::GameHandler(int x, int y)
 {
     handler = new GUIHandler(x, y);
@@ -15,12 +14,14 @@ GameHandler::GameHandler(int x, int y)
     NeedToWin = 5;
     IsXTurn = true;
     Areas = nullptr;
+    IsPlayerX = true;
     LoadMainMenu();
 }
 
 GameHandler::~GameHandler()
 {
     delete handler;
+    delete ai;
 }
 
 void GameHandler::PlaceAt(int x, int y)
@@ -48,6 +49,10 @@ void GameHandler::PlaceAt(int x, int y)
     {
         ShowWinWindow("O jatekos nyert!");
     }
+
+    IsXTurn = !IsXTurn;
+    if (IsXTurn == !IsPlayerX && GameMode == 1)
+        DoAIStep();
 }
 
 void GameHandler::LoadMainMenu()
@@ -98,7 +103,7 @@ void GameHandler::LoadMainMenu()
 
 
     RadioButtonHolder * gameMode = new RadioButtonHolder();
-    gameMode->SetEventVoid([&](RadioButtonHolder* r){GameMode = r->GetCurrentlySelected();});
+    gameMode->SetEventVoid([&](RadioButtonHolder* r){GameMode = r->CurrentlySelectedValue();});
     RadioButton * player2 = new RadioButton(10, 130, 10, "Ketjatekos", 0);
     player2->SetBackgroundColour(255, 255, 255);
     player2->SetFrontColour(0, 0, 0);
@@ -122,8 +127,8 @@ void GameHandler::LoadMainMenu()
 
     gameMode->AddRadioButton(player2);
     gameMode->AddRadioButton(vsAI);
-    gameMode->AddRadioButton(AIvsAI);
-    gameMode->AddRadioButton(trainAI);
+    //gameMode->AddRadioButton(AIvsAI);
+    //gameMode->AddRadioButton(trainAI);
 
     Label * player1Choose = new Label(250, 90, 150, 30, "Elso jatekos:");
     player1Choose->SetBorderThickness(2);
@@ -133,7 +138,7 @@ void GameHandler::LoadMainMenu()
 
 
     RadioButtonHolder * player1Selection = new RadioButtonHolder();
-    player1Selection->SetEventVoid([&](RadioButtonHolder* r){IsXTurn = r->GetCurrentlySelected() == 0 ? true : false;});
+    player1Selection->SetEventVoid([&](RadioButtonHolder* r){IsXTurn = r->CurrentlySelectedValue() == 0 ? true : false;});
 
     RadioButton * rx = new RadioButton(250, 140, 10, "X", 0);
     rx->SetBackgroundColour(255, 255, 255);
@@ -169,11 +174,16 @@ void GameHandler::LoadGame()
 {
     level = new Level(LevelSize, NeedToWin);
     handler->DeleteAllWidget();
+    if (GameMode == 1)
+    {
+        ai = new MinMax(4, level, !IsXTurn);
+    }
     //DeleteAreas();
     Areas = new Area**[LevelSize];
     for (int x = 0; x < LevelSize; x++)
         Areas[x] = new Area*[LevelSize];
 
+    IsPlayerX = IsXTurn;
     Label * gameDisplay = new Label(10, 10, 100, 30, "Jatek");
     gameDisplay->SetBorderThickness(2);
     gameDisplay->SetBackgroundColour(255, 255, 255);
@@ -187,7 +197,7 @@ void GameHandler::LoadGame()
             a->SetBackgroundColour(255, 255, 255);
             a->SetFrontColour(0, 0, 0);
             a->SetBorderThickness(1);
-            a->SetEventVoid([&](Area* a){a->SetValue(IsXTurn ? 1 : 2); PlaceAt(a->GetXPostion(), a->GetYPosition());IsXTurn = !IsXTurn;});
+            a->SetEventVoid([&](Area* a){a->SetValue(IsXTurn ? 1 : 2); PlaceAt(a->GetXPostion(), a->GetYPosition());});
             a->SetMarkerColour(255, 0, 0);
             Areas[xp][yp] = a;
             handler->AddWidget(a);
@@ -232,7 +242,7 @@ void GameHandler::DeleteAreas()
     Areas = nullptr;
 }
 
-void GameHandler::ShowWinWindow(std::string text)
+void GameHandler::DisableAreas()
 {
     for (int x = 0; x < LevelSize; x++)
     {
@@ -241,7 +251,46 @@ void GameHandler::ShowWinWindow(std::string text)
             Areas[x][y]->SetEnable(false);
         }
     }
+}
 
+void GameHandler::EnableAreas()
+{
+    for (int x = 0; x < LevelSize; x++)
+    {
+        for (int y = 0; y < LevelSize; y++)
+        {
+            Areas[x][y]->SetEnable(true);
+        }
+    }
+}
+
+void GameHandler::DoAIStep()
+{
+    Label * aiThink = new Label(310, 10, 200, 30, "A gep gondolkodik...");
+    aiThink->SetBorderThickness(2);
+    aiThink->SetBackgroundColour(255, 255, 255);
+    aiThink->SetFontColour(255, 255, 255);
+    aiThink->SetFrontColour(0, 0, 0);
+    handler->AddWidget(aiThink);
+
+    DisableAreas();
+    ai->Step();
+    Areas[level->GetLastX()][level->GetLastY()]->SetValue(IsPlayerX ? 2 : 1);
+    PlaceAt(level->GetLastX(), level->GetLastY());
+    EnableAreas();
+    handler->RemoveWidget(aiThink);
+
+}
+
+void GameHandler::ShowWinWindow(std::string text)
+{
+    if (ai != nullptr)
+    {
+        delete ai;
+        ai = nullptr;
+    }
+
+    DisableAreas();
     Label * window = new Label(150, 150, 300, 400, "");
     window->SetBorderThickness(2);
     window->SetBackgroundColour(255, 255, 255);

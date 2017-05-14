@@ -49,6 +49,7 @@ class GUIHandler
 
         void Exit();
         bool GetIsRunning();
+        int GetWidgetNumber(Widget* a);
 
     protected:
 

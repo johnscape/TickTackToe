@@ -6,6 +6,9 @@ Level::Level(int levelSize, int win)
     NeedToWin = win;
     Size = levelSize;
 
+    LastX = 0;
+    LastY = 0;
+
     LevelData = new int*[levelSize];
     for (int i = 0; i < levelSize; i++)
     {
@@ -59,6 +62,9 @@ void Level::Place(int x, int y, bool xVal)
             LevelData[x][y] = 2;
             OCount++;
         }
+
+        LastX = x;
+        LastY = y;
     }
 }
 
@@ -116,6 +122,17 @@ int Level::CheckArea(int x, int y, int LookFor)
         for (int i = 0; i < NeedToWin; i++)
         {
             if (LevelData[x + i][y + i] == LookFor)
+                score++;
+        }
+        if (score >= NeedToWin)
+            return LookFor;
+    }
+    score = 0;
+    if (x - NeedToWin + 1 >= 0 && y + NeedToWin - 1 < Size)
+    {
+        for (int i = 0; i < NeedToWin; i++)
+        {
+            if (LevelData[x - i][y + i] == LookFor)
                 score++;
         }
         if (score >= NeedToWin)
@@ -210,4 +227,14 @@ void Level::Reset()
             LevelData[x][y] = 0;
         }
     }
+}
+
+int Level::GetLastX()
+{
+    return LastX;
+}
+
+int Level::GetLastY()
+{
+    return LastY;
 }

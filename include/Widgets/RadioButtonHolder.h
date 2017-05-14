@@ -15,6 +15,7 @@ class RadioButtonHolder : public Widget
         void RemoveRadioButton(RadioButton* button);
         void RemoveRadioButton(int place);
         int GetCurrentlySelected();
+        int CurrentlySelectedValue();
         void SetEventVoid(std::function<void(RadioButtonHolder*)> event);
 
         virtual void Draw();

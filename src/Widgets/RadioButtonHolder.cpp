@@ -23,8 +23,9 @@ void RadioButtonHolder::Draw()
 
 void RadioButtonHolder::Handle(genv::event ev)
 {
-    if (IsEnabled)
+    if (IsEnabled && IsInLine(ev.pos_x, ev.pos_y))
     {
+        int calc = 0;
         for (RadioButton* r : radioButtons)
         {
             if (r->IsInLine(ev.pos_x, ev.pos_y))
@@ -35,8 +36,10 @@ void RadioButtonHolder::Handle(genv::event ev)
                     if (r != r1)
                         r1->SetSelection(false);
                 }
+                CurrentlySelected = calc;
                 break;
             }
+            calc++;
         }
 
         if (OnEvent != nullptr)
@@ -98,4 +101,12 @@ void RadioButtonHolder::CheckNull()
 void RadioButtonHolder::SetEventVoid(std::function<void(RadioButtonHolder*)> event)
 {
     OnEvent = event;
+}
+
+int RadioButtonHolder::CurrentlySelectedValue()
+{
+    if (CurrentlySelected > -1)
+        return radioButtons[CurrentlySelected]->GetValue();
+    else
+        return 0;
 }

@@ -136,3 +136,16 @@ bool GUIHandler::GetIsRunning()
 {
     return IsRunning;
 }
+
+int GUIHandler::GetWidgetNumber(Widget* a)
+{
+    int counter = 0;
+    for (Widget* w : Widgets)
+    {
+        if (w == a)
+            return counter;
+        counter++;
+    }
+
+    return counter;
+}
