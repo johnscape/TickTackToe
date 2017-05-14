@@ -8,8 +8,10 @@
 
 GameHandler::GameHandler(int x, int y)
 {
-    gameState = 0;
     handler = new GUIHandler(x, y);
+    GameMode = 0;
+    LevelSize = 20;
+    NeedToWin = 5;
     LoadMainMenu();
 }
 
@@ -39,6 +41,22 @@ void GameHandler::LoadMainMenu()
     sizeOfMap->SetFontColour(255, 255, 255);
     sizeOfMap->SetButtonColour(0, 0, 0);
     sizeOfMap->SetButtonOnClickColour(0, 255, 0);
+    sizeOfMap->SetEventVoid([&](NumberInput* n){LevelSize = n->GetCurrentValue();});
+
+    Label * needToWinLabel = new Label(250, 50, 200, 30, "Pontszam a nyereshez:");
+    needToWinLabel->SetBorderThickness(0);
+    needToWinLabel->SetBackgroundColour(255, 255, 255);
+    needToWinLabel->SetFontColour(255, 255, 255);
+    needToWinLabel->SetFrontColour(0, 0, 0);
+
+    NumberInput * needToWin = new NumberInput(460, 50, 50, 30, 4, 10, 3);
+    needToWin->SetBackgroundColour(255, 255, 255);
+    needToWin->SetFrontColour(0, 0, 0);
+    needToWin->SetFontColour(255, 255, 255);
+    needToWin->SetButtonColour(0, 0, 0);
+    needToWin->SetButtonOnClickColour(0, 255, 0);
+    needToWin->SetEventVoid([&](NumberInput* n){NeedToWin = n->GetCurrentValue();});
+
 
     Label * gameModeSelection = new Label(10, 90, 100, 30, "Jatek mod:");
     gameModeSelection->SetBorderThickness(2);
@@ -48,6 +66,7 @@ void GameHandler::LoadMainMenu()
 
 
     RadioButtonHolder * gameMode = new RadioButtonHolder();
+    gameMode->SetEventVoid([&](RadioButtonHolder* r){GameMode = r->GetCurrentlySelected();});
     RadioButton * player2 = new RadioButton(10, 130, 10, "Ketjatekos", 0);
     player2->SetBackgroundColour(255, 255, 255);
     player2->SetFrontColour(0, 0, 0);
@@ -82,6 +101,7 @@ void GameHandler::LoadMainMenu()
 
 
     RadioButtonHolder * player1Selection = new RadioButtonHolder();
+    player1Selection->SetEventVoid([&](RadioButtonHolder* r){player1X = r->GetCurrentlySelected() == 0 ? true : false;});
 
     RadioButton * rx = new RadioButton(250, 140, 10, "X", 0);
     rx->SetBackgroundColour(255, 255, 255);
@@ -97,14 +117,12 @@ void GameHandler::LoadMainMenu()
     player1Selection->AddRadioButton(rx);
     player1Selection->AddRadioButton(ry);
 
-    Button * startGame = new Button(250, 250, 150, 40, "Jatek kezdese", LoadGame);
-
-    levelSize = sizeOfMap;
-    gameModeSelector = gameMode;
-    firstPlayerSelector = player1Selection;
+    Button * startGame = new Button(250, 250, 150, 40, "Jatek kezdese", [&](){LoadGame();});
 
     handler->AddWidget(title);
     handler->AddWidget(sizeOfMapTitle);
+    handler->AddWidget(needToWinLabel);
+    handler->AddWidget(needToWin);
     handler->AddWidget(sizeOfMap);
     handler->AddWidget(gameModeSelection);
     handler->AddWidget(gameMode);
@@ -116,7 +134,7 @@ void GameHandler::LoadMainMenu()
 
 void GameHandler::LoadGame()
 {
-    level = new Level(levelSize->GetCurrentValue(), 5);
+    level = new Level(LevelSize, 5);
     handler->DeleteAllWidget();
 
     Label * gameDisplay = new Label(10, 10, 100, 30, "Game");

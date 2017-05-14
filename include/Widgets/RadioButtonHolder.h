@@ -4,6 +4,7 @@
 #include "Widget.h"
 #include "RadioButton.h"
 #include <vector>
+#include <functional>
 
 class RadioButtonHolder : public Widget
 {
@@ -14,6 +15,7 @@ class RadioButtonHolder : public Widget
         void RemoveRadioButton(RadioButton* button);
         void RemoveRadioButton(int place);
         int GetCurrentlySelected();
+        void SetEventVoid(std::function<void(RadioButtonHolder*)> event);
 
         virtual void Draw();
         virtual void Handle(genv::event ev);
@@ -23,6 +25,7 @@ class RadioButtonHolder : public Widget
 
     private:
         std::vector<RadioButton*> radioButtons;
+        std::function<void(RadioButtonHolder*)> OnEvent;
         int ButtonCount;
         int CurrentlySelected;
         void CheckNull();

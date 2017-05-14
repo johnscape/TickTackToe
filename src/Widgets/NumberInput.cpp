@@ -20,6 +20,8 @@ NumberInput::NumberInput(int x, int y, int xSize, int ySize, int startingNumber,
     //selectedColour = new Colour(255, 255, 255);
     buttonClickColour = new Colour(0, 255, 0);
     buttonColour = new Colour(0, 255, 255);
+
+    OnEvent = nullptr;
 }
 
 NumberInput::~NumberInput()
@@ -129,61 +131,67 @@ void NumberInput::Draw()
 
 void NumberInput::Handle(event ev)
 {
-    if (ev.type == ev_mouse && ev.button == btn_left && ev.pos_x >= X + XSize && ev.pos_x <= X + XSize + 20)
+    if (IsEnabled)
     {
-        if (ev.pos_y >= Y && ev.pos_y < Y + YSize / 2 && !buttonUpClicking)
+        if (ev.type == ev_mouse && ev.button == btn_left && ev.pos_x >= X + XSize && ev.pos_x <= X + XSize + 20)
         {
-            buttonUpClicking = true;
-            Step(true, false);
+            if (ev.pos_y >= Y && ev.pos_y < Y + YSize / 2 && !buttonUpClicking)
+            {
+                buttonUpClicking = true;
+                Step(true, false);
+            }
+            else if (ev.pos_y > Y + YSize / 2 && ev.pos_y <= Y + YSize && !buttonDownClicking)
+            {
+                buttonDownClicking = true;
+                Step(false, false);
+            }
         }
-        else if (ev.pos_y > Y + YSize / 2 && ev.pos_y <= Y + YSize && !buttonDownClicking)
+        else if (ev.type == ev_mouse && ev.button == -btn_left)
         {
-            buttonDownClicking = true;
-            Step(false, false);
+            if (buttonUpClicking)
+                buttonUpClicking = false;
+            else if (buttonDownClicking)
+                buttonDownClicking = false;
         }
-    }
-    else if (ev.type == ev_mouse && ev.button == -btn_left)
-    {
-        if (buttonUpClicking)
-            buttonUpClicking = false;
-        else if (buttonDownClicking)
-            buttonDownClicking = false;
-    }
-    else if (ev.type == ev_key)
-    {
-        if (ev.keycode == key_up && !buttonUpClicking)
+        else if (ev.type == ev_key)
         {
-            buttonUpClicking = true;
-            Step(true, false);
+            if (ev.keycode == key_up && !buttonUpClicking)
+            {
+                buttonUpClicking = true;
+                Step(true, false);
+            }
+            else if (ev.keycode == key_pgup && !buttonUpClicking)
+            {
+                buttonUpClicking = true;
+                Step(true, true);
+            }
+            else if (ev.keycode == key_down&& !buttonDownClicking)
+            {
+                buttonDownClicking = true;
+                Step(false, false);
+            }
+            else if (ev.keycode == key_pgdn && !buttonDownClicking)
+            {
+                buttonDownClicking = true;
+                Step(false, true);
+            }
+            else if ((ev.keycode == -key_up || ev.keycode == -key_pgup) && buttonUpClicking)
+                buttonUpClicking = false;
+            else if ((ev.keycode == -key_down || ev.keycode == -key_pgdn) && buttonDownClicking)
+                buttonDownClicking = false;
+            else if (ev.keycode == key_f10)
+            {
+                std::ofstream log;
+                log.open("log.txt", std::ios_base::app);
+                log << "Numeric input" << std::endl;
+                log << CurrentNumber << std::endl;
+                log << "-----------------------------------" << std::endl;
+                log.close();
+            }
         }
-        else if (ev.keycode == key_pgup && !buttonUpClicking)
-        {
-            buttonUpClicking = true;
-            Step(true, true);
-        }
-        else if (ev.keycode == key_down&& !buttonDownClicking)
-        {
-            buttonDownClicking = true;
-            Step(false, false);
-        }
-        else if (ev.keycode == key_pgdn && !buttonDownClicking)
-        {
-            buttonDownClicking = true;
-            Step(false, true);
-        }
-        else if ((ev.keycode == -key_up || ev.keycode == -key_pgup) && buttonUpClicking)
-            buttonUpClicking = false;
-        else if ((ev.keycode == -key_down || ev.keycode == -key_pgdn) && buttonDownClicking)
-            buttonDownClicking = false;
-        else if (ev.keycode == key_f10)
-        {
-            std::ofstream log;
-            log.open("log.txt", std::ios_base::app);
-            log << "Numeric input" << std::endl;
-            log << CurrentNumber << std::endl;
-            log << "-----------------------------------" << std::endl;
-            log.close();
-        }
+
+        if (OnEvent != nullptr)
+            OnEvent(this);
     }
 }
 
@@ -213,5 +221,10 @@ void NumberInput::SetButtonOnClickColour(int r, int g, int b)
 int NumberInput::GetCurrentValue()
 {
     return CurrentNumber;
+}
+
+void NumberInput::SetEventVoid(std::function<void(NumberInput*)> event)
+{
+    OnEvent = event;
 }
 

@@ -109,7 +109,12 @@ void GUIHandler::Start(bool exitOnEscape, int timer)
 void GUIHandler::DeleteAllWidget()
 {
     for (Widget* w : Widgets)
+    {
         delete w;
+        w = nullptr;
+    }
+
 
     Widgets.clear();
+    SelectedWidget = -1;
 }

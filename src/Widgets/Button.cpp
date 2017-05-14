@@ -1,8 +1,8 @@
 #include "Button.h"
 
-Button::Button(int x, int y, int xSize, int ySize, std::string text, void (*onClick)()) : Label(x, y, xSize, ySize)
+Button::Button(int x, int y, int xSize, int ySize, std::string text, std::function<void()> fv) : Label(x, y, xSize, ySize, text)
 {
-    Fv = onClick;
+    Function = fv;
     OnClickColor = new Colour(0, 0, 255);
 }
 
@@ -26,7 +26,7 @@ void Button::Draw()
         if (IsTextFits())
         {
             fontColor->SetThisColour();
-            genv::gout << genv::move_to(X + borderThickness + 5, Y + borderThickness + ((YSize - borderThickness) / 2) + ((gout.cascent() + gout.cdescent()) / 4)) << genv::text(Text);
+            genv::gout << genv::move_to(X + borderThickness + 5, Y + borderThickness + ((YSize - borderThickness) / 2) + ((genv::gout.cascent() + genv::gout.cdescent()) / 4)) << genv::text(Text);
         }
     }
 }
@@ -38,9 +38,21 @@ void Button::Handle(genv::event ev)
         if (ev.button == genv::btn_left)
         {
             isClicking = true;
-            Fv();
+            Function();
         }
         else if (ev.button == -genv::btn_left)
             isClicking = false;
     }
+}
+
+bool Button::IsInLine(int x, int y)
+{
+    if (x >= X + borderThickness && x <= X + XSize - borderThickness && y >= Y + borderThickness && y <= Y + YSize - borderThickness)
+        return true;
+    return false;
+}
+
+void Button::SetOnClickColor(int r, int g, int b)
+{
+    OnClickColor->SetColour(r, g, b);
 }

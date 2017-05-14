@@ -4,6 +4,7 @@ RadioButtonHolder::RadioButtonHolder() : Widget(0, 0, 0, 0)
 {
     CurrentlySelected = -1;
     ButtonCount = 0;
+    OnEvent = nullptr;
 }
 
 RadioButtonHolder::~RadioButtonHolder()
@@ -22,19 +23,24 @@ void RadioButtonHolder::Draw()
 
 void RadioButtonHolder::Handle(genv::event ev)
 {
-    for (RadioButton* r : radioButtons)
+    if (IsEnabled)
     {
-        if (r->IsInLine(ev.pos_x, ev.pos_y))
+        for (RadioButton* r : radioButtons)
         {
-            r->Handle(ev);
-            for (RadioButton* r1 : radioButtons)
+            if (r->IsInLine(ev.pos_x, ev.pos_y))
             {
-                if (r != r1)
-                    r1->SetSelection(false);
+                r->Handle(ev);
+                for (RadioButton* r1 : radioButtons)
+                {
+                    if (r != r1)
+                        r1->SetSelection(false);
+                }
+                break;
             }
-            break;
         }
 
+        if (OnEvent != nullptr)
+            OnEvent(this);
     }
 }
 
@@ -87,4 +93,9 @@ void RadioButtonHolder::CheckNull()
 {
     if (ButtonCount == 0)
         CurrentlySelected = -1;
+}
+
+void RadioButtonHolder::SetEventVoid(std::function<void(RadioButtonHolder*)> event)
+{
+    OnEvent = event;
 }

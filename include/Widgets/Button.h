@@ -1,13 +1,15 @@
 #ifndef BUTTON_H
 #define BUTTON_H
 
+#include <functional>
 #include "Label.h"
 #include "Widget.h"
+#include "graphics.hpp"
 
 class Button : public Label
 {
     public:
-        Button(int x, int y, int xSize, int ySize, std::string text, void (*onClick)());
+        Button(int x, int y, int xSize, int ySize, std::string text, std::function<void()> fv);
         virtual ~Button();
 
         virtual void Draw();
@@ -19,7 +21,7 @@ class Button : public Label
     protected:
 
     private:
-        void (*Fv)();
+        std::function<void()> Function;
         Colour * OnClickColor;
         bool isClicking;
 };

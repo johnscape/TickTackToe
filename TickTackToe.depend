@@ -145,7 +145,7 @@
 	<stdio.h>
 	<random>
 
-1494709226 d:\atandra\prog\git\ticktacktoe\include\gamehandler.h
+1494769821 d:\atandra\prog\git\ticktacktoe\include\gamehandler.h
 	"Widgets/GUIHandler.h"
 	"Level.h"
 	"RadioButtonHolder.h"
@@ -164,13 +164,14 @@
 
 1492731094 d:\atandra\prog\git\ticktacktoe\include\widgets\colour.h
 
-1494701879 source:d:\atandra\prog\git\ticktacktoe\src\gamehandler.cpp
+1494769890 source:d:\atandra\prog\git\ticktacktoe\src\gamehandler.cpp
 	<string>
 	"GameHandler.h"
 	"Widgets/Label.h"
 	"Widgets/NumberInput.h"
 	"RadioButtonHolder.h"
 	"RadioButton.h"
+	"Button.h"
 
 1492731905 d:\atandra\prog\git\ticktacktoe\include\widgets\label.h
 	"Colour.h"
@@ -182,7 +183,7 @@
 	"Widgets/Colour.h"
 	"graphics.hpp"
 
-1494703101 source:d:\atandra\prog\git\ticktacktoe\src\widgets\guihandler.cpp
+1494768505 source:d:\atandra\prog\git\ticktacktoe\src\widgets\guihandler.cpp
 	"Widgets/Colour.h"
 	"Widgets/GUIHandler.h"
 	"graphics.hpp"
@@ -192,17 +193,18 @@
 	<string.h>
 	"graphics.hpp"
 
-1494678022 source:d:\atandra\prog\git\ticktacktoe\src\widgets\numberinput.cpp
+1494770139 source:d:\atandra\prog\git\ticktacktoe\src\widgets\numberinput.cpp
 	<sstream>
 	"Widgets/NumberInput.h"
 	"graphics.hpp"
 	<iostream>
 	<fstream>
 
-1494708718 d:\atandra\prog\git\ticktacktoe\include\widgets\numberinput.h
+1494770002 d:\atandra\prog\git\ticktacktoe\include\widgets\numberinput.h
 	"graphics.hpp"
 	"Label.h"
 	"Colour.h"
+	<functional>
 
 1494678033 source:d:\atandra\prog\git\ticktacktoe\src\widgets\selectionbox.cpp
 	<vector>
@@ -231,11 +233,21 @@
 	"Label.h"
 	"Colour.h"
 
-1494702056 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobuttonholder.cpp
+1494769683 source:d:\atandra\prog\git\ticktacktoe\src\widgets\radiobuttonholder.cpp
 	"RadioButtonHolder.h"
 
-1494696937 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobuttonholder.h
+1494769701 d:\atandra\prog\git\ticktacktoe\include\widgets\radiobuttonholder.h
 	"Widget.h"
 	"RadioButton.h"
 	<vector>
+	<functional>
+
+1494768317 d:\atandra\prog\git\ticktacktoe\include\widgets\button.h
+	<functional>
+	"Label.h"
+	"Widget.h"
+	"graphics.hpp"
+
+1494768719 source:d:\atandra\prog\git\ticktacktoe\src\widgets\button.cpp
+	"Button.h"
 

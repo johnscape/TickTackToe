@@ -17,12 +17,13 @@ class GameHandler
     private:
         GUIHandler * handler;
         Level * level;
-        int gameState;
+        bool player1X;
+        int GameMode;
+        int NeedToWin;
+        int LevelSize;
 
-
-        NumberInput * levelSize;
-        RadioButtonHolder * gameModeSelector;
-        RadioButtonHolder * firstPlayerSelector;
+        void LoadMainMenu();
+        void LoadGame();
 };
 
 #endif // GAMEHANDLER_H

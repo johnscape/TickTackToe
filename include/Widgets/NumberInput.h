@@ -4,6 +4,7 @@
 #include "graphics.hpp"
 #include "Label.h"
 #include "Colour.h"
+#include <functional>
 
 class NumberInput : public Label
 {
@@ -102,6 +103,8 @@ class NumberInput : public Label
 
         int GetCurrentValue();
 
+        void SetEventVoid(std::function<void(NumberInput*)> event);
+
     protected:
 
     private:
@@ -113,6 +116,8 @@ class NumberInput : public Label
 
         bool buttonUpClicking; /**< Igaz, amennyiben a felfele gombra éppen rákattintanak */
         bool buttonDownClicking; /**< Igaz, amennyiben a lefele gombra éppen rákattintanak */
+
+        std::function<void(NumberInput*)> OnEvent;
 
         /**
         * Ellenõrzi, hogy a jelenlegi érték nem-e lóg ki a határokon
