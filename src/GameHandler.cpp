@@ -11,10 +11,11 @@ GameHandler::GameHandler(int x, int y)
     handler = new GUIHandler(x, y);
     GameMode = 0;
     LevelSize = 20;
-    NeedToWin = 5;
+    NeedToWin = 4;
     IsXTurn = true;
     Areas = nullptr;
     IsPlayerX = true;
+    ai = nullptr;
     LoadMainMenu();
 }
 
@@ -86,7 +87,7 @@ void GameHandler::LoadMainMenu()
     needToWinLabel->SetFontColour(255, 255, 255);
     needToWinLabel->SetFrontColour(0, 0, 0);
 
-    NumberInput * needToWin = new NumberInput(460, 50, 50, 30, 4, 10, 3);
+    NumberInput * needToWin = new NumberInput(460, 50, 50, 30, 4, 10, 4);
     needToWin->SetBackgroundColour(255, 255, 255);
     needToWin->SetFrontColour(0, 0, 0);
     needToWin->SetFontColour(255, 255, 255);
@@ -176,6 +177,11 @@ void GameHandler::LoadGame()
     handler->DeleteAllWidget();
     if (GameMode == 1)
     {
+        if (ai != nullptr)
+        {
+            delete ai;
+            ai = nullptr;
+        }
         ai = new MinMax(4, level, !IsXTurn);
     }
     //DeleteAreas();
@@ -284,12 +290,6 @@ void GameHandler::DoAIStep()
 
 void GameHandler::ShowWinWindow(std::string text)
 {
-    if (ai != nullptr)
-    {
-        delete ai;
-        ai = nullptr;
-    }
-
     DisableAreas();
     Label * window = new Label(150, 150, 300, 400, "");
     window->SetBorderThickness(2);
