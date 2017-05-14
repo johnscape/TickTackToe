@@ -10,6 +10,8 @@ GUIHandler::GUIHandler(int& xx, int& yy)
     WindowY = yy;
     SelectedWidget = -1;
     bgColour = new Colour();
+    Exiting = true;
+    IsRunning = false;
 }
 
 GUIHandler::~GUIHandler()
@@ -82,21 +84,27 @@ void GUIHandler::Handle(event ev)
 
 void GUIHandler::Start(bool exitOnEscape, int timer)
 {
+    IsRunning = true;
     event ev;
     gin.timer(timer);
     if (exitOnEscape)
     {
-        while(gin >> ev || ev.keycode == key_escape)
+        while(gin >> ev &&(ev.keycode != key_escape || Exiting != true))
         {
             if (ev.type == ev_timer)
                 Draw();
             else
                 Handle(ev);
+
+            if (ev.keycode == key_escape)
+            {
+                int k = 0;
+            }
         }
     }
     else
     {
-        while(gin >> ev)
+        while(gin >> ev || Exiting == true)
         {
             if (ev.type == ev_timer)
                 Draw();
@@ -117,4 +125,14 @@ void GUIHandler::DeleteAllWidget()
 
     Widgets.clear();
     SelectedWidget = -1;
+}
+
+void GUIHandler::Exit()
+{
+    Exiting = true;
+}
+
+bool GUIHandler::GetIsRunning()
+{
+    return IsRunning;
 }

@@ -44,6 +44,7 @@
 			<Add library="lib/libSDLmain.a" />
 			<Add directory="lib" />
 		</Linker>
+		<Unit filename="include/Area.h" />
 		<Unit filename="include/GameHandler.h" />
 		<Unit filename="include/Level.h" />
 		<Unit filename="include/MinMax.h" />
@@ -64,6 +65,7 @@
 		<Unit filename="include/Widgets/SelectionBox.h" />
 		<Unit filename="include/Widgets/Widget.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Area.cpp" />
 		<Unit filename="src/GameHandler.cpp" />
 		<Unit filename="src/Level.cpp" />
 		<Unit filename="src/MinMax.cpp" />
