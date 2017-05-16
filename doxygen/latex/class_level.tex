@@ -1,0 +1,355 @@
+\hypertarget{class_level}{}\section{Level osztÃ¡lyreferencia}
+\label{class_level}\index{Level@{Level}}
+\subsection*{Publikus tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_level_ac9a3c078ddbc1fb1e622aeece4b21484}{Level} (int level\+Size, int win)
+\begin{DoxyCompactList}\small\item\em Létrehoz egy új pályát \end{DoxyCompactList}\item 
+int \hyperlink{class_level_a49511c05442d904229c8e603e6dfc067}{Get\+Value} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Megadja a pálya egy adott koordinátáján levõ mezõ értékét \end{DoxyCompactList}\item 
+int \hyperlink{class_level_a1acfceb6295e1bf3f3dd3b64bd7d38d6}{Value\+To\+Win} ()
+\begin{DoxyCompactList}\small\item\em Visszatérésként megadja, hogy hány pont kell a gyõzelemhez. \end{DoxyCompactList}\item 
+int \hyperlink{class_level_a2f77bdcd4cc4536dc2dffbaf05d4db1d}{Get\+Size} ()
+\begin{DoxyCompactList}\small\item\em A pálya méretét adja meg. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a73b6dd3a3e23881ae63c72d4fc7667bf}{Place} (int x, int y, bool x\+Val)
+\begin{DoxyCompactList}\small\item\em A megadott koordinátákra elhelyez egy értéket. \end{DoxyCompactList}\item 
+int \hyperlink{class_level_ae4c2034a22fc8c229b3b0e058d30fc91}{Is\+Game\+Won} ()
+\begin{DoxyCompactList}\small\item\em Megadja, hogy megnyerte-\/e valaki a játékot. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a5414deea40ce7604d7df76cc955b803d}{Remove\+Value} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Egy adott koordinátáról tölri az értéket. \end{DoxyCompactList}\item 
+bool \hyperlink{class_level_a635da67a86e8a63bf88571dbcf1b4385}{Is\+Area\+Empty} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Megadja, hogy egy adott koordináta körül üresek-\/e a mezõk \end{DoxyCompactList}\item 
+bool \hyperlink{class_level_a520988125e87d13b98b7c42b5e2fe928}{Is\+Level\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Megadja, hogy üres-\/e a pálya. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a743f5fee9bdce09b4ce87ffc2ceca4ce}{Recount} ()
+\begin{DoxyCompactList}\small\item\em Megszámolja, hogy hány X és O van a pályán \end{DoxyCompactList}\item 
+void \hyperlink{class_level_abd143fd02f8959207315bdafd0be05ab}{Reset} ()
+\begin{DoxyCompactList}\small\item\em Visszaállítja a pályát alapértelmezetten üresbe. \end{DoxyCompactList}\item 
+int \hyperlink{class_level_aec4f6c6e75283e425a8cd5d52d35e8ee}{Get\+LastX} ()
+\begin{DoxyCompactList}\small\item\em Az utoljára módosított mezõ x koordinátáját adja vissza. \end{DoxyCompactList}\item 
+int \hyperlink{class_level_ae2a8b36cbebe340d8b0495487a3a156a}{Get\+LastY} ()
+\begin{DoxyCompactList}\small\item\em Az utoljára módosított mezõ y koordinátáját adja vissza. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a3e93b00a83e3a187d02c2b308ad538ed}{Write\+Current\+Position} (std\+::ostream \&writer)
+\begin{DoxyCompactList}\small\item\em A megadott módon kiírja a pálya aktuális tartalmát \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_level_a8ad7db518fbe4527ee2c5b329a35c199}{Check\+Area} (int x, int y, int Look\+For)
+\begin{DoxyCompactList}\small\item\em Egy területen ellenõrzi, hogy elég pontja van-\/e a játékosnak a gyõzelemhez. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t attribÃºtumok}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$ \hyperlink{class_level_ab03146b79cb15288ae8c2a58ca6bcc25}{Level\+Data}
+\item 
+int \hyperlink{class_level_af58abc7bfaf524e30484170301e184a4}{Size}
+\item 
+int \hyperlink{class_level_ae88ea518ad018d37fadbe11a1464fb10}{Need\+To\+Win}
+\item 
+int \hyperlink{class_level_a93b51a4d35d1c29c52eff276e83a9b43}{X\+Count}
+\item 
+int \hyperlink{class_level_a425f83b38930d2d8b0e3ce115e881e68}{O\+Count}
+\item 
+int \hyperlink{class_level_acd5302da9e83ba6183f2167c624b2f1e}{LastX}
+\item 
+int \hyperlink{class_level_a12ed79a812cee4eee19c63a964e7603d}{LastY}
+\end{DoxyCompactItemize}
+
+
+\subsection{Konstruktorok Ã©s destruktorok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_level_ac9a3c078ddbc1fb1e622aeece4b21484}\label{class_level_ac9a3c078ddbc1fb1e622aeece4b21484}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{int}]{level\+Size,  }\item[{int}]{win }\end{DoxyParamCaption})}
+
+
+
+Létrehoz egy új pályát 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em level\+Size} & int A pálya mérete (X$\ast$X) \\
+\hline
+{\em win} & int A szükséges pontszám a játék megnyeréséhez \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_level_a8ad7db518fbe4527ee2c5b329a35c199}\label{class_level_a8ad7db518fbe4527ee2c5b329a35c199}} 
+\index{Level@{Level}!Check\+Area@{Check\+Area}}
+\index{Check\+Area@{Check\+Area}!Level@{Level}}
+\subsubsection{\texorpdfstring{Check\+Area()}{CheckArea()}}
+{\footnotesize\ttfamily int Level\+::\+Check\+Area (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{Look\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Egy területen ellenõrzi, hogy elég pontja van-\/e a játékosnak a gyõzelemhez. 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & int A terület közepének x koordinátája \\
+\hline
+{\em y} & int A terület közepének y koordinátája \\
+\hline
+{\em Look\+For} & int A játékos, akit figyelni kell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+int Az adott játékos értéke, ha nyert, 0 ha nem 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_aec4f6c6e75283e425a8cd5d52d35e8ee}\label{class_level_aec4f6c6e75283e425a8cd5d52d35e8ee}} 
+\index{Level@{Level}!Get\+LastX@{Get\+LastX}}
+\index{Get\+LastX@{Get\+LastX}!Level@{Level}}
+\subsubsection{\texorpdfstring{Get\+Last\+X()}{GetLastX()}}
+{\footnotesize\ttfamily int Level\+::\+Get\+LastX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Az utoljára módosított mezõ x koordinátáját adja vissza. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+int Az utoljára módosított mezõ x koordinátája 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_ae2a8b36cbebe340d8b0495487a3a156a}\label{class_level_ae2a8b36cbebe340d8b0495487a3a156a}} 
+\index{Level@{Level}!Get\+LastY@{Get\+LastY}}
+\index{Get\+LastY@{Get\+LastY}!Level@{Level}}
+\subsubsection{\texorpdfstring{Get\+Last\+Y()}{GetLastY()}}
+{\footnotesize\ttfamily int Level\+::\+Get\+LastY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Az utoljára módosított mezõ y koordinátáját adja vissza. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+int Az utoljára módosított mezõ y koordinátája 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a2f77bdcd4cc4536dc2dffbaf05d4db1d}\label{class_level_a2f77bdcd4cc4536dc2dffbaf05d4db1d}} 
+\index{Level@{Level}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!Level@{Level}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily int Level\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A pálya méretét adja meg. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+int A pálya mérete 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a49511c05442d904229c8e603e6dfc067}\label{class_level_a49511c05442d904229c8e603e6dfc067}} 
+\index{Level@{Level}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Level@{Level}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}}
+{\footnotesize\ttfamily int Level\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Megadja a pálya egy adott koordinátáján levõ mezõ értékét 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & int Az x koordináta \\
+\hline
+{\em y} & int Az y koordináta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+int Az x,y koordinátán levõ érték 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a635da67a86e8a63bf88571dbcf1b4385}\label{class_level_a635da67a86e8a63bf88571dbcf1b4385}} 
+\index{Level@{Level}!Is\+Area\+Empty@{Is\+Area\+Empty}}
+\index{Is\+Area\+Empty@{Is\+Area\+Empty}!Level@{Level}}
+\subsubsection{\texorpdfstring{Is\+Area\+Empty()}{IsAreaEmpty()}}
+{\footnotesize\ttfamily bool Level\+::\+Is\+Area\+Empty (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Megadja, hogy egy adott koordináta körül üresek-\/e a mezõk 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & int Az x koordináta \\
+\hline
+{\em y} & int Az y koordináta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+bool Üresek-\/e a mezõk egy inervalumon belül 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_ae4c2034a22fc8c229b3b0e058d30fc91}\label{class_level_ae4c2034a22fc8c229b3b0e058d30fc91}} 
+\index{Level@{Level}!Is\+Game\+Won@{Is\+Game\+Won}}
+\index{Is\+Game\+Won@{Is\+Game\+Won}!Level@{Level}}
+\subsubsection{\texorpdfstring{Is\+Game\+Won()}{IsGameWon()}}
+{\footnotesize\ttfamily int Level\+::\+Is\+Game\+Won (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megadja, hogy megnyerte-\/e valaki a játékot. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+int A játék aktuális állapota számként (-\/1 nincs vége, 0 döntetlen, 1 x nyert, 2 O nyert) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a520988125e87d13b98b7c42b5e2fe928}\label{class_level_a520988125e87d13b98b7c42b5e2fe928}} 
+\index{Level@{Level}!Is\+Level\+Empty@{Is\+Level\+Empty}}
+\index{Is\+Level\+Empty@{Is\+Level\+Empty}!Level@{Level}}
+\subsubsection{\texorpdfstring{Is\+Level\+Empty()}{IsLevelEmpty()}}
+{\footnotesize\ttfamily bool Level\+::\+Is\+Level\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megadja, hogy üres-\/e a pálya. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+bool Üres-\/e a pálya 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a73b6dd3a3e23881ae63c72d4fc7667bf}\label{class_level_a73b6dd3a3e23881ae63c72d4fc7667bf}} 
+\index{Level@{Level}!Place@{Place}}
+\index{Place@{Place}!Level@{Level}}
+\subsubsection{\texorpdfstring{Place()}{Place()}}
+{\footnotesize\ttfamily void Level\+::\+Place (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{x\+Val }\end{DoxyParamCaption})}
+
+
+
+A megadott koordinátákra elhelyez egy értéket. 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & int Az x koordináta \\
+\hline
+{\em y} & int Az y koordináta \\
+\hline
+{\em x\+Val} & bool Az elhelyezni kívánt érték x-\/e \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a743f5fee9bdce09b4ce87ffc2ceca4ce}\label{class_level_a743f5fee9bdce09b4ce87ffc2ceca4ce}} 
+\index{Level@{Level}!Recount@{Recount}}
+\index{Recount@{Recount}!Level@{Level}}
+\subsubsection{\texorpdfstring{Recount()}{Recount()}}
+{\footnotesize\ttfamily void Level\+::\+Recount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megszámolja, hogy hány X és O van a pályán 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a5414deea40ce7604d7df76cc955b803d}\label{class_level_a5414deea40ce7604d7df76cc955b803d}} 
+\index{Level@{Level}!Remove\+Value@{Remove\+Value}}
+\index{Remove\+Value@{Remove\+Value}!Level@{Level}}
+\subsubsection{\texorpdfstring{Remove\+Value()}{RemoveValue()}}
+{\footnotesize\ttfamily void Level\+::\+Remove\+Value (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Egy adott koordinátáról tölri az értéket. 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & int Az x koordináta \\
+\hline
+{\em y} & int Az y koordináta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_abd143fd02f8959207315bdafd0be05ab}\label{class_level_abd143fd02f8959207315bdafd0be05ab}} 
+\index{Level@{Level}!Reset@{Reset}}
+\index{Reset@{Reset}!Level@{Level}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Level\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Visszaállítja a pályát alapértelmezetten üresbe. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a1acfceb6295e1bf3f3dd3b64bd7d38d6}\label{class_level_a1acfceb6295e1bf3f3dd3b64bd7d38d6}} 
+\index{Level@{Level}!Value\+To\+Win@{Value\+To\+Win}}
+\index{Value\+To\+Win@{Value\+To\+Win}!Level@{Level}}
+\subsubsection{\texorpdfstring{Value\+To\+Win()}{ValueToWin()}}
+{\footnotesize\ttfamily int Level\+::\+Value\+To\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Visszatérésként megadja, hogy hány pont kell a gyõzelemhez. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+int Pontok száma a gyõzelemhez 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a3e93b00a83e3a187d02c2b308ad538ed}\label{class_level_a3e93b00a83e3a187d02c2b308ad538ed}} 
+\index{Level@{Level}!Write\+Current\+Position@{Write\+Current\+Position}}
+\index{Write\+Current\+Position@{Write\+Current\+Position}!Level@{Level}}
+\subsubsection{\texorpdfstring{Write\+Current\+Position()}{WriteCurrentPosition()}}
+{\footnotesize\ttfamily void Level\+::\+Write\+Current\+Position (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{writer }\end{DoxyParamCaption})}
+
+
+
+A megadott módon kiírja a pálya aktuális tartalmát 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em writer} & std\+::ostream\& A kimeneti forrás \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Adattagok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_level_acd5302da9e83ba6183f2167c624b2f1e}\label{class_level_acd5302da9e83ba6183f2167c624b2f1e}} 
+\index{Level@{Level}!LastX@{LastX}}
+\index{LastX@{LastX}!Level@{Level}}
+\subsubsection{\texorpdfstring{LastX}{LastX}}
+{\footnotesize\ttfamily int Level\+::\+LastX\hspace{0.3cm}{\ttfamily [private]}}
+
+Az utoljára módosított mezõ X koordinátája \mbox{\Hypertarget{class_level_a12ed79a812cee4eee19c63a964e7603d}\label{class_level_a12ed79a812cee4eee19c63a964e7603d}} 
+\index{Level@{Level}!LastY@{LastY}}
+\index{LastY@{LastY}!Level@{Level}}
+\subsubsection{\texorpdfstring{LastY}{LastY}}
+{\footnotesize\ttfamily int Level\+::\+LastY\hspace{0.3cm}{\ttfamily [private]}}
+
+Az utoljára módosított mezõ Y koordinátája \mbox{\Hypertarget{class_level_ab03146b79cb15288ae8c2a58ca6bcc25}\label{class_level_ab03146b79cb15288ae8c2a58ca6bcc25}} 
+\index{Level@{Level}!Level\+Data@{Level\+Data}}
+\index{Level\+Data@{Level\+Data}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level\+Data}{LevelData}}
+{\footnotesize\ttfamily int$\ast$$\ast$ Level\+::\+Level\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+Maga a pálya adatai \mbox{\Hypertarget{class_level_ae88ea518ad018d37fadbe11a1464fb10}\label{class_level_ae88ea518ad018d37fadbe11a1464fb10}} 
+\index{Level@{Level}!Need\+To\+Win@{Need\+To\+Win}}
+\index{Need\+To\+Win@{Need\+To\+Win}!Level@{Level}}
+\subsubsection{\texorpdfstring{Need\+To\+Win}{NeedToWin}}
+{\footnotesize\ttfamily int Level\+::\+Need\+To\+Win\hspace{0.3cm}{\ttfamily [private]}}
+
+A nyeréshet szükséges pontszám \mbox{\Hypertarget{class_level_a425f83b38930d2d8b0e3ce115e881e68}\label{class_level_a425f83b38930d2d8b0e3ce115e881e68}} 
+\index{Level@{Level}!O\+Count@{O\+Count}}
+\index{O\+Count@{O\+Count}!Level@{Level}}
+\subsubsection{\texorpdfstring{O\+Count}{OCount}}
+{\footnotesize\ttfamily int Level\+::\+O\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+O-\/k száma \mbox{\Hypertarget{class_level_af58abc7bfaf524e30484170301e184a4}\label{class_level_af58abc7bfaf524e30484170301e184a4}} 
+\index{Level@{Level}!Size@{Size}}
+\index{Size@{Size}!Level@{Level}}
+\subsubsection{\texorpdfstring{Size}{Size}}
+{\footnotesize\ttfamily int Level\+::\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+A pálya mérete \mbox{\Hypertarget{class_level_a93b51a4d35d1c29c52eff276e83a9b43}\label{class_level_a93b51a4d35d1c29c52eff276e83a9b43}} 
+\index{Level@{Level}!X\+Count@{X\+Count}}
+\index{X\+Count@{X\+Count}!Level@{Level}}
+\subsubsection{\texorpdfstring{X\+Count}{XCount}}
+{\footnotesize\ttfamily int Level\+::\+X\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+X-\/ek száma 
+
+Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt\+:\begin{DoxyCompactItemize}
+\item 
+Level.\+h\item 
+Level.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: Level.h ForrÃ¡sfÃ¡jl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- KÃ©szÃ­tette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'KeresÃ©s');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','KeresÃ©s');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Level.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LEVEL_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LEVEL_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_level.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_level.html">Level</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_level.html#ac9a3c078ddbc1fb1e622aeece4b21484">Level</a>(<span class="keywordtype">int</span> levelSize, <span class="keywordtype">int</span> win);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_level.html">Level</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#a49511c05442d904229c8e603e6dfc067">GetValue</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#a1acfceb6295e1bf3f3dd3b64bd7d38d6">ValueToWin</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#a2f77bdcd4cc4536dc2dffbaf05d4db1d">GetSize</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_level.html#a73b6dd3a3e23881ae63c72d4fc7667bf">Place</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">bool</span> xVal);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#ae4c2034a22fc8c229b3b0e058d30fc91">IsGameWon</a>();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_level.html#a5414deea40ce7604d7df76cc955b803d">RemoveValue</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a635da67a86e8a63bf88571dbcf1b4385">IsAreaEmpty</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_level.html#a520988125e87d13b98b7c42b5e2fe928">IsLevelEmpty</a>();</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_level.html#a743f5fee9bdce09b4ce87ffc2ceca4ce">Recount</a>();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_level.html#abd143fd02f8959207315bdafd0be05ab">Reset</a>();</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#aec4f6c6e75283e425a8cd5d52d35e8ee">GetLastX</a>();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#ae2a8b36cbebe340d8b0495487a3a156a">GetLastY</a>();</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_level.html#a3e93b00a83e3a187d02c2b308ad538ed">WriteCurrentPosition</a>(std::ostream&amp; writer);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_level.html#ab03146b79cb15288ae8c2a58ca6bcc25">  122</a></span>&#160;        <span class="keywordtype">int</span>** <a class="code" href="class_level.html#ab03146b79cb15288ae8c2a58ca6bcc25">LevelData</a>;</div><div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_level.html#af58abc7bfaf524e30484170301e184a4">  123</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#af58abc7bfaf524e30484170301e184a4">Size</a>;</div><div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_level.html#ae88ea518ad018d37fadbe11a1464fb10">  124</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#ae88ea518ad018d37fadbe11a1464fb10">NeedToWin</a>;</div><div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_level.html#a93b51a4d35d1c29c52eff276e83a9b43">  126</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#a93b51a4d35d1c29c52eff276e83a9b43">XCount</a>;</div><div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_level.html#a425f83b38930d2d8b0e3ce115e881e68">  127</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#a425f83b38930d2d8b0e3ce115e881e68">OCount</a>;</div><div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_level.html#acd5302da9e83ba6183f2167c624b2f1e">  129</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#acd5302da9e83ba6183f2167c624b2f1e">LastX</a>;</div><div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_level.html#a12ed79a812cee4eee19c63a964e7603d">  130</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#a12ed79a812cee4eee19c63a964e7603d">LastY</a>;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_level.html#a8ad7db518fbe4527ee2c5b329a35c199">CheckArea</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> LookFor);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;};</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif // LEVEL_H</span></div><div class="ttc" id="class_level_html_abd143fd02f8959207315bdafd0be05ab"><div class="ttname"><a href="class_level.html#abd143fd02f8959207315bdafd0be05ab">Level::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Visszaállítja a pályát alapértelmezetten üresbe. </div><div class="ttdef"><b>Definition:</b> Level.cpp:221</div></div>
+<div class="ttc" id="class_level_html_a8ad7db518fbe4527ee2c5b329a35c199"><div class="ttname"><a href="class_level.html#a8ad7db518fbe4527ee2c5b329a35c199">Level::CheckArea</a></div><div class="ttdeci">int CheckArea(int x, int y, int LookFor)</div><div class="ttdoc">Egy területen ellenõrzi, hogy elég pontja van-e a játékosnak a gyõzelemhez. </div><div class="ttdef"><b>Definition:</b> Level.cpp:95</div></div>
+<div class="ttc" id="class_level_html_ac9a3c078ddbc1fb1e622aeece4b21484"><div class="ttname"><a href="class_level.html#ac9a3c078ddbc1fb1e622aeece4b21484">Level::Level</a></div><div class="ttdeci">Level(int levelSize, int win)</div><div class="ttdoc">Létrehoz egy új pályát </div><div class="ttdef"><b>Definition:</b> Level.cpp:4</div></div>
+<div class="ttc" id="class_level_html_a12ed79a812cee4eee19c63a964e7603d"><div class="ttname"><a href="class_level.html#a12ed79a812cee4eee19c63a964e7603d">Level::LastY</a></div><div class="ttdeci">int LastY</div><div class="ttdef"><b>Definition:</b> Level.h:130</div></div>
+<div class="ttc" id="class_level_html_a5414deea40ce7604d7df76cc955b803d"><div class="ttname"><a href="class_level.html#a5414deea40ce7604d7df76cc955b803d">Level::RemoveValue</a></div><div class="ttdeci">void RemoveValue(int x, int y)</div><div class="ttdoc">Egy adott koordinátáról tölri az értéket. </div><div class="ttdef"><b>Definition:</b> Level.cpp:45</div></div>
+<div class="ttc" id="class_level_html_ae2a8b36cbebe340d8b0495487a3a156a"><div class="ttname"><a href="class_level.html#ae2a8b36cbebe340d8b0495487a3a156a">Level::GetLastY</a></div><div class="ttdeci">int GetLastY()</div><div class="ttdoc">Az utoljára módosított mezõ y koordinátáját adja vissza. </div><div class="ttdef"><b>Definition:</b> Level.cpp:237</div></div>
+<div class="ttc" id="class_level_html_af58abc7bfaf524e30484170301e184a4"><div class="ttname"><a href="class_level.html#af58abc7bfaf524e30484170301e184a4">Level::Size</a></div><div class="ttdeci">int Size</div><div class="ttdef"><b>Definition:</b> Level.h:123</div></div>
+<div class="ttc" id="class_level_html_ae88ea518ad018d37fadbe11a1464fb10"><div class="ttname"><a href="class_level.html#ae88ea518ad018d37fadbe11a1464fb10">Level::NeedToWin</a></div><div class="ttdeci">int NeedToWin</div><div class="ttdef"><b>Definition:</b> Level.h:124</div></div>
+<div class="ttc" id="class_level_html_a520988125e87d13b98b7c42b5e2fe928"><div class="ttname"><a href="class_level.html#a520988125e87d13b98b7c42b5e2fe928">Level::IsLevelEmpty</a></div><div class="ttdeci">bool IsLevelEmpty()</div><div class="ttdoc">Megadja, hogy üres-e a pálya. </div><div class="ttdef"><b>Definition:</b> Level.cpp:214</div></div>
+<div class="ttc" id="class_level_html_a1acfceb6295e1bf3f3dd3b64bd7d38d6"><div class="ttname"><a href="class_level.html#a1acfceb6295e1bf3f3dd3b64bd7d38d6">Level::ValueToWin</a></div><div class="ttdeci">int ValueToWin()</div><div class="ttdoc">Visszatérésként megadja, hogy hány pont kell a gyõzelemhez. </div><div class="ttdef"><b>Definition:</b> Level.cpp:32</div></div>
+<div class="ttc" id="class_level_html_a743f5fee9bdce09b4ce87ffc2ceca4ce"><div class="ttname"><a href="class_level.html#a743f5fee9bdce09b4ce87ffc2ceca4ce">Level::Recount</a></div><div class="ttdeci">void Recount()</div><div class="ttdoc">Megszámolja, hogy hány X és O van a pályán </div><div class="ttdef"><b>Definition:</b> Level.cpp:200</div></div>
+<div class="ttc" id="class_level_html_a73b6dd3a3e23881ae63c72d4fc7667bf"><div class="ttname"><a href="class_level.html#a73b6dd3a3e23881ae63c72d4fc7667bf">Level::Place</a></div><div class="ttdeci">void Place(int x, int y, bool xVal)</div><div class="ttdoc">A megadott koordinátákra elhelyez egy értéket. </div><div class="ttdef"><b>Definition:</b> Level.cpp:51</div></div>
+<div class="ttc" id="class_level_html_acd5302da9e83ba6183f2167c624b2f1e"><div class="ttname"><a href="class_level.html#acd5302da9e83ba6183f2167c624b2f1e">Level::LastX</a></div><div class="ttdeci">int LastX</div><div class="ttdef"><b>Definition:</b> Level.h:129</div></div>
+<div class="ttc" id="class_level_html_a2f77bdcd4cc4536dc2dffbaf05d4db1d"><div class="ttname"><a href="class_level.html#a2f77bdcd4cc4536dc2dffbaf05d4db1d">Level::GetSize</a></div><div class="ttdeci">int GetSize()</div><div class="ttdoc">A pálya méretét adja meg. </div><div class="ttdef"><b>Definition:</b> Level.cpp:145</div></div>
+<div class="ttc" id="class_level_html_a93b51a4d35d1c29c52eff276e83a9b43"><div class="ttname"><a href="class_level.html#a93b51a4d35d1c29c52eff276e83a9b43">Level::XCount</a></div><div class="ttdeci">int XCount</div><div class="ttdef"><b>Definition:</b> Level.h:126</div></div>
+<div class="ttc" id="class_level_html_a49511c05442d904229c8e603e6dfc067"><div class="ttname"><a href="class_level.html#a49511c05442d904229c8e603e6dfc067">Level::GetValue</a></div><div class="ttdeci">int GetValue(int x, int y)</div><div class="ttdoc">Megadja a pálya egy adott koordinátáján levõ mezõ értékét </div><div class="ttdef"><b>Definition:</b> Level.cpp:37</div></div>
+<div class="ttc" id="class_level_html_ab03146b79cb15288ae8c2a58ca6bcc25"><div class="ttname"><a href="class_level.html#ab03146b79cb15288ae8c2a58ca6bcc25">Level::LevelData</a></div><div class="ttdeci">int ** LevelData</div><div class="ttdef"><b>Definition:</b> Level.h:122</div></div>
+<div class="ttc" id="class_level_html"><div class="ttname"><a href="class_level.html">Level</a></div><div class="ttdef"><b>Definition:</b> Level.h:6</div></div>
+<div class="ttc" id="class_level_html_aec4f6c6e75283e425a8cd5d52d35e8ee"><div class="ttname"><a href="class_level.html#aec4f6c6e75283e425a8cd5d52d35e8ee">Level::GetLastX</a></div><div class="ttdeci">int GetLastX()</div><div class="ttdoc">Az utoljára módosított mezõ x koordinátáját adja vissza. </div><div class="ttdef"><b>Definition:</b> Level.cpp:232</div></div>
+<div class="ttc" id="class_level_html_ae4c2034a22fc8c229b3b0e058d30fc91"><div class="ttname"><a href="class_level.html#ae4c2034a22fc8c229b3b0e058d30fc91">Level::IsGameWon</a></div><div class="ttdeci">int IsGameWon()</div><div class="ttdoc">Megadja, hogy megnyerte-e valaki a játékot. </div><div class="ttdef"><b>Definition:</b> Level.cpp:71</div></div>
+<div class="ttc" id="class_level_html_a635da67a86e8a63bf88571dbcf1b4385"><div class="ttname"><a href="class_level.html#a635da67a86e8a63bf88571dbcf1b4385">Level::IsAreaEmpty</a></div><div class="ttdeci">bool IsAreaEmpty(int x, int y)</div><div class="ttdoc">Megadja, hogy egy adott koordináta körül üresek-e a mezõk </div><div class="ttdef"><b>Definition:</b> Level.cpp:180</div></div>
+<div class="ttc" id="class_level_html_a425f83b38930d2d8b0e3ce115e881e68"><div class="ttname"><a href="class_level.html#a425f83b38930d2d8b0e3ce115e881e68">Level::OCount</a></div><div class="ttdeci">int OCount</div><div class="ttdef"><b>Definition:</b> Level.h:127</div></div>
+<div class="ttc" id="class_level_html_a3e93b00a83e3a187d02c2b308ad538ed"><div class="ttname"><a href="class_level.html#a3e93b00a83e3a187d02c2b308ad538ed">Level::WriteCurrentPosition</a></div><div class="ttdeci">void WriteCurrentPosition(std::ostream &amp;writer)</div><div class="ttdoc">A megadott módon kiírja a pálya aktuális tartalmát </div><div class="ttdef"><b>Definition:</b> Level.cpp:150</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+KÃ©szÃ­tette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

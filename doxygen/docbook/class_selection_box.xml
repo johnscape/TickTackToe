@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_selection_box">
+<title>SelectionBox class Reference</title>
+        <section>
+            <title>PrivÃ¡t attribÃºtumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isOpened</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int maxItemsInView</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int currentlySelected</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int mouseOnItem</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int topItem</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * selectedFontColour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * selectedFrontColour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * buttonColour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * buttonOnClickColour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int buttonSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; std::string &gt; Values</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_selection_box_1a1d5613b94e9d7c57a12fedc783813f62">SelectionBox</link> (
+int x, int y, int xSize, int ySize, std::vector&lt; std::string &gt; values)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_selection_box_1ad7ca81556a52cdd7f21422331a845ef9">~SelectionBox</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1a1c0b7b6c851180450964a4df0c7c15e8">Draw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1a4762480ce86018d74c0cfa271c9cce11">Handle</link> (
+<link linkend="structgenv_1_1event">genv::event</link> ev)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_selection_box_1a0378e1ec035f90dd04efac5d6a2c7132">IsInLine</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1a5f53112258e5b32ac9e0232c75a62eda">AddItem</link> (
+std::string value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1ae4bb0013ac37a323c72a426de84c08c8">RemoveItem</link> (
+std::string value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1af81528e021ed52fee388cb6dea786446">RemoveItem</link> (
+int place)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_selection_box_1a11dadb7f3ebc3bc797f6747312c18597">CurrentlySelectedValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="class_selection_box_1a7bec61ef09f9198f93f88121074753ac">CurrentlySelectedItem</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1abd6e227d728b5802353d69c210997619">EditSelectedFontColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1aaa47aeeda9cb1d50e5c519f5a1bb9dab">EditSelectedFrontColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1a572b7322795b52447cf6ed292e13e832">SetButtonSize</link> (
+int button)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_selection_box_1a4596a4d2ff08593fda4f1ddd1cfc6eea">EditMaxItemInView</link> (
+int elements)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentÃ¡ciÃ³ja</title>
+            <simplesect>
+                <title>bool SelectionBox::isOpened</title>                
+<para>Megadja, hogy le van-e gördítve a lista </para>
+
+                <para>Definition at line 105 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int SelectionBox::maxItemsInView</title>                
+<para>Megadja, hogy hány elem látható egyszerre </para>
+
+                <para>Definition at line 106 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int SelectionBox::currentlySelected</title>                
+<para>Megadja, hogy hanyadik elem van jelenleg kiválasztva </para>
+
+                <para>Definition at line 107 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int SelectionBox::mouseOnItem</title>                
+<para>Megadja, hogy jelenleg hanyadik elem fölött van az egér. -1 ha egyik fölött sem vagy a lista csukva van </para>
+
+                <para>Definition at line 108 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int SelectionBox::topItem</title>                
+<para>Megadja, hogy a legördülõ listában melyik elem látható legfölül </para>
+
+                <para>Definition at line 109 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* SelectionBox::selectedFontColour</title>                
+<para>A kiválasztás betûszíne </para>
+
+                <para>Definition at line 111 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* SelectionBox::selectedFrontColour</title>                
+<para>A kiválasztás elõtér színe </para>
+
+                <para>Definition at line 112 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* SelectionBox::buttonColour</title>                
+<para>A gomb színe </para>
+
+                <para>Definition at line 113 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* SelectionBox::buttonOnClickColour</title>                
+<para>A gomb színe kattintáskor </para>
+
+                <para>Definition at line 114 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int SelectionBox::buttonSize</title>                
+<para>A gombok mérete </para>
+
+                <para>Definition at line 116 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::vector&lt;std::string&gt; SelectionBox::Values</title>                
+<para>Ebben vannak tárolva az értékek </para>
+
+                <para>Definition at line 118 of file SelectionBox.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SelectionBox.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_selection_box_1a1d5613b94e9d7c57a12fedc783813f62">
+                <title>SelectionBox::SelectionBox (int x, int y, int xSize, int ySize, std::vector&lt; std::string &gt; values)</title> <emphasis></emphasis>
+                
+<para>Egy legördülõ menüt ad meg. 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>A widget X pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>A widget Y pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>xSize</entry>
+                                <entry>
+<para>A widget hossza </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ySize</entry>
+                                <entry>
+<para>A widget magassága </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>values</entry>
+                                <entry>
+<para>A widget kezdõ értékeit tartalmazza </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1ad7ca81556a52cdd7f21422331a845ef9">
+                <title>SelectionBox::~SelectionBox ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_selection_box_1a1c0b7b6c851180450964a4df0c7c15e8">
+                <title>void SelectionBox::Draw ()</title> <emphasis></emphasis>
+                
+<para>Ez felel a widget kirajzolásáért </para>
+
+            </section>
+            <section xml:id="class_selection_box_1a4762480ce86018d74c0cfa271c9cce11">
+                <title>void SelectionBox::Handle (genv::event ev)</title> <emphasis></emphasis>
+                
+<para>Ez a függvény kezeli az eventeket 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ev</entry>
+                                <entry>
+<para>Az aktuális event objektum </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1a0378e1ec035f90dd04efac5d6a2c7132">
+                <title>bool SelectionBox::IsInLine (int x, int y)</title> <emphasis></emphasis>
+                
+<para>Megadja, hogy az egér a saját keretein belül van-e 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Az egér X pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Az egér Y pozíciója </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1a5f53112258e5b32ac9e0232c75a62eda">
+                <title>void SelectionBox::AddItem (std::string value)</title> <emphasis></emphasis>
+                
+<para>Új elemet ad hozzá a listához 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>value</entry>
+                                <entry>
+<para>Az új elem </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1ae4bb0013ac37a323c72a426de84c08c8">
+                <title>void SelectionBox::RemoveItem (std::string value)</title> <emphasis></emphasis>
+                
+<para>Töröl egy elemet a listából 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>value</entry>
+                                <entry>
+<para>A törölni kívánt elem </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1af81528e021ed52fee388cb6dea786446">
+                <title>void SelectionBox::RemoveItem (int place)</title> <emphasis></emphasis>
+                
+<para>Töröl egy elemet a listából 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>value</entry>
+                                <entry>
+<para>A törölni kívánt elem helye </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1a11dadb7f3ebc3bc797f6747312c18597">
+                <title>int SelectionBox::CurrentlySelectedValue ()</title> <emphasis></emphasis>
+                
+<para>Megadja a jelenleg kijelölt elem sorszámát a listában <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>A kijelölt elem sorszáma </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_selection_box_1a7bec61ef09f9198f93f88121074753ac">
+                <title>std::string SelectionBox::CurrentlySelectedItem ()</title> <emphasis></emphasis>
+                
+<para>Megadja a jelenleg kijelölt elemet <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>A kijelölt elem értéke </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_selection_box_1abd6e227d728b5802353d69c210997619">
+                <title>void SelectionBox::EditSelectedFontColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Átálítja kijelölt szöveg színét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>Az új piros érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>Az új zöld érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Az új kék érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1aaa47aeeda9cb1d50e5c519f5a1bb9dab">
+                <title>void SelectionBox::EditSelectedFrontColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Átálítja a kijelölt elõtér színét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>Az új piros érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>Az új zöld érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Az új kék érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1a572b7322795b52447cf6ed292e13e832">
+                <title>void SelectionBox::SetButtonSize (int button)</title> <emphasis></emphasis>
+                
+<para>Megadja a kis gombok méretét és a menü mellett látható nagy gomb szélességét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>button</entry>
+                                <entry>
+<para>A gombok mérete </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_selection_box_1a4596a4d2ff08593fda4f1ddd1cfc6eea">
+                <title>void SelectionBox::EditMaxItemInView (int elements)</title> <emphasis></emphasis>
+                
+<para>Átálítja, hogy maximum hány elem látszódjon a lenyíló menüben. Amennyiben több elemet tartalmaz, mint ez a szám, görgetni kell 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Az</entry>
+                                <entry>
+<para>egyszerre látható elemek száma </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

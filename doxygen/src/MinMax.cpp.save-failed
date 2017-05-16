@@ -1,0 +1,119 @@
+#include "MinMax.h"
+#include <iostream>
+#include <fstream>
+#include <vector>
+
+MinMax::MinMax(int deep, Level * currentLevel, bool isX)
+{
+    IsX = isX;
+    playingLevel = currentLevel;
+    MaxSteps = deep;
+    MapSize = currentLevel->GetSize();
+    computingLevel = new Level(MapSize, playingLevel->ValueToWin());
+    CopyLevels();
+
+
+}
+
+MinMax::~MinMax()
+{
+    delete computingLevel;
+}
+
+void MinMax::CopyLevels()
+{
+
+    for (int x = 0; x < MapSize; x++)
+    {
+        for (int y = 0; y < MapSize; y++)
+        {
+            if (playingLevel->GetValue(x, y) == 1)
+                computingLevel->Place(x, y, true);
+            else if (playingLevel->GetValue(x, y) == 2)
+                computingLevel->Place(x, y, false);
+        }
+    }
+}
+
+void MinMax::Step()
+{
+    CopyLevels();
+    StepData s = NextStep(0, 0, 0, true);
+
+}
+
+StepData MinMax::NextStep(int x, int y, int deep, bool isAI)
+{
+    StepData s;
+    int gameWon = computingLevel->IsGameWon();
+    int cSize = computingLevel->GetSize();
+    if (gameWon == IsX ? 1 : 2)
+    {
+        s.point = 10;
+        s.x = x;
+        s.y = y;
+        return s;
+    }
+    else if (gameWon == IsX ? 2 : 1)
+    {
+        s.point = -10;
+        s.x = x;
+        s.y = y;
+        return s;
+    }
+    else if (deep >= MaxSteps || gameWon == 0)
+    {
+        s.point = 0;
+        s.x = x;
+        s.y = y;
+        return s;
+    }
+
+    std::vector<StepData> sVec;
+
+    for (int x = 0; x < cSize; x++)
+    {
+        for (int y = 0; y < cSize; y++)
+        {
+            if (computingLevel->GetValue(x, y) == 0)
+            {
+                s.x = x;
+                s.y = y;
+                computingLevel->Place(x, y, isAI ? IsX : !IsX);
+                s.point = NextStep(x, y, deep + 1, !isAI).point;
+                sVec.push_back(s);
+                computingLevel->RemoveValue(x, y);
+            }
+        }
+    }
+
+    int selectedMove = 0;
+    if (isAI)
+    {
+        int score = -1000;
+        for (int i = 0; i < sVec.size(); i++)
+        {
+            if (sVec[i].point > score)
+            {
+                selectedMove = i;
+                score = sVec[i].point;
+            }
+        }
+    }
+    else
+    {
+        int score = 1000;
+        for (int i = 0; i < sVec.size(); i++)
+        {
+            if (sVec[i].point < score)
+            {
+                selectedMove = i;
+                score = sVec[i].point;
+            }
+        }
+    }
+
+    return sVec[selectedMove];
+}
+
+

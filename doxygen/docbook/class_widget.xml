@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_widget">
+<title>Widget class Reference</title>
+        <section>
+            <title>VÃ©dett attribÃºtumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int X</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int Y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int XSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int YSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * bgColor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * frontColor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int borderThickness</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool Selected</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool IsEnabled</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool IsVisible</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_widget_1a5a76a8d2fbb399fe02eb89782d1c3e99">Widget</link> (
+int x, int y, int xSize, int ySize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_widget_1aa24f66bcbaaec6d458b0980e8c8eae65">~Widget</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_widget_1ac4c2063cd671468ad05d84cfe963c032">Draw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_widget_1abf512e4606c7a5d44245a9b0246634a0">Handle</link> (
+<link linkend="structgenv_1_1event">genv::event</link> ev)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="class_widget_1a7a18323ef481add82e5edba5c0c6ec06">IsInLine</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_widget_1ac614472479dfd7c3f54c3d1445647403">SetBorderThickness</link> (
+int thickness)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_widget_1a714f8e9b39be7e3627cb7031a1ccbfc1">SetBackgroundColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_widget_1ae8018660228f34e126830e1d951e3e39">SetFrontColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_widget_1aa7003624e0cda852437dcd4d31fbbd74">SetEnable</link> (
+bool value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_widget_1ab44aee83ce8ca060f0164f2cbca53c27">SetVisible</link> (
+bool value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentÃ¡ciÃ³ja</title>
+            <simplesect>
+                <title>int Widget::X</title>                
+<para>A widget X koordinátája </para>
+
+                <para>Definition at line 64 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Widget::Y</title>                
+<para>A widget Y koordinátája </para>
+
+                <para>Definition at line 65 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Widget::XSize</title>                
+<para>A widget szélessége </para>
+
+                <para>Definition at line 66 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Widget::YSize</title>                
+<para>A widget magassága </para>
+
+                <para>Definition at line 67 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* Widget::bgColor</title>                
+<para>A háttér színe </para>
+
+                <para>Definition at line 68 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* Widget::frontColor</title>                
+<para>Az elõtér színe </para>
+
+                <para>Definition at line 69 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Widget::borderThickness</title>                
+<para>A margó vastagsága </para>
+
+                <para>Definition at line 71 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool Widget::Selected</title>                
+<para>Ki van-e választva a widget </para>
+
+                <para>Definition at line 72 of file Widget.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Widget.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_widget_1a5a76a8d2fbb399fe02eb89782d1c3e99">
+                <title>Widget::Widget (int x, int y, int xSize, int ySize)</title> <emphasis></emphasis>
+                
+<para>Egy új widgetet hoz létre. 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>A widget X pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>A widget Y pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>xSize</entry>
+                                <entry>
+<para>A widget hossza </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ySize</entry>
+                                <entry>
+<para>A widget magassága </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_widget_1aa24f66bcbaaec6d458b0980e8c8eae65">
+                <title>Widget::~Widget ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_widget_1ac4c2063cd671468ad05d84cfe963c032">
+                <title>virtual void Widget::Draw ()=0</title> <emphasis></emphasis>
+                
+<para>Ez felel a widget kirajzolásáért </para>
+
+            </section>
+            <section xml:id="class_widget_1abf512e4606c7a5d44245a9b0246634a0">
+                <title>virtual void Widget::Handle (genv::event ev)=0</title> <emphasis></emphasis>
+                
+<para>Ez a függvény kezeli az eventeket 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ev</entry>
+                                <entry>
+<para>Az aktuális event objektum </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_widget_1a7a18323ef481add82e5edba5c0c6ec06">
+                <title>virtual bool Widget::IsInLine (int x, int y)=0</title> <emphasis></emphasis>
+                
+<para>Megadja, hogy az egér a saját keretein belül van-e 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Az egér X pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Az egér Y pozíciója </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_widget_1ac614472479dfd7c3f54c3d1445647403">
+                <title>void Widget::SetBorderThickness (int thickness)</title> <emphasis></emphasis>
+                
+<para>Átálítja a margó vastagságát 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>thickness</entry>
+                                <entry>
+<para>Az új vastagság </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_widget_1a714f8e9b39be7e3627cb7031a1ccbfc1">
+                <title>void Widget::SetBackgroundColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Átálítja a widget háttérszínét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>Az új piros érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>Az új zöld érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Az új kék érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_widget_1ae8018660228f34e126830e1d951e3e39">
+                <title>void Widget::SetFrontColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Átálítja a widget elõtér színét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>Az új piros érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>Az új zöld érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Az új kék érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_widget_1aa7003624e0cda852437dcd4d31fbbd74">
+                <title>void Widget::SetEnable (bool value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_widget_1ab44aee83ce8ca060f0164f2cbca53c27">
+                <title>void Widget::SetVisible (bool value)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

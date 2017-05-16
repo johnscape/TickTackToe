@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_radio_button_holder_8cpp">
+    <title>RadioButtonHolder.cpp File Reference</title>
+    <programlisting>#include &quot;RadioButtonHolder.h&quot;</programlisting>
+    <simplesect>
+        <title>Részletes leírás</title>
+    <para>Definition in file D:/Atandra/Prog/GIT/TickTackToe/doxygen/RadioButtonHolder.cpp</para>
+    </simplesect>
+</section>

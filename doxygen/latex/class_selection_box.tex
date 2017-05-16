@@ -1,0 +1,308 @@
+\hypertarget{class_selection_box}{}\section{Selection\+Box osztÃ¡lyreferencia}
+\label{class_selection_box}\index{Selection\+Box@{Selection\+Box}}
+A Selection\+Box osztÃ¡ly szÃ¡rmazÃ¡si diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_selection_box}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_selection_box_a1d5613b94e9d7c57a12fedc783813f62}{Selection\+Box} (int x, int y, int x\+Size, int y\+Size, std\+::vector$<$ std\+::string $>$ values)
+\item 
+void \hyperlink{class_selection_box_a1c0b7b6c851180450964a4df0c7c15e8}{Draw} ()
+\item 
+void \hyperlink{class_selection_box_a4762480ce86018d74c0cfa271c9cce11}{Handle} (\hyperlink{structgenv_1_1event}{genv\+::event} ev)
+\item 
+bool \hyperlink{class_selection_box_a0378e1ec035f90dd04efac5d6a2c7132}{Is\+In\+Line} (int x, int y)
+\item 
+void \hyperlink{class_selection_box_a5f53112258e5b32ac9e0232c75a62eda}{Add\+Item} (std\+::string value)
+\item 
+void \hyperlink{class_selection_box_ae4bb0013ac37a323c72a426de84c08c8}{Remove\+Item} (std\+::string value)
+\item 
+void \hyperlink{class_selection_box_af81528e021ed52fee388cb6dea786446}{Remove\+Item} (int place)
+\item 
+int \hyperlink{class_selection_box_a11dadb7f3ebc3bc797f6747312c18597}{Currently\+Selected\+Value} ()
+\item 
+std\+::string \hyperlink{class_selection_box_a7bec61ef09f9198f93f88121074753ac}{Currently\+Selected\+Item} ()
+\item 
+void \hyperlink{class_selection_box_abd6e227d728b5802353d69c210997619}{Edit\+Selected\+Font\+Colour} (int r, int g, int b)
+\item 
+void \hyperlink{class_selection_box_aaa47aeeda9cb1d50e5c519f5a1bb9dab}{Edit\+Selected\+Front\+Colour} (int r, int g, int b)
+\item 
+void \hyperlink{class_selection_box_a572b7322795b52447cf6ed292e13e832}{Set\+Button\+Size} (int button)
+\item 
+void \hyperlink{class_selection_box_a4596a4d2ff08593fda4f1ddd1cfc6eea}{Edit\+Max\+Item\+In\+View} (int elements)
+\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t attribÃºtumok}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_selection_box_ad7340177b4fc04b45cc26973f72002ac}{is\+Opened}
+\item 
+int \hyperlink{class_selection_box_a6a0fac038c98be9bdc85d4208ea5d1d5}{max\+Items\+In\+View}
+\item 
+int \hyperlink{class_selection_box_a5ecda83cc02b9aa23a1119b599c14420}{currently\+Selected}
+\item 
+int \hyperlink{class_selection_box_af7d6ac5ec9c1bec8093c4658c8d7eb4a}{mouse\+On\+Item}
+\item 
+int \hyperlink{class_selection_box_afcfc7749e3ec40e69d58f2774d32805b}{top\+Item}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_selection_box_a6db5b172a719f48db281e6bd12e20d5e}{selected\+Font\+Colour}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_selection_box_a3e20a7106c555781d74772c0dd983e9d}{selected\+Front\+Colour}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_selection_box_a8f00181c55398686633e05055fe9050b}{button\+Colour}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_selection_box_a671415d9b6a3625fcffdc0f8a2882f3a}{button\+On\+Click\+Colour}
+\item 
+int \hyperlink{class_selection_box_a91fe3df437f4ffe0e5885e9362c76e55}{button\+Size} = 15
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_selection_box_a8bac4f40a469f4ed3acba73a3e233390}{Values}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Konstruktorok Ã©s destruktorok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_selection_box_a1d5613b94e9d7c57a12fedc783813f62}\label{class_selection_box_a1d5613b94e9d7c57a12fedc783813f62}} 
+\index{Selection\+Box@{Selection\+Box}!Selection\+Box@{Selection\+Box}}
+\index{Selection\+Box@{Selection\+Box}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Selection\+Box()}{SelectionBox()}}
+{\footnotesize\ttfamily Selection\+Box\+::\+Selection\+Box (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x\+Size,  }\item[{int}]{y\+Size,  }\item[{std\+::vector$<$ std\+::string $>$}]{values }\end{DoxyParamCaption})}
+
+Egy legördülõ menüt ad meg. 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & A widget X pozíciója \\
+\hline
+{\em y} & A widget Y pozíciója \\
+\hline
+{\em x\+Size} & A widget hossza \\
+\hline
+{\em y\+Size} & A widget magassága \\
+\hline
+{\em values} & A widget kezdõ értékeit tartalmazza \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_selection_box_a5f53112258e5b32ac9e0232c75a62eda}\label{class_selection_box_a5f53112258e5b32ac9e0232c75a62eda}} 
+\index{Selection\+Box@{Selection\+Box}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Add\+Item()}{AddItem()}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Add\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+Új elemet ad hozzá a listához 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em value} & Az új elem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_selection_box_a7bec61ef09f9198f93f88121074753ac}\label{class_selection_box_a7bec61ef09f9198f93f88121074753ac}} 
+\index{Selection\+Box@{Selection\+Box}!Currently\+Selected\+Item@{Currently\+Selected\+Item}}
+\index{Currently\+Selected\+Item@{Currently\+Selected\+Item}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Currently\+Selected\+Item()}{CurrentlySelectedItem()}}
+{\footnotesize\ttfamily std\+::string Selection\+Box\+::\+Currently\+Selected\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Megadja a jelenleg kijelölt elemet \begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+A kijelölt elem értéke 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_selection_box_a11dadb7f3ebc3bc797f6747312c18597}\label{class_selection_box_a11dadb7f3ebc3bc797f6747312c18597}} 
+\index{Selection\+Box@{Selection\+Box}!Currently\+Selected\+Value@{Currently\+Selected\+Value}}
+\index{Currently\+Selected\+Value@{Currently\+Selected\+Value}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Currently\+Selected\+Value()}{CurrentlySelectedValue()}}
+{\footnotesize\ttfamily int Selection\+Box\+::\+Currently\+Selected\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Megadja a jelenleg kijelölt elem sorszámát a listában \begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+A kijelölt elem sorszáma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_selection_box_a1c0b7b6c851180450964a4df0c7c15e8}\label{class_selection_box_a1c0b7b6c851180450964a4df0c7c15e8}} 
+\index{Selection\+Box@{Selection\+Box}!Draw@{Draw}}
+\index{Draw@{Draw}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ez felel a widget kirajzolásáért 
+
+ÃšjraimplementÃ¡lt Å‘sÃ¶k\+: \hyperlink{class_label_a184df028b3aa8c7f8dec8ecb90533319}{Label}.
+
+\mbox{\Hypertarget{class_selection_box_a4596a4d2ff08593fda4f1ddd1cfc6eea}\label{class_selection_box_a4596a4d2ff08593fda4f1ddd1cfc6eea}} 
+\index{Selection\+Box@{Selection\+Box}!Edit\+Max\+Item\+In\+View@{Edit\+Max\+Item\+In\+View}}
+\index{Edit\+Max\+Item\+In\+View@{Edit\+Max\+Item\+In\+View}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Edit\+Max\+Item\+In\+View()}{EditMaxItemInView()}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Edit\+Max\+Item\+In\+View (\begin{DoxyParamCaption}\item[{int}]{elements }\end{DoxyParamCaption})}
+
+Átálítja, hogy maximum hány elem látszódjon a lenyíló menüben. Amennyiben több elemet tartalmaz, mint ez a szám, görgetni kell 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em Az} & egyszerre látható elemek száma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_selection_box_abd6e227d728b5802353d69c210997619}\label{class_selection_box_abd6e227d728b5802353d69c210997619}} 
+\index{Selection\+Box@{Selection\+Box}!Edit\+Selected\+Font\+Colour@{Edit\+Selected\+Font\+Colour}}
+\index{Edit\+Selected\+Font\+Colour@{Edit\+Selected\+Font\+Colour}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Edit\+Selected\+Font\+Colour()}{EditSelectedFontColour()}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Edit\+Selected\+Font\+Colour (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Átálítja kijelölt szöveg színét 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em r} & Az új piros érték \\
+\hline
+{\em g} & Az új zöld érték \\
+\hline
+{\em b} & Az új kék érték \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_selection_box_aaa47aeeda9cb1d50e5c519f5a1bb9dab}\label{class_selection_box_aaa47aeeda9cb1d50e5c519f5a1bb9dab}} 
+\index{Selection\+Box@{Selection\+Box}!Edit\+Selected\+Front\+Colour@{Edit\+Selected\+Front\+Colour}}
+\index{Edit\+Selected\+Front\+Colour@{Edit\+Selected\+Front\+Colour}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Edit\+Selected\+Front\+Colour()}{EditSelectedFrontColour()}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Edit\+Selected\+Front\+Colour (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Átálítja a kijelölt elõtér színét 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em r} & Az új piros érték \\
+\hline
+{\em g} & Az új zöld érték \\
+\hline
+{\em b} & Az új kék érték \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_selection_box_a4762480ce86018d74c0cfa271c9cce11}\label{class_selection_box_a4762480ce86018d74c0cfa271c9cce11}} 
+\index{Selection\+Box@{Selection\+Box}!Handle@{Handle}}
+\index{Handle@{Handle}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{structgenv_1_1event}{genv\+::event}}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ez a függvény kezeli az eventeket 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em ev} & Az aktuális event objektum \\
+\hline
+\end{DoxyParams}
+
+
+ÃšjraimplementÃ¡lt Å‘sÃ¶k\+: \hyperlink{class_label_a5cf04da7def075453b5c0fda93a1b575}{Label}.
+
+\mbox{\Hypertarget{class_selection_box_a0378e1ec035f90dd04efac5d6a2c7132}\label{class_selection_box_a0378e1ec035f90dd04efac5d6a2c7132}} 
+\index{Selection\+Box@{Selection\+Box}!Is\+In\+Line@{Is\+In\+Line}}
+\index{Is\+In\+Line@{Is\+In\+Line}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Is\+In\+Line()}{IsInLine()}}
+{\footnotesize\ttfamily bool Selection\+Box\+::\+Is\+In\+Line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Megadja, hogy az egér a saját keretein belül van-\/e 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & Az egér X pozíciója \\
+\hline
+{\em y} & Az egér Y pozíciója \\
+\hline
+\end{DoxyParams}
+
+
+ÃšjraimplementÃ¡lt Å‘sÃ¶k\+: \hyperlink{class_label_a918ebb45dbaa5484643355cf5ab4be47}{Label}.
+
+\mbox{\Hypertarget{class_selection_box_ae4bb0013ac37a323c72a426de84c08c8}\label{class_selection_box_ae4bb0013ac37a323c72a426de84c08c8}} 
+\index{Selection\+Box@{Selection\+Box}!Remove\+Item@{Remove\+Item}}
+\index{Remove\+Item@{Remove\+Item}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Remove\+Item()}{RemoveItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Remove\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+Töröl egy elemet a listából 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em value} & A törölni kívánt elem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_selection_box_af81528e021ed52fee388cb6dea786446}\label{class_selection_box_af81528e021ed52fee388cb6dea786446}} 
+\index{Selection\+Box@{Selection\+Box}!Remove\+Item@{Remove\+Item}}
+\index{Remove\+Item@{Remove\+Item}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Remove\+Item()}{RemoveItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Remove\+Item (\begin{DoxyParamCaption}\item[{int}]{place }\end{DoxyParamCaption})}
+
+Töröl egy elemet a listából 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em value} & A törölni kívánt elem helye \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_selection_box_a572b7322795b52447cf6ed292e13e832}\label{class_selection_box_a572b7322795b52447cf6ed292e13e832}} 
+\index{Selection\+Box@{Selection\+Box}!Set\+Button\+Size@{Set\+Button\+Size}}
+\index{Set\+Button\+Size@{Set\+Button\+Size}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Set\+Button\+Size()}{SetButtonSize()}}
+{\footnotesize\ttfamily void Selection\+Box\+::\+Set\+Button\+Size (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})}
+
+Megadja a kis gombok méretét és a menü mellett látható nagy gomb szélességét 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em button} & A gombok mérete \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Adattagok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_selection_box_a8f00181c55398686633e05055fe9050b}\label{class_selection_box_a8f00181c55398686633e05055fe9050b}} 
+\index{Selection\+Box@{Selection\+Box}!button\+Colour@{button\+Colour}}
+\index{button\+Colour@{button\+Colour}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{button\+Colour}{buttonColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Selection\+Box\+::button\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+A gomb színe \mbox{\Hypertarget{class_selection_box_a671415d9b6a3625fcffdc0f8a2882f3a}\label{class_selection_box_a671415d9b6a3625fcffdc0f8a2882f3a}} 
+\index{Selection\+Box@{Selection\+Box}!button\+On\+Click\+Colour@{button\+On\+Click\+Colour}}
+\index{button\+On\+Click\+Colour@{button\+On\+Click\+Colour}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{button\+On\+Click\+Colour}{buttonOnClickColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Selection\+Box\+::button\+On\+Click\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+A gomb színe kattintáskor \mbox{\Hypertarget{class_selection_box_a91fe3df437f4ffe0e5885e9362c76e55}\label{class_selection_box_a91fe3df437f4ffe0e5885e9362c76e55}} 
+\index{Selection\+Box@{Selection\+Box}!button\+Size@{button\+Size}}
+\index{button\+Size@{button\+Size}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{button\+Size}{buttonSize}}
+{\footnotesize\ttfamily int Selection\+Box\+::button\+Size = 15\hspace{0.3cm}{\ttfamily [private]}}
+
+A gombok mérete \mbox{\Hypertarget{class_selection_box_a5ecda83cc02b9aa23a1119b599c14420}\label{class_selection_box_a5ecda83cc02b9aa23a1119b599c14420}} 
+\index{Selection\+Box@{Selection\+Box}!currently\+Selected@{currently\+Selected}}
+\index{currently\+Selected@{currently\+Selected}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{currently\+Selected}{currentlySelected}}
+{\footnotesize\ttfamily int Selection\+Box\+::currently\+Selected\hspace{0.3cm}{\ttfamily [private]}}
+
+Megadja, hogy hanyadik elem van jelenleg kiválasztva \mbox{\Hypertarget{class_selection_box_ad7340177b4fc04b45cc26973f72002ac}\label{class_selection_box_ad7340177b4fc04b45cc26973f72002ac}} 
+\index{Selection\+Box@{Selection\+Box}!is\+Opened@{is\+Opened}}
+\index{is\+Opened@{is\+Opened}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{is\+Opened}{isOpened}}
+{\footnotesize\ttfamily bool Selection\+Box\+::is\+Opened\hspace{0.3cm}{\ttfamily [private]}}
+
+Megadja, hogy le van-\/e gördítve a lista \mbox{\Hypertarget{class_selection_box_a6a0fac038c98be9bdc85d4208ea5d1d5}\label{class_selection_box_a6a0fac038c98be9bdc85d4208ea5d1d5}} 
+\index{Selection\+Box@{Selection\+Box}!max\+Items\+In\+View@{max\+Items\+In\+View}}
+\index{max\+Items\+In\+View@{max\+Items\+In\+View}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{max\+Items\+In\+View}{maxItemsInView}}
+{\footnotesize\ttfamily int Selection\+Box\+::max\+Items\+In\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+Megadja, hogy hány elem látható egyszerre \mbox{\Hypertarget{class_selection_box_af7d6ac5ec9c1bec8093c4658c8d7eb4a}\label{class_selection_box_af7d6ac5ec9c1bec8093c4658c8d7eb4a}} 
+\index{Selection\+Box@{Selection\+Box}!mouse\+On\+Item@{mouse\+On\+Item}}
+\index{mouse\+On\+Item@{mouse\+On\+Item}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{mouse\+On\+Item}{mouseOnItem}}
+{\footnotesize\ttfamily int Selection\+Box\+::mouse\+On\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+Megadja, hogy jelenleg hanyadik elem fölött van az egér. -\/1 ha egyik fölött sem vagy a lista csukva van \mbox{\Hypertarget{class_selection_box_a6db5b172a719f48db281e6bd12e20d5e}\label{class_selection_box_a6db5b172a719f48db281e6bd12e20d5e}} 
+\index{Selection\+Box@{Selection\+Box}!selected\+Font\+Colour@{selected\+Font\+Colour}}
+\index{selected\+Font\+Colour@{selected\+Font\+Colour}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{selected\+Font\+Colour}{selectedFontColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Selection\+Box\+::selected\+Font\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+A kiválasztás betûszíne \mbox{\Hypertarget{class_selection_box_a3e20a7106c555781d74772c0dd983e9d}\label{class_selection_box_a3e20a7106c555781d74772c0dd983e9d}} 
+\index{Selection\+Box@{Selection\+Box}!selected\+Front\+Colour@{selected\+Front\+Colour}}
+\index{selected\+Front\+Colour@{selected\+Front\+Colour}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{selected\+Front\+Colour}{selectedFrontColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Selection\+Box\+::selected\+Front\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+A kiválasztás elõtér színe \mbox{\Hypertarget{class_selection_box_afcfc7749e3ec40e69d58f2774d32805b}\label{class_selection_box_afcfc7749e3ec40e69d58f2774d32805b}} 
+\index{Selection\+Box@{Selection\+Box}!top\+Item@{top\+Item}}
+\index{top\+Item@{top\+Item}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{top\+Item}{topItem}}
+{\footnotesize\ttfamily int Selection\+Box\+::top\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+Megadja, hogy a legördülõ listában melyik elem látható legfölül \mbox{\Hypertarget{class_selection_box_a8bac4f40a469f4ed3acba73a3e233390}\label{class_selection_box_a8bac4f40a469f4ed3acba73a3e233390}} 
+\index{Selection\+Box@{Selection\+Box}!Values@{Values}}
+\index{Values@{Values}!Selection\+Box@{Selection\+Box}}
+\subsubsection{\texorpdfstring{Values}{Values}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Selection\+Box\+::\+Values\hspace{0.3cm}{\ttfamily [private]}}
+
+Ebben vannak tárolva az értékek 
+
+Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt\+:\begin{DoxyCompactItemize}
+\item 
+Selection\+Box.\+h\item 
+Selection\+Box.\+cpp\end{DoxyCompactItemize}

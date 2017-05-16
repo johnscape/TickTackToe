@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_min_max_8h">
+    <title>MinMax.h File Reference</title>
+    <programlisting>#include &quot;Level.h&quot;</programlisting>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+        <section>
+            <title> Osztályok </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_step_data">StepData</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_min_max">MinMax</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Részletes leírás</title>
+    <para>Definition in file D:/Atandra/Prog/GIT/TickTackToe/doxygen/MinMax.h</para>
+    </simplesect>
+</section>

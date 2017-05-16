@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classgenv_1_1canvas">
+<title>genv::canvas class Reference</title>
+        <section>
+            <title>Védett attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>short pt_x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>short pt_y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SDL_Surface * buf</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int draw_clr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool transp</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>_TTF_Font * font</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool antialiastext</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string loaded_font_file_name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int font_size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classgenv_1_1canvas_1a46d382a63c9cdd582a15189fef4bd968">canvas</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classgenv_1_1canvas_1a9c712b13a5538b7014970ae43f09bf69">~canvas</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classgenv_1_1canvas_1ae4210ffb2450a3ba02df10dc54e51450">canvas</link> (
+int w, int h)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classgenv_1_1canvas_1a86451ee2e5574e00d3afc56333f531e4">canvas</link> (
+const <link linkend="classgenv_1_1canvas">canvas</link> &amp; c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classgenv_1_1canvas">genv::canvas</link> &amp; <link linkend="classgenv_1_1canvas_1ab39f2907cf7fda9c27246e9e644877e8">operator=</link> (
+const <link linkend="classgenv_1_1canvas">genv::canvas</link> &amp; c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgenv_1_1canvas_1aeb1d899ae60e28a104923d3b63266638">open</link> (
+unsigned width, unsigned height)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgenv_1_1canvas_1a8f1a7098176b298409a1aeb9dfdb6333">save</link> (
+const std::string &amp; file)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1a05e9e3bc7664435b02175325e667ffcc">transparent</link> (
+bool t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1a085f91bf2c74631935ba2fe7cc0a6002">set_color</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgenv_1_1canvas_1a03b50301a46098ee2e0ba4e4203e3995">move_point</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1a767d2a082da511ab6e84d4d7b98360be">draw_dot</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1a89a4e72f7064389cbe9418646863e919">draw_line</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1aea31b05cd41534691b329bd1545eeb84">draw_box</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1a6c6b77a47bde4163919ad44dfa6e0638">draw_text</link> (
+const std::string &amp; str)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1a94bad016a557ab62c7019ca25647bc0c">blitfrom</link> (
+const <link linkend="classgenv_1_1canvas">canvas</link> &amp; c, short x1, short y1, unsigned short x2, unsigned short y2, short x3, short y3)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgenv_1_1canvas_1a8ecb2e0d7f15f8a4875e04f747762a13">load_font</link> (
+const std::string &amp; fname, int fontsize, bool antialias)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1ad57cbfa2d960d827e5f689c508255254">set_antialias</link> (
+bool antialias)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classgenv_1_1canvas_1ad220ddfad4b67f2e24e2699e2ad7f91e">x</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classgenv_1_1canvas_1a56c80674a756a69f09c0ce63bf17402d">y</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classgenv_1_1canvas_1a21c0c57177ee0e47eb444a6bae8b7da5">cascent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classgenv_1_1canvas_1ae90f845816ac7045be771cca107f6f73">cdescent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classgenv_1_1canvas_1a79b09f2fa46b713164ddc326fb5c7c31">twidth</link> (
+const std::string &amp; s)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classgenv_1_1canvas_1a04bc3204672ade4baa0a13a10a43d9e2">refresh</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1canvas_1a6a4a48ca686c16460d0c42e9d8c2ea3c">call_with_rel</link> (
+T meth, int vec_x, int vec_y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classgenv_1_1canvas_1a7d2385f86f8e25db8c3a9254037e42df">sgn</link> (
+const T &amp; a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="classgenv_1_1canvas_1a46d382a63c9cdd582a15189fef4bd968">
+                <title>genv::canvas::canvas ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a9c712b13a5538b7014970ae43f09bf69">
+                <title>virtual genv::canvas::~canvas ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1ae4210ffb2450a3ba02df10dc54e51450">
+                <title>genv::canvas::canvas (int w, int h)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a86451ee2e5574e00d3afc56333f531e4">
+                <title>genv::canvas::canvas (const canvas &amp;c)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1ab39f2907cf7fda9c27246e9e644877e8">
+                <title>genv::canvas&amp; genv::canvas::operator= (const genv::canvas &amp;c)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1aeb1d899ae60e28a104923d3b63266638">
+                <title>bool genv::canvas::open (unsigned width, unsigned height)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a8f1a7098176b298409a1aeb9dfdb6333">
+                <title>bool genv::canvas::save (const std::string &amp;file) const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a05e9e3bc7664435b02175325e667ffcc">
+                <title>void genv::canvas::transparent (bool t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a085f91bf2c74631935ba2fe7cc0a6002">
+                <title>void genv::canvas::set_color (int r, int g, int b)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a03b50301a46098ee2e0ba4e4203e3995">
+                <title>bool genv::canvas::move_point (int x, int y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a767d2a082da511ab6e84d4d7b98360be">
+                <title>void genv::canvas::draw_dot ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a89a4e72f7064389cbe9418646863e919">
+                <title>void genv::canvas::draw_line (int x, int y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1aea31b05cd41534691b329bd1545eeb84">
+                <title>void genv::canvas::draw_box (int x, int y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a6c6b77a47bde4163919ad44dfa6e0638">
+                <title>void genv::canvas::draw_text (const std::string &amp;str)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a94bad016a557ab62c7019ca25647bc0c">
+                <title>void genv::canvas::blitfrom (const canvas &amp;c, short x1, short y1, unsigned short x2, unsigned short y2, short x3, short y3)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a8ecb2e0d7f15f8a4875e04f747762a13">
+                <title>bool genv::canvas::load_font (const std::string &amp;fname, int fontsize=16, bool antialias=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1ad57cbfa2d960d827e5f689c508255254">
+                <title>void genv::canvas::set_antialias (bool antialias)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1ad220ddfad4b67f2e24e2699e2ad7f91e">
+                <title>int genv::canvas::x () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a56c80674a756a69f09c0ce63bf17402d">
+                <title>int genv::canvas::y () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a21c0c57177ee0e47eb444a6bae8b7da5">
+                <title>int genv::canvas::cascent () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1ae90f845816ac7045be771cca107f6f73">
+                <title>int genv::canvas::cdescent () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a79b09f2fa46b713164ddc326fb5c7c31">
+                <title>int genv::canvas::twidth (const std::string &amp;s) const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a04bc3204672ade4baa0a13a10a43d9e2">
+                <title>virtual void genv::canvas::refresh ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a6a4a48ca686c16460d0c42e9d8c2ea3c">
+                <title>void genv::canvas::call_with_rel (T meth, int vec_x, int vec_y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1canvas_1a7d2385f86f8e25db8c3a9254037e42df">
+                <title>int genv::canvas::sgn (const T &amp;a)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

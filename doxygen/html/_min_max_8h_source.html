@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: MinMax.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">MinMax.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MINMAX_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MINMAX_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Level.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_step_data.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_step_data.html">StepData</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="struct_step_data.html">StepData</a>(){};</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="struct_step_data.html">StepData</a>(<span class="keywordtype">int</span> a) : point(a){x = 0; y = 0;}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> x;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> y;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> point;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_min_max.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_min_max.html">MinMax</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="class_min_max.html">MinMax</a>(<span class="keywordtype">int</span> deep, <a class="code" href="class_level.html">Level</a> * currentLevel, <span class="keywordtype">bool</span> isX);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_min_max.html">MinMax</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> Step();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_min_max.html#a6da4ca45e19de6c1bdbe8a5a3d4b7da8">   38</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_min_max.html#a6da4ca45e19de6c1bdbe8a5a3d4b7da8">IsX</a>;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_min_max.html#a6972ddd2c6a41089c586220563e07e25">   39</a></span>&#160;        <a class="code" href="class_level.html">Level</a> * <a class="code" href="class_min_max.html#a6972ddd2c6a41089c586220563e07e25">playingLevel</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_min_max.html#a2b1b3631d9cf8c6efec0c7bf16c7d846">   40</a></span>&#160;        <a class="code" href="class_level.html">Level</a> * <a class="code" href="class_min_max.html#a2b1b3631d9cf8c6efec0c7bf16c7d846">computingLevel</a>;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_min_max.html#a9bb13756ec099292e262724f16d39a88">   41</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_min_max.html#a9bb13756ec099292e262724f16d39a88">MaxSteps</a>;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_min_max.html#ab1a2e347bd948d37b96a6694e6ee4a5b">   42</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_min_max.html#ab1a2e347bd948d37b96a6694e6ee4a5b">MapSize</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="struct_step_data.html">StepData</a> NextStep(<span class="keywordtype">int</span> deep, <span class="keywordtype">bool</span> isAI);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> CopyLevels();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::ofstream Writer;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // MINMAX_H</span></div><div class="ttc" id="class_min_max_html_ab1a2e347bd948d37b96a6694e6ee4a5b"><div class="ttname"><a href="class_min_max.html#ab1a2e347bd948d37b96a6694e6ee4a5b">MinMax::MapSize</a></div><div class="ttdeci">int MapSize</div><div class="ttdef"><b>Definition:</b> MinMax.h:42</div></div>
+<div class="ttc" id="class_min_max_html"><div class="ttname"><a href="class_min_max.html">MinMax</a></div><div class="ttdef"><b>Definition:</b> MinMax.h:16</div></div>
+<div class="ttc" id="class_level_html"><div class="ttname"><a href="class_level.html">Level</a></div><div class="ttdef"><b>Definition:</b> Level.h:6</div></div>
+<div class="ttc" id="class_min_max_html_a9bb13756ec099292e262724f16d39a88"><div class="ttname"><a href="class_min_max.html#a9bb13756ec099292e262724f16d39a88">MinMax::MaxSteps</a></div><div class="ttdeci">int MaxSteps</div><div class="ttdef"><b>Definition:</b> MinMax.h:41</div></div>
+<div class="ttc" id="class_min_max_html_a2b1b3631d9cf8c6efec0c7bf16c7d846"><div class="ttname"><a href="class_min_max.html#a2b1b3631d9cf8c6efec0c7bf16c7d846">MinMax::computingLevel</a></div><div class="ttdeci">Level * computingLevel</div><div class="ttdef"><b>Definition:</b> MinMax.h:40</div></div>
+<div class="ttc" id="class_min_max_html_a6da4ca45e19de6c1bdbe8a5a3d4b7da8"><div class="ttname"><a href="class_min_max.html#a6da4ca45e19de6c1bdbe8a5a3d4b7da8">MinMax::IsX</a></div><div class="ttdeci">bool IsX</div><div class="ttdef"><b>Definition:</b> MinMax.h:38</div></div>
+<div class="ttc" id="struct_step_data_html"><div class="ttname"><a href="struct_step_data.html">StepData</a></div><div class="ttdef"><b>Definition:</b> MinMax.h:7</div></div>
+<div class="ttc" id="class_min_max_html_a6972ddd2c6a41089c586220563e07e25"><div class="ttname"><a href="class_min_max.html#a6972ddd2c6a41089c586220563e07e25">MinMax::playingLevel</a></div><div class="ttdeci">Level * playingLevel</div><div class="ttdef"><b>Definition:</b> MinMax.h:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

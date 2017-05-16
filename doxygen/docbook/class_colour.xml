@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_colour">
+<title>Colour class Reference</title>
+        <section>
+            <title>PrivÃ¡t attribÃºtumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int R</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int G</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int B</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_colour_1a46612b9524fcd4cee818af6a86b7a4d2">Colour</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_colour_1a88131e7210ca30c64fcf0d73d4705945">Colour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_colour_1a92e4d464c2e972d272f4e14c59e4a7ad">~Colour</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_1a8781ecef0908fa0b0795e35a0282c4c9">AdjustColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_1ada133c508a2b08f0884e260daee0bb82">SetColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_1a403a38c1c711785622f8bacfadbb2801">SetThisColour</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_colour_1aa520286f0c3e65e02298dafd98e730af">GetR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_colour_1a5867c71ecb081868729f81e9c2f104b1">GetG</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_colour_1a1fbadc37dbe6ca5d7f9e40356a0b8213">GetB</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_1a6b770134b677d05d9062fe55a5466e03">CheckRGB</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentÃ¡ciÃ³ja</title>
+            <simplesect>
+                <title>int Colour::R</title>                
+<para>A tárolt piros érték </para>
+
+                <para>Definition at line 64 of file Colour.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Colour.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Colour::G</title>                
+<para>A tárolt zöld érték </para>
+
+                <para>Definition at line 65 of file Colour.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Colour.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Colour::B</title>                
+<para>A tárolt kék érték </para>
+
+                <para>Definition at line 66 of file Colour.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Colour.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_colour_1a46612b9524fcd4cee818af6a86b7a4d2">
+                <title>Colour::Colour ()</title> <emphasis></emphasis>
+                
+<para>Egy szín RGB kódját tárolja, alapértelmezetten fekete </para>
+
+            </section>
+            <section xml:id="class_colour_1a88131e7210ca30c64fcf0d73d4705945">
+                <title>Colour::Colour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Egy szín RGB kódját tárolja 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>a szín piros kódja </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>a szín zöld kódja </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>a szín kék kódja </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_colour_1a92e4d464c2e972d272f4e14c59e4a7ad">
+                <title>Colour::~Colour ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_colour_1a8781ecef0908fa0b0795e35a0282c4c9">
+                <title>void Colour::AdjustColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>A színt módosítja a megadott értékekkel 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>a piros módosítás mértéke </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>a zöld módosítás mértéke </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>a kék módosítás mértéke </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_colour_1ada133c508a2b08f0884e260daee0bb82">
+                <title>void Colour::SetColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Megváltoztatja a tárolt színt az új színre 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>az új piros érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>az új zöld érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>az új kék érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_colour_1a403a38c1c711785622f8bacfadbb2801">
+                <title>void Colour::SetThisColour ()</title> <emphasis></emphasis>
+                
+<para>A gout színét átálítja az általa tárolt színre </para>
+
+            </section>
+            <section xml:id="class_colour_1aa520286f0c3e65e02298dafd98e730af">
+                <title>int Colour::GetR ()</title> <emphasis></emphasis>
+                
+<para>Megadja a tárolt szín piros értékét <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>A tárolt piros érték </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_colour_1a5867c71ecb081868729f81e9c2f104b1">
+                <title>int Colour::GetG ()</title> <emphasis></emphasis>
+                
+<para>Megadja a tárolt szín zöld értékét <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>A tárolt zöld érték </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_colour_1a1fbadc37dbe6ca5d7f9e40356a0b8213">
+                <title>int Colour::GetB ()</title> <emphasis></emphasis>
+                
+<para>Megadja a tárolt szín kék értékét <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>A tárolt kék érték </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_colour_1a6b770134b677d05d9062fe55a5466e03">
+                <title>void Colour::CheckRGB ()</title> <emphasis></emphasis>
+                
+<para>Ellenõrzi, hogy a színek nem-e lógnak ki a 0-255 tartományból </para>
+
+            </section>
+</section>

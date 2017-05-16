@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: Colour.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Colour.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COLOUR_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COLOUR_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_colour.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_colour.html">Colour</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_colour.html#a46612b9524fcd4cee818af6a86b7a4d2">Colour</a>();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_colour.html#a46612b9524fcd4cee818af6a86b7a4d2">Colour</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_colour.html">Colour</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_colour.html#a8781ecef0908fa0b0795e35a0282c4c9">AdjustColour</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_colour.html#ada133c508a2b08f0884e260daee0bb82">SetColour</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_colour.html#a403a38c1c711785622f8bacfadbb2801">SetThisColour</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_colour.html#aa520286f0c3e65e02298dafd98e730af">GetR</a>();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_colour.html#a5867c71ecb081868729f81e9c2f104b1">GetG</a>();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_colour.html#a1fbadc37dbe6ca5d7f9e40356a0b8213">GetB</a>();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_colour.html#a2045bcd0534cd4cf0bd025571ac72feb">   64</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_colour.html#a2045bcd0534cd4cf0bd025571ac72feb">R</a>; </div><div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_colour.html#a05957ae575ef990faf6f24ef1f6eb828">   65</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_colour.html#a05957ae575ef990faf6f24ef1f6eb828">G</a>; </div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_colour.html#a25ef99016bc619acb35d25e0eb86cad6">   66</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_colour.html#a25ef99016bc619acb35d25e0eb86cad6">B</a>; </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_colour.html#a6b770134b677d05d9062fe55a5466e03">CheckRGB</a>();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // COLOUR_H</span></div><div class="ttc" id="class_colour_html_a8781ecef0908fa0b0795e35a0282c4c9"><div class="ttname"><a href="class_colour.html#a8781ecef0908fa0b0795e35a0282c4c9">Colour::AdjustColour</a></div><div class="ttdeci">void AdjustColour(int r, int g, int b)</div><div class="ttdef"><b>Definition:</b> Colour.cpp:24</div></div>
+<div class="ttc" id="class_colour_html_a5867c71ecb081868729f81e9c2f104b1"><div class="ttname"><a href="class_colour.html#a5867c71ecb081868729f81e9c2f104b1">Colour::GetG</a></div><div class="ttdeci">int GetG()</div><div class="ttdef"><b>Definition:</b> Colour.cpp:68</div></div>
+<div class="ttc" id="class_colour_html_a46612b9524fcd4cee818af6a86b7a4d2"><div class="ttname"><a href="class_colour.html#a46612b9524fcd4cee818af6a86b7a4d2">Colour::Colour</a></div><div class="ttdeci">Colour()</div><div class="ttdef"><b>Definition:</b> Colour.cpp:4</div></div>
+<div class="ttc" id="class_colour_html"><div class="ttname"><a href="class_colour.html">Colour</a></div><div class="ttdef"><b>Definition:</b> Colour.h:5</div></div>
+<div class="ttc" id="class_colour_html_a403a38c1c711785622f8bacfadbb2801"><div class="ttname"><a href="class_colour.html#a403a38c1c711785622f8bacfadbb2801">Colour::SetThisColour</a></div><div class="ttdeci">void SetThisColour()</div><div class="ttdef"><b>Definition:</b> Colour.cpp:58</div></div>
+<div class="ttc" id="class_colour_html_a05957ae575ef990faf6f24ef1f6eb828"><div class="ttname"><a href="class_colour.html#a05957ae575ef990faf6f24ef1f6eb828">Colour::G</a></div><div class="ttdeci">int G</div><div class="ttdef"><b>Definition:</b> Colour.h:65</div></div>
+<div class="ttc" id="class_colour_html_ada133c508a2b08f0884e260daee0bb82"><div class="ttname"><a href="class_colour.html#ada133c508a2b08f0884e260daee0bb82">Colour::SetColour</a></div><div class="ttdeci">void SetColour(int r, int g, int b)</div><div class="ttdef"><b>Definition:</b> Colour.cpp:32</div></div>
+<div class="ttc" id="class_colour_html_a2045bcd0534cd4cf0bd025571ac72feb"><div class="ttname"><a href="class_colour.html#a2045bcd0534cd4cf0bd025571ac72feb">Colour::R</a></div><div class="ttdeci">int R</div><div class="ttdef"><b>Definition:</b> Colour.h:64</div></div>
+<div class="ttc" id="class_colour_html_a6b770134b677d05d9062fe55a5466e03"><div class="ttname"><a href="class_colour.html#a6b770134b677d05d9062fe55a5466e03">Colour::CheckRGB</a></div><div class="ttdeci">void CheckRGB()</div><div class="ttdef"><b>Definition:</b> Colour.cpp:40</div></div>
+<div class="ttc" id="class_colour_html_a1fbadc37dbe6ca5d7f9e40356a0b8213"><div class="ttname"><a href="class_colour.html#a1fbadc37dbe6ca5d7f9e40356a0b8213">Colour::GetB</a></div><div class="ttdeci">int GetB()</div><div class="ttdef"><b>Definition:</b> Colour.cpp:73</div></div>
+<div class="ttc" id="class_colour_html_a25ef99016bc619acb35d25e0eb86cad6"><div class="ttname"><a href="class_colour.html#a25ef99016bc619acb35d25e0eb86cad6">Colour::B</a></div><div class="ttdeci">int B</div><div class="ttdef"><b>Definition:</b> Colour.h:66</div></div>
+<div class="ttc" id="class_colour_html_aa520286f0c3e65e02298dafd98e730af"><div class="ttname"><a href="class_colour.html#aa520286f0c3e65e02298dafd98e730af">Colour::GetR</a></div><div class="ttdeci">int GetR()</div><div class="ttdef"><b>Definition:</b> Colour.cpp:63</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

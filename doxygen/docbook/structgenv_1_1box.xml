@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structgenv_1_1box">
+<title>genv::box struct Reference</title>
+        <section>
+            <title>Publikus attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int vec_x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int vec_y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1box_1af3503beee95ae0b5fa4a33fcdd75a0b5">box</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="structgenv_1_1box_1aa370a72cc0844a0dcb18efd335dc2c72">operator()</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="structgenv_1_1box_1af3503beee95ae0b5fa4a33fcdd75a0b5">
+                <title>genv::box::box (int x, int y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1box_1aa370a72cc0844a0dcb18efd335dc2c72">
+                <title>void genv::box::operator() (canvas &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

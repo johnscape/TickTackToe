@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: GUIHandler.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">GUIHandler.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GUIHANDLER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GUIHANDLER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;graphics.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Widget.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_g_u_i_handler.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_u_i_handler.html">GUIHandler</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_g_u_i_handler.html#a5f7c105ce1232b512206e7720c91d5e3">GUIHandler</a>(<span class="keywordtype">int</span>&amp; xx, <span class="keywordtype">int</span>&amp; yy);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_g_u_i_handler.html">GUIHandler</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_handler.html#ab25716ff908ac3258a11ceff6511c1a8">AddWidget</a>(<a class="code" href="class_widget.html">Widget</a>* w);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_handler.html#a1aab537eafbed97a0b5fc3d766c3a0f8">RemoveWidget</a>(<span class="keywordtype">int</span> num);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_handler.html#a1aab537eafbed97a0b5fc3d766c3a0f8">RemoveWidget</a>(<a class="code" href="class_widget.html">Widget</a>* w);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> DeleteAllWidget();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_handler.html#a2682b297a7ec68033772358add0b6ca5">Start</a>(<span class="keywordtype">bool</span> exitOnEscape, <span class="keywordtype">int</span> timer);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> Exit();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">bool</span> GetIsRunning();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">int</span> GetWidgetNumber(<a class="code" href="class_widget.html">Widget</a>* a);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_g_u_i_handler.html#a393237de816334de912d1b113ee1fcc5">   58</a></span>&#160;        std::vector&lt;Widget*&gt; <a class="code" href="class_g_u_i_handler.html#a393237de816334de912d1b113ee1fcc5">Widgets</a>; </div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_g_u_i_handler.html#ac16356b3284231bdd602f3b0176955fe">   59</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_g_u_i_handler.html#ac16356b3284231bdd602f3b0176955fe">SelectedWidget</a>; </div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_g_u_i_handler.html#af084b370233fa8e3bda14b9a35828eb6">   60</a></span>&#160;        <a class="code" href="class_colour.html">Colour</a>* <a class="code" href="class_g_u_i_handler.html#af084b370233fa8e3bda14b9a35828eb6">bgColour</a>; </div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_g_u_i_handler.html#ac0cbeb259e73abcbe34888ca5ff4a248">   61</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_g_u_i_handler.html#ac0cbeb259e73abcbe34888ca5ff4a248">WindowX</a>; </div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_g_u_i_handler.html#aa4ee4e5b027093bd990e7f06e12c35b5">   62</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_g_u_i_handler.html#aa4ee4e5b027093bd990e7f06e12c35b5">WindowY</a>; </div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">bool</span> Exiting;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span> IsRunning;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_g_u_i_handler.html#af864fc3eb860de1b198cf857dc120db9">   66</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_g_u_i_handler.html#af864fc3eb860de1b198cf857dc120db9">isEscapeExit</a>; </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_handler.html#a62e6efe1f011584f34ec69b20b585c18">Draw</a>();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_u_i_handler.html#a8ea722319827ba27eb941151c562539f">Handle</a>(<a class="code" href="structgenv_1_1event.html">genv::event</a> ev);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif // GUIHANDLER_H</span></div><div class="ttc" id="structgenv_1_1event_html"><div class="ttname"><a href="structgenv_1_1event.html">genv::event</a></div><div class="ttdef"><b>Definition:</b> graphics.hpp:229</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_ac0cbeb259e73abcbe34888ca5ff4a248"><div class="ttname"><a href="class_g_u_i_handler.html#ac0cbeb259e73abcbe34888ca5ff4a248">GUIHandler::WindowX</a></div><div class="ttdeci">int WindowX</div><div class="ttdef"><b>Definition:</b> GUIHandler.h:61</div></div>
+<div class="ttc" id="class_colour_html"><div class="ttname"><a href="class_colour.html">Colour</a></div><div class="ttdef"><b>Definition:</b> Colour.h:5</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_a393237de816334de912d1b113ee1fcc5"><div class="ttname"><a href="class_g_u_i_handler.html#a393237de816334de912d1b113ee1fcc5">GUIHandler::Widgets</a></div><div class="ttdeci">std::vector&lt; Widget * &gt; Widgets</div><div class="ttdef"><b>Definition:</b> GUIHandler.h:58</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_a1aab537eafbed97a0b5fc3d766c3a0f8"><div class="ttname"><a href="class_g_u_i_handler.html#a1aab537eafbed97a0b5fc3d766c3a0f8">GUIHandler::RemoveWidget</a></div><div class="ttdeci">void RemoveWidget(int num)</div><div class="ttdef"><b>Definition:</b> GUIHandler.cpp:32</div></div>
+<div class="ttc" id="class_g_u_i_handler_html"><div class="ttname"><a href="class_g_u_i_handler.html">GUIHandler</a></div><div class="ttdef"><b>Definition:</b> GUIHandler.h:9</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_ab25716ff908ac3258a11ceff6511c1a8"><div class="ttname"><a href="class_g_u_i_handler.html#ab25716ff908ac3258a11ceff6511c1a8">GUIHandler::AddWidget</a></div><div class="ttdeci">void AddWidget(Widget *w)</div><div class="ttdef"><b>Definition:</b> GUIHandler.cpp:27</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_af864fc3eb860de1b198cf857dc120db9"><div class="ttname"><a href="class_g_u_i_handler.html#af864fc3eb860de1b198cf857dc120db9">GUIHandler::isEscapeExit</a></div><div class="ttdeci">bool isEscapeExit</div><div class="ttdef"><b>Definition:</b> GUIHandler.h:66</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_a62e6efe1f011584f34ec69b20b585c18"><div class="ttname"><a href="class_g_u_i_handler.html#a62e6efe1f011584f34ec69b20b585c18">GUIHandler::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> GUIHandler.cpp:56</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_ac16356b3284231bdd602f3b0176955fe"><div class="ttname"><a href="class_g_u_i_handler.html#ac16356b3284231bdd602f3b0176955fe">GUIHandler::SelectedWidget</a></div><div class="ttdeci">int SelectedWidget</div><div class="ttdef"><b>Definition:</b> GUIHandler.h:59</div></div>
+<div class="ttc" id="class_widget_html"><div class="ttname"><a href="class_widget.html">Widget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:6</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_af084b370233fa8e3bda14b9a35828eb6"><div class="ttname"><a href="class_g_u_i_handler.html#af084b370233fa8e3bda14b9a35828eb6">GUIHandler::bgColour</a></div><div class="ttdeci">Colour * bgColour</div><div class="ttdef"><b>Definition:</b> GUIHandler.h:60</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_a5f7c105ce1232b512206e7720c91d5e3"><div class="ttname"><a href="class_g_u_i_handler.html#a5f7c105ce1232b512206e7720c91d5e3">GUIHandler::GUIHandler</a></div><div class="ttdeci">GUIHandler(int &amp;xx, int &amp;yy)</div><div class="ttdef"><b>Definition:</b> GUIHandler.cpp:7</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_a2682b297a7ec68033772358add0b6ca5"><div class="ttname"><a href="class_g_u_i_handler.html#a2682b297a7ec68033772358add0b6ca5">GUIHandler::Start</a></div><div class="ttdeci">void Start(bool exitOnEscape, int timer)</div><div class="ttdef"><b>Definition:</b> GUIHandler.cpp:85</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_aa4ee4e5b027093bd990e7f06e12c35b5"><div class="ttname"><a href="class_g_u_i_handler.html#aa4ee4e5b027093bd990e7f06e12c35b5">GUIHandler::WindowY</a></div><div class="ttdeci">int WindowY</div><div class="ttdef"><b>Definition:</b> GUIHandler.h:62</div></div>
+<div class="ttc" id="class_g_u_i_handler_html_a8ea722319827ba27eb941151c562539f"><div class="ttname"><a href="class_g_u_i_handler.html#a8ea722319827ba27eb941151c562539f">GUIHandler::Handle</a></div><div class="ttdeci">void Handle(genv::event ev)</div><div class="ttdef"><b>Definition:</b> GUIHandler.cpp:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

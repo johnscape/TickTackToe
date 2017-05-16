@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_button">
+<title>Button class Reference</title>
+        <section>
+            <title>Privát attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void()&gt; Function</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * OnClickColor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isClicking</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_button_1a33553572657626500239c144f1bbc04f">Button</link> (
+int x, int y, int xSize, int ySize, std::string text, std::function&lt; void()&gt; fv)<para><emphasis>Létrehoz egy új gombot.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_button_1a2a001eb9c3cc8ae54768a850dd345002">~Button</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_button_1a6aaa2b781c933a296f41a8eca890eb1f">Draw</link> (
+)<para><emphasis>Kirajzolja a widgetet.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_button_1a72dc68b7a78edfebe904bf489d6e03fb">Handle</link> (
+<link linkend="structgenv_1_1event">genv::event</link> ev)<para><emphasis>Kezeli a widgetet az inputnak megfelelõen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="class_button_1a61832186fb0cf58c4c1c6fbbe572b61c">IsInLine</link> (
+int x, int y)<para><emphasis>Megadja, hogy egy koordináta rajta van-e a widgeten.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_button_1aa9bb1fc7a079ef575f255f9c7e4fcfbb">SetOnClickColor</link> (
+int r, int g, int b)<para><emphasis>A kattintáskor látható színt változtatja meg.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+            <simplesect>
+                <title>std::function&lt;void()&gt; Button::Function</title>                
+<para>A kattintáskor meghívandó funció </para>
+
+                <para>Definition at line 60 of file Button.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Button.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* Button::OnClickColor</title>                
+<para>A kattintáskor látható szín </para>
+
+                <para>Definition at line 61 of file Button.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Button.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool Button::isClicking</title>                
+<para>Le van-e nyomva a gomb </para>
+
+                <para>Definition at line 62 of file Button.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Button.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_button_1a33553572657626500239c144f1bbc04f">
+                <title>Button::Button (int x, int y, int xSize, int ySize, std::string text, std::function&lt; void()&gt; fv)</title> <emphasis>Létrehoz egy új gombot.</emphasis>
+                
+<para><formalpara><title>Visszatérési érték: </title>
+
+<para><link linkend="class_button">Button</link>(int x, int y, int xSize, int ySize, std::string text, </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_button_1a2a001eb9c3cc8ae54768a850dd345002">
+                <title>Button::~Button ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_button_1a6aaa2b781c933a296f41a8eca890eb1f">
+                <title>void Button::Draw ()</title> <emphasis>Kirajzolja a widgetet.</emphasis>
+                
+<para><formalpara><title>Visszatérési érték: </title>
+
+<para>virtual void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_button_1a72dc68b7a78edfebe904bf489d6e03fb">
+                <title>void Button::Handle (genv::event ev)</title> <emphasis>Kezeli a widgetet az inputnak megfelelõen.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ev</entry>
+                                <entry>
+<para><link linkend="structgenv_1_1event">genv::event</link> Az input eventje </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>virtual void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_button_1a61832186fb0cf58c4c1c6fbbe572b61c">
+                <title>bool Button::IsInLine (int x, int y)</title> <emphasis>Megadja, hogy egy koordináta rajta van-e a widgeten.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int Az x koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int Az y koordináta </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>virtual bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_button_1aa9bb1fc7a079ef575f255f9c7e4fcfbb">
+                <title>void Button::SetOnClickColor (int r, int g, int b)</title> <emphasis>A kattintáskor látható színt változtatja meg.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>int Az új szín piros értéke </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>int Az új szín zöld értéke </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>int Az új szín kék értéke </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

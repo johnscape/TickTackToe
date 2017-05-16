@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_radio_button_holder">
+<title>RadioButtonHolder class Reference</title>
+        <section>
+            <title>Privát attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; RadioButton * &gt; radioButtons</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(RadioButtonHolder *)&gt; OnEvent</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int ButtonCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int CurrentlySelected</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_radio_button_holder_1ab100a3d26a036b76ead2bcd4331e8552">RadioButtonHolder</link> (
+)<para><emphasis>Létrehot egy kiválasztó gomb tartó objektumot.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_radio_button_holder_1abe15d79c1267f2147a992d6cd57bd5ed">~RadioButtonHolder</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_radio_button_holder_1ab9ac730a7440439eb73b892f193741ae">AddRadioButton</link> (
+<link linkend="class_radio_button">RadioButton</link> * button)<para><emphasis>A listához ad egy új gombot.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_radio_button_holder_1a217e5620f70f0d2633e70896ad166f70">RemoveRadioButton</link> (
+<link linkend="class_radio_button">RadioButton</link> * button)<para><emphasis>Eltávolít egy gombot.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_radio_button_holder_1a8a44f58d480a8c1b4822adb9e9df0c98">RemoveRadioButton</link> (
+int place)<para><emphasis>Eltávolít egy gombot.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_radio_button_holder_1ad185ab84d978e645eac54f236069705b">GetCurrentlySelected</link> (
+)<para><emphasis>Megadja a jelenleg kiválasztott gomb sorszámát.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_radio_button_holder_1a5ed73396ddd57f3de474a7487429bae3">CurrentlySelectedValue</link> (
+)<para><emphasis>Megadja a jelenleg kiválasztott gomb értékét.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_radio_button_holder_1a1b15e73021c8e2022d43b12f4246182d">SetEventVoid</link> (
+std::function&lt; void(<link linkend="class_radio_button_holder">RadioButtonHolder</link> *)&gt; event)<para><emphasis>Egy gomra történő kattintáskor meghívandó esemény.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_radio_button_holder_1a70d6ba1724bdb68afe351d0474cbd767">Draw</link> (
+)<para><emphasis>Kirajzolja a widgeteket.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_radio_button_holder_1a7b4ed9e75eef252ad20c3cbcb8547981">Handle</link> (
+<link linkend="structgenv_1_1event">genv::event</link> ev)<para><emphasis>Kezeli a widgeteket az inputnak megfelelõen.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="class_radio_button_holder_1aa6d6fe7d9eb9ce9c2628f432ef129e01">IsInLine</link> (
+int x, int y)<para><emphasis>Megadja, hogy egy koordináta rajta van-e a widgeten.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_radio_button_holder_1aeca94b584cd2a969f38f587f08ff43df">CheckNull</link> (
+)<para><emphasis>Ellenőrzi, hogy vannak-e gombok.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+            <simplesect>
+                <title>std::vector&lt;RadioButton*&gt; RadioButtonHolder::radioButtons</title>                
+<para>A tárolt gombok listája </para>
+
+                <para>Definition at line 93 of file RadioButtonHolder.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RadioButtonHolder.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::function&lt;void(RadioButtonHolder*)&gt; RadioButtonHolder::OnEvent</title>                
+<para>A meghíndó esemény </para>
+
+                <para>Definition at line 94 of file RadioButtonHolder.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RadioButtonHolder.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int RadioButtonHolder::ButtonCount</title>                
+<para>A gombok száma </para>
+
+                <para>Definition at line 95 of file RadioButtonHolder.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RadioButtonHolder.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int RadioButtonHolder::CurrentlySelected</title>                
+<para>A jeleneg kiválasztott gomb sorszáma </para>
+
+                <para>Definition at line 96 of file RadioButtonHolder.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RadioButtonHolder.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_radio_button_holder_1ab100a3d26a036b76ead2bcd4331e8552">
+                <title>RadioButtonHolder::RadioButtonHolder ()</title> <emphasis>Létrehot egy kiválasztó gomb tartó objektumot.</emphasis>
+                
+            </section>
+            <section xml:id="class_radio_button_holder_1abe15d79c1267f2147a992d6cd57bd5ed">
+                <title>RadioButtonHolder::~RadioButtonHolder ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_radio_button_holder_1ab9ac730a7440439eb73b892f193741ae">
+                <title>void RadioButtonHolder::AddRadioButton (RadioButton *button)</title> <emphasis>A listához ad egy új gombot.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>button</entry>
+                                <entry>
+<para>RadioButton* Az új gomn </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1a217e5620f70f0d2633e70896ad166f70">
+                <title>void RadioButtonHolder::RemoveRadioButton (RadioButton *button)</title> <emphasis>Eltávolít egy gombot.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>button</entry>
+                                <entry>
+<para>RadioButton* Az eltávolítandó gomb </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1a8a44f58d480a8c1b4822adb9e9df0c98">
+                <title>void RadioButtonHolder::RemoveRadioButton (int place)</title> <emphasis>Eltávolít egy gombot.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>place</entry>
+                                <entry>
+<para>int Az eltávolítandó gomb sorszáma </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1ad185ab84d978e645eac54f236069705b">
+                <title>int RadioButtonHolder::GetCurrentlySelected ()</title> <emphasis>Megadja a jelenleg kiválasztott gomb sorszámát.</emphasis>
+                
+<para><formalpara><title>Visszatérési érték: </title>
+
+<para>int A jelenleg kiválasztott gomb sorszáma </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1a5ed73396ddd57f3de474a7487429bae3">
+                <title>int RadioButtonHolder::CurrentlySelectedValue ()</title> <emphasis>Megadja a jelenleg kiválasztott gomb értékét.</emphasis>
+                
+<para><formalpara><title>Visszatérési érték: </title>
+
+<para>int A jelenleg kiválasztott gomb értéke </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1a1b15e73021c8e2022d43b12f4246182d">
+                <title>void RadioButtonHolder::SetEventVoid (std::function&lt; void(RadioButtonHolder *)&gt; event)</title> <emphasis>Egy gomra történő kattintáskor meghívandó esemény.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>RadioButtonHolder*</entry>
+                                <entry>
+<para>A meghívandó esemény </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1a70d6ba1724bdb68afe351d0474cbd767">
+                <title>void RadioButtonHolder::Draw ()</title> <emphasis>Kirajzolja a widgeteket.</emphasis>
+                
+<para><formalpara><title>Visszatérési érték: </title>
+
+<para>virtual void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1a7b4ed9e75eef252ad20c3cbcb8547981">
+                <title>void RadioButtonHolder::Handle (genv::event ev)</title> <emphasis>Kezeli a widgeteket az inputnak megfelelõen.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ev</entry>
+                                <entry>
+<para><link linkend="structgenv_1_1event">genv::event</link> Az input eventje </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>virtual void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1aa6d6fe7d9eb9ce9c2628f432ef129e01">
+                <title>bool RadioButtonHolder::IsInLine (int x, int y)</title> <emphasis>Megadja, hogy egy koordináta rajta van-e a widgeten.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int Az x koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int Az y koordináta </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para>virtual bool </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_radio_button_holder_1aeca94b584cd2a969f38f587f08ff43df">
+                <title>void RadioButtonHolder::CheckNull ()</title> <emphasis>Ellenőrzi, hogy vannak-e gombok.</emphasis>
+                
+<para><formalpara><title>Visszatérési érték: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

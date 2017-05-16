@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structgenv_1_1color">
+<title>genv::color struct Reference</title>
+        <section>
+            <title>Publikus attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int red</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int green</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int blue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1color_1a212f9aeefe4fd3fd95dfca0cbfc286cd">color</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="structgenv_1_1color_1a88efd3188c6cffa85ba3422e7e32c0d9">operator()</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="structgenv_1_1color_1a212f9aeefe4fd3fd95dfca0cbfc286cd">
+                <title>genv::color::color (int r, int g, int b)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1color_1a88efd3188c6cffa85ba3422e7e32c0d9">
+                <title>void genv::color::operator() (canvas &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

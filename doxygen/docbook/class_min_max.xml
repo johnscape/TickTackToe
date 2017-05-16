@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_min_max">
+<title>MinMax class Reference</title>
+        <section>
+            <title>Privát attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool IsX</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Level * playingLevel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Level * computingLevel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int MaxSteps</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int MapSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::ofstream Writer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_min_max_1a15fb56ebb61d033eced1ae2ae43252a9">MinMax</link> (
+int deep, <link linkend="class_level">Level</link> * currentLevel, bool isX)<para><emphasis>Létrehoz egy új MiniMax algoritmus alapján működő számítógépes játékost.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_min_max_1aed7cb298da32372fbb10e8b069604c0c">~MinMax</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_min_max_1a8448a9ea304b2890ddca4a123de5693b">Step</link> (
+)<para><emphasis>Ez a funckció számolja ki a következõ lépését a MiniMax algoritmusnak.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_step_data">StepData</link> <link linkend="class_min_max_1ab491c411792412ad53665cbce23c0286">NextStep</link> (
+int deep, bool isAI)<para><emphasis>Ez a függvény számolja a következõ lépést, úgy hogy rekurzívan meghívja önmagát.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_min_max_1a80ae5176daca604a8a949a9a03c10036">CopyLevels</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+            <simplesect>
+                <title>bool MinMax::IsX</title>                
+<para>Ez a változó tárolja, hogy a gép &apos;X&apos; szerint játszik-e </para>
+
+                <para>Definition at line 38 of file MinMax.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MinMax.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Level* MinMax::playingLevel</title>                
+<para>Ez a mutató mutat a valódi pályára, amin a játék zajlik </para>
+
+                <para>Definition at line 39 of file MinMax.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MinMax.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Level* MinMax::computingLevel</title>                
+<para>Ezen a pályán számolja a lépéseit, így nem kell az éles pályán megtenni a próbalépéseket </para>
+
+                <para>Definition at line 40 of file MinMax.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MinMax.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int MinMax::MaxSteps</title>                
+<para>Ez a változó adja meg, hogy maximum hány lépést számolhat elõre. Minnél nagyobb annál pontosabban lép, de a számolás hosszúsága exponenciálisan nõ </para>
+
+                <para>Definition at line 41 of file MinMax.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MinMax.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int MinMax::MapSize</title>                
+<para>Ez a változó tárolja a pálya méretét, így nem kell újra és újra lekérni </para>
+
+                <para>Definition at line 42 of file MinMax.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MinMax.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_min_max_1a15fb56ebb61d033eced1ae2ae43252a9">
+                <title>MinMax::MinMax (int deep, Level *currentLevel, bool isX)</title> <emphasis>Létrehoz egy új MiniMax algoritmus alapján működő számítógépes játékost.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>deep</entry>
+                                <entry>
+<para>int Ezzel lehet megadni, hogy maximum hány lépést számoljon előre </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>currentLevel</entry>
+                                <entry>
+<para>Level* Ez a aktuális pályára mutató mutató </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>isX</entry>
+                                <entry>
+<para>bool Ez adja meg, hogy a gépi játékos az X-el játszik-e </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_min_max_1aed7cb298da32372fbb10e8b069604c0c">
+                <title>MinMax::~MinMax ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_min_max_1a8448a9ea304b2890ddca4a123de5693b">
+                <title>void MinMax::Step ()</title> <emphasis>Ez a funckció számolja ki a következõ lépését a MiniMax algoritmusnak.</emphasis>
+                
+<para><formalpara><title>Visszatérési érték: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_min_max_1ab491c411792412ad53665cbce23c0286">
+                <title>StepData MinMax::NextStep (int deep, bool isAI)</title> <emphasis>Ez a függvény számolja a következõ lépést, úgy hogy rekurzívan meghívja önmagát.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>deep</entry>
+                                <entry>
+<para>int Az aktuális érték, hogy hány lépést számolt elõre </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>isAI</entry>
+                                <entry>
+<para>bool Megadja, hogy az aktuális lépés neki tesz jót, vagy a játékosnal </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Visszatérési érték: </title>
+
+<para><link linkend="struct_step_data">StepData</link> Megadja a lépés helyét, és a maximálisan szerzett pontot </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_min_max_1a80ae5176daca604a8a949a9a03c10036">
+                <title>void MinMax::CopyLevels ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

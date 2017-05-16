@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classgenv_1_1groutput">
+<title>genv::groutput class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classgenv_1_1groutput">groutput</link> &amp; <link linkend="classgenv_1_1groutput_1aaa2dd41fe95e14d04e97c4811dcacf75">instance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classgenv_1_1groutput_1a2fa6637321cc3da7bb19d092fb487750">~groutput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1groutput_1a8ed996705e1dc0620715b193c971faf8">showmouse</link> (
+bool toggle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1groutput_1a2d0714199248562a8b0c8124dec148ea">movemouse</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classgenv_1_1groutput_1a4f2e395396c08492e5fb23e63d9d3c77">open</link> (
+unsigned width, unsigned height, bool fullscreen)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classgenv_1_1groutput_1a5cf426dcd4d104ad23e359e4d8106ad3">refresh</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1groutput_1acb0e52cee139f03f653a8adefc7c31ba">set_title</link> (
+const std::string &amp; title)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classgenv_1_1groutput_1a76ab5c9810ac370ecf663fc02083b8c4">groutput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classgenv_1_1groutput_1aaa2dd41fe95e14d04e97c4811dcacf75">
+                <title>static groutput&amp; genv::groutput::instance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1groutput_1a2fa6637321cc3da7bb19d092fb487750">
+                <title>virtual genv::groutput::~groutput ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1groutput_1a8ed996705e1dc0620715b193c971faf8">
+                <title>void genv::groutput::showmouse (bool toggle)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1groutput_1a2d0714199248562a8b0c8124dec148ea">
+                <title>void genv::groutput::movemouse (int x, int y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1groutput_1a4f2e395396c08492e5fb23e63d9d3c77">
+                <title>bool genv::groutput::open (unsigned width, unsigned height, bool fullscreen=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1groutput_1a5cf426dcd4d104ad23e359e4d8106ad3">
+                <title>virtual void genv::groutput::refresh ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1groutput_1acb0e52cee139f03f653a8adefc7c31ba">
+                <title>void genv::groutput::set_title (const std::string &amp;title)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1groutput_1a76ab5c9810ac370ecf663fc02083b8c4">
+                <title>genv::groutput::groutput ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

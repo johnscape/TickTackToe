@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_level_8h">
+    <title>Level.h File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+        <section>
+            <title> Osztályok </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_level">Level</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Részletes leírás</title>
+    <para>Definition in file D:/Atandra/Prog/GIT/TickTackToe/doxygen/Level.h</para>
+    </simplesect>
+</section>

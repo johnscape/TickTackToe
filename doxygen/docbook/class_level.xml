@@ -1,0 +1,595 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_level">
+<title>Level class Reference</title>
+        <section>
+            <title>PrivÃ¡t attribÃºtumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int ** LevelData</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int Size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int NeedToWin</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int XCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int OCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int LastX</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int LastY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_level_1ac9a3c078ddbc1fb1e622aeece4b21484">Level</link> (
+int levelSize, int win)<para><emphasis>Létrehoz egy új pályát</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_level_1a249eac1e8f19ff44134efa5e986feaca">~Level</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_level_1a49511c05442d904229c8e603e6dfc067">GetValue</link> (
+int x, int y)<para><emphasis>Megadja a pálya egy adott koordinátáján levõ mezõ értékét</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_level_1a1acfceb6295e1bf3f3dd3b64bd7d38d6">ValueToWin</link> (
+)<para><emphasis>Visszatérésként megadja, hogy hány pont kell a gyõzelemhez.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_level_1a2f77bdcd4cc4536dc2dffbaf05d4db1d">GetSize</link> (
+)<para><emphasis>A pálya méretét adja meg.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_level_1a73b6dd3a3e23881ae63c72d4fc7667bf">Place</link> (
+int x, int y, bool xVal)<para><emphasis>A megadott koordinátákra elhelyez egy értéket.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_level_1ae4c2034a22fc8c229b3b0e058d30fc91">IsGameWon</link> (
+)<para><emphasis>Megadja, hogy megnyerte-e valaki a játékot.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_level_1a5414deea40ce7604d7df76cc955b803d">RemoveValue</link> (
+int x, int y)<para><emphasis>Egy adott koordinátáról tölri az értéket.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_level_1a635da67a86e8a63bf88571dbcf1b4385">IsAreaEmpty</link> (
+int x, int y)<para><emphasis>Megadja, hogy egy adott koordináta körül üresek-e a mezõk</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_level_1a520988125e87d13b98b7c42b5e2fe928">IsLevelEmpty</link> (
+)<para><emphasis>Megadja, hogy üres-e a pálya.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_level_1a743f5fee9bdce09b4ce87ffc2ceca4ce">Recount</link> (
+)<para><emphasis>Megszámolja, hogy hány X és O van a pályán</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_level_1abd143fd02f8959207315bdafd0be05ab">Reset</link> (
+)<para><emphasis>Visszaállítja a pályát alapértelmezetten üresbe.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_level_1aec4f6c6e75283e425a8cd5d52d35e8ee">GetLastX</link> (
+)<para><emphasis>Az utoljára módosított mezõ x koordinátáját adja vissza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_level_1ae2a8b36cbebe340d8b0495487a3a156a">GetLastY</link> (
+)<para><emphasis>Az utoljára módosított mezõ y koordinátáját adja vissza.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_level_1a3e93b00a83e3a187d02c2b308ad538ed">WriteCurrentPosition</link> (
+std::ostream &amp; writer)<para><emphasis>A megadott módon kiírja a pálya aktuális tartalmát</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_level_1a8ad7db518fbe4527ee2c5b329a35c199">CheckArea</link> (
+int x, int y, int LookFor)<para><emphasis>Egy területen ellenõrzi, hogy elég pontja van-e a játékosnak a gyõzelemhez.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentÃ¡ciÃ³ja</title>
+            <simplesect>
+                <title>int** Level::LevelData</title>                
+<para>Maga a pálya adatai </para>
+
+                <para>Definition at line 122 of file Level.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Level.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Level::Size</title>                
+<para>A pálya mérete </para>
+
+                <para>Definition at line 123 of file Level.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Level.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Level::NeedToWin</title>                
+<para>A nyeréshet szükséges pontszám </para>
+
+                <para>Definition at line 124 of file Level.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Level.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Level::XCount</title>                
+<para>X-ek száma </para>
+
+                <para>Definition at line 126 of file Level.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Level.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Level::OCount</title>                
+<para>O-k száma </para>
+
+                <para>Definition at line 127 of file Level.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Level.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Level::LastX</title>                
+<para>Az utoljára módosított mezõ X koordinátája </para>
+
+                <para>Definition at line 129 of file Level.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Level.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int Level::LastY</title>                
+<para>Az utoljára módosított mezõ Y koordinátája </para>
+
+                <para>Definition at line 130 of file Level.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Level.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_level_1ac9a3c078ddbc1fb1e622aeece4b21484">
+                <title>Level::Level (int levelSize, int win)</title> <emphasis>Létrehoz egy új pályát</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>levelSize</entry>
+                                <entry>
+<para>int A pálya mérete (X*X) </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>win</entry>
+                                <entry>
+<para>int A szükséges pontszám a játék megnyeréséhez </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_level_1a249eac1e8f19ff44134efa5e986feaca">
+                <title>Level::~Level ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_level_1a49511c05442d904229c8e603e6dfc067">
+                <title>int Level::GetValue (int x, int y)</title> <emphasis>Megadja a pálya egy adott koordinátáján levõ mezõ értékét</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int Az x koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int Az y koordináta </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>int Az x,y koordinátán levõ érték </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a1acfceb6295e1bf3f3dd3b64bd7d38d6">
+                <title>int Level::ValueToWin ()</title> <emphasis>Visszatérésként megadja, hogy hány pont kell a gyõzelemhez.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>int Pontok száma a gyõzelemhez </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a2f77bdcd4cc4536dc2dffbaf05d4db1d">
+                <title>int Level::GetSize ()</title> <emphasis>A pálya méretét adja meg.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>int A pálya mérete </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a73b6dd3a3e23881ae63c72d4fc7667bf">
+                <title>void Level::Place (int x, int y, bool xVal)</title> <emphasis>A megadott koordinátákra elhelyez egy értéket.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int Az x koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int Az y koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>xVal</entry>
+                                <entry>
+<para>bool Az elhelyezni kívánt érték x-e </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1ae4c2034a22fc8c229b3b0e058d30fc91">
+                <title>int Level::IsGameWon ()</title> <emphasis>Megadja, hogy megnyerte-e valaki a játékot.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>int A játék aktuális állapota számként (-1 nincs vége, 0 döntetlen, 1 x nyert, 2 O nyert) </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a5414deea40ce7604d7df76cc955b803d">
+                <title>void Level::RemoveValue (int x, int y)</title> <emphasis>Egy adott koordinátáról tölri az értéket.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int Az x koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int Az y koordináta </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a635da67a86e8a63bf88571dbcf1b4385">
+                <title>bool Level::IsAreaEmpty (int x, int y)</title> <emphasis>Megadja, hogy egy adott koordináta körül üresek-e a mezõk</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int Az x koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int Az y koordináta </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>bool Üresek-e a mezõk egy inervalumon belül </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a520988125e87d13b98b7c42b5e2fe928">
+                <title>bool Level::IsLevelEmpty ()</title> <emphasis>Megadja, hogy üres-e a pálya.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>bool Üres-e a pálya </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a743f5fee9bdce09b4ce87ffc2ceca4ce">
+                <title>void Level::Recount ()</title> <emphasis>Megszámolja, hogy hány X és O van a pályán</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1abd143fd02f8959207315bdafd0be05ab">
+                <title>void Level::Reset ()</title> <emphasis>Visszaállítja a pályát alapértelmezetten üresbe.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1aec4f6c6e75283e425a8cd5d52d35e8ee">
+                <title>int Level::GetLastX ()</title> <emphasis>Az utoljára módosított mezõ x koordinátáját adja vissza.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>int Az utoljára módosított mezõ x koordinátája </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1ae2a8b36cbebe340d8b0495487a3a156a">
+                <title>int Level::GetLastY ()</title> <emphasis>Az utoljára módosított mezõ y koordinátáját adja vissza.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>int Az utoljára módosított mezõ y koordinátája </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a3e93b00a83e3a187d02c2b308ad538ed">
+                <title>void Level::WriteCurrentPosition (std::ostream &amp;writer)</title> <emphasis>A megadott módon kiírja a pálya aktuális tartalmát</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>writer</entry>
+                                <entry>
+<para>std::ostream&amp; A kimeneti forrás </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_level_1a8ad7db518fbe4527ee2c5b329a35c199">
+                <title>int Level::CheckArea (int x, int y, int LookFor)</title> <emphasis>Egy területen ellenõrzi, hogy elég pontja van-e a játékosnak a gyõzelemhez.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int A terület közepének x koordinátája </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int A terület közepének y koordinátája </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>LookFor</entry>
+                                <entry>
+<para>int A játékos, akit figyelni kell </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>int Az adott játékos értéke, ha nyert, 0 ha nem </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_game_handler_8h">
+    <title>GameHandler.h File Reference</title>
+    <programlisting>#include &quot;Widgets/GUIHandler.h&quot;</programlisting>
+    <programlisting>#include &quot;Level.h&quot;</programlisting>
+    <programlisting>#include &quot;RadioButtonHolder.h&quot;</programlisting>
+    <programlisting>#include &quot;NumberInput.h&quot;</programlisting>
+    <programlisting>#include &quot;Area.h&quot;</programlisting>
+    <programlisting>#include &quot;MinMax.h&quot;</programlisting>
+        <section>
+            <title> Osztályok </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_game_handler">GameHandler</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Részletes leírás</title>
+    <para>Definition in file D:/Atandra/Prog/GIT/TickTackToe/doxygen/GameHandler.h</para>
+    </simplesect>
+</section>

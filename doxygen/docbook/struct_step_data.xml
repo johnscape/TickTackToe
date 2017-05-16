@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_step_data">
+<title>StepData struct Reference</title>
+        <section>
+            <title>Publikus attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int point</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="struct_step_data_1af10610a0b7514bce5e1f5e47210b963a">StepData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="struct_step_data_1a0516e32953276507b2ed8bddefbd4ae3">StepData</link> (
+int a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="struct_step_data_1af10610a0b7514bce5e1f5e47210b963a">
+                <title>StepData::StepData ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_step_data_1a0516e32953276507b2ed8bddefbd4ae3">
+                <title>StepData::StepData (int a)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespacegenv">
+<title>genv</title>
+        <section>
+            <title> Osztályok </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1box">genv::box</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1box__to">genv::box_to</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classgenv_1_1canvas">genv::canvas</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1color">genv::color</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1event">genv::event</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1font">genv::font</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classgenv_1_1grinput">genv::grinput</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classgenv_1_1groutput">genv::groutput</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1line">genv::line</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1line__to">genv::line_to</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1move">genv::move</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1move__to">genv::move_to</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1stamp">genv::stamp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structgenv_1_1text">genv::text</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerációk</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643d">keycode_t</link> {
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da155540647fa022b76141a9051ffd1982">key_tab</link>= &apos;\t&apos;,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da6ea834a86c766ccbba515f0e2eda6bfb">key_backspace</link>= &apos;\b&apos;,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da025e9bb46ba9374e7191c63ad06af236">key_enter</link>= &apos;\r&apos;,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da084c3f3b9d0a7b49f830d0ee2781a358">key_escape</link>= &apos;\033&apos;,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da320d9dc03f9fcd7e3868ab75c2685d20">key_space</link>= &apos; &apos;,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da596cf8c4bfb8dc1612b6cf2a7ffd8844">key_up</link>= 0x10000,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da7dbf12d16fde7dd36b4a048e8c3d4b5e">key_down</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da43abbe6730cec7589c71e091e07ca766">key_right</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da14dc812e59508dc385f76fca44a29c51">key_left</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dab7cc6cbad49017e970551b87c438ff72">key_insert</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643daf9feec1616fb6961ef99bf5105683d2b">key_delete</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da3f2075019def824ce9b40149302f1513">key_home</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da0aeca70db634402f6ec80ae3e19098d2">key_end</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643daa20bf9c03c109170865856ef16ecc431">key_pgup</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da2d53d737f94464f8223d1d812cd761f7">key_pgdn</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da009cdaf96511f74770cfe5a4dcc814c0">key_lshift</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dad9cd1841e04bdd081d2c8ad32bdef668">key_rshift</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dab6686b8103350196d6bc54183c8726c5">key_lctrl</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da116e906e7856b88ad9ba81bfc5c6001f">key_rctrl</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643daf9012d0e904becde1dedee4867081f8c">key_lalt</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da1c9cca43d7e7b915efc3823a65f59212">key_ralt</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da1ffc676d00e8d14b0f6507608bedd1e3">key_lwin</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da412a4371e2228e56528f9869ab44019e">key_rwin</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dac2bb75bef9f7506e864d6e42889cdbf2">key_menu</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da6826d07eaf699553a9ec85e89755ad99">key_numl</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dadff64dc7dbaff5a4273ca0d0f6cb52f3">key_capsl</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da65e244bf95217338c9455ad20e343d0a">key_scrl</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da88e5de6ca08dfc08ff5b6272589ee375">key_f0</link>= 0x20000,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da546c4b7f4f191123cb6899eac858725b">key_f1</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dafba2798deee6e85292795e359404ecaa">key_f2</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643daae9a80dea1e988cfc018974af80a2a23">key_f3</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da1ac1f8cf9dad421e61516d61bdc1217e">key_f4</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dae2722dc30125e55fc2d44ebcbf93ce05">key_f5</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da5e3e5d8b294cd1b2513094f8e24006f7">key_f6</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da2ae35789b9ec7c85e7cf0610c246fd77">key_f7</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da31fbf5d67e97a4bf56ade79f3be95a1f">key_f8</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da0c36f1ca947094d8075041e85010f2a9">key_f9</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dae93d92d29172c3120dd9b94fc35d33f5">key_f10</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da00b5771c693484131c0b40c5b03ac3a8">key_f11</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643daace459cd6db53bac04366ec8e6ebd064">key_f12</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da686aa5c7f25b3de75576c0a9e580c2fe">key_f13</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643da0e73e33fcbf087de17b0a174bdfb5779">key_f14</link>,
+<link linkend="graphics_8hpp_1a144fc38d176f52b0283282e2cbf3643dac219cedc82b17012098a2816e54afe1d">key_f15</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="graphics_8hpp_1af370e49a41fb0baca86c8b22cd6270e5">button_t</link> {
+<link linkend="graphics_8hpp_1af370e49a41fb0baca86c8b22cd6270e5aa2789a8ad450c67408ef3c4c4a1b6ed1">btn_left</link>= 1,
+<link linkend="graphics_8hpp_1af370e49a41fb0baca86c8b22cd6270e5a7e66852f3d5c57c81592fc854e14cfa3">btn_middle</link>,
+<link linkend="graphics_8hpp_1af370e49a41fb0baca86c8b22cd6270e5a7768faca3787facdfd6d40369cf63c3b">btn_right</link>,
+<link linkend="graphics_8hpp_1af370e49a41fb0baca86c8b22cd6270e5a7aa4604a75373e334055c636a897b606">btn_wheelup</link>,
+<link linkend="graphics_8hpp_1af370e49a41fb0baca86c8b22cd6270e5a7e969803907f259d4857b879ad3c59cf">btn_wheeldown</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="graphics_8hpp_1ad791b9e6dc7b940f25ce2a2452a757b7">event_type</link> {
+<link linkend="graphics_8hpp_1ad791b9e6dc7b940f25ce2a2452a757b7a0ef4aab21935083e3160a712ce65cf38">ev_key</link>= 1,
+<link linkend="graphics_8hpp_1ad791b9e6dc7b940f25ce2a2452a757b7a69fb492d7c5e06e2371c8aea42516f2a">ev_mouse</link>,
+<link linkend="graphics_8hpp_1ad791b9e6dc7b940f25ce2a2452a757b7a3b0350a3f0157a957f9c83ce8bde5414">ev_timer</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Változók</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classgenv_1_1groutput">groutput</link> &amp; <link linkend="graphics_8hpp_1a4e9fb2a7d0accfa8f22b35fd42fcc6b3">gout</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classgenv_1_1grinput">grinput</link> &amp; <link linkend="graphics_8hpp_1aff96cd33d2214802ba9f65e31f9802ec">gin</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Függvények</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classgenv_1_1canvas">canvas</link> &amp; <link linkend="graphics_8hpp_1af22f7d1fd2ac6b8decb99b843467f3ef">operator&lt;&lt;</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out, Op oper)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="graphics_8hpp_1a4406c5a704cad8a870c469e05e27d913">refresh</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="graphics_8hpp_1a3fe082e4551a4dcbda80f223f9e40569">dot</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classgenv_1_1grinput">grinput</link> &amp; <link linkend="graphics_8hpp_1a2df60ad2b607286aa1c8e3c50d686c1b">operator&gt;&gt;</link> (
+<link linkend="classgenv_1_1grinput">grinput</link> &amp; inp, <link linkend="structgenv_1_1event">event</link> &amp; ev)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

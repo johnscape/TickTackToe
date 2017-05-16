@@ -1,0 +1,267 @@
+\hypertarget{class_area}{}\section{Area oszt√°lyreferencia}
+\label{class_area}\index{Area@{Area}}
+Az Area oszt√°ly sz√°rmaz√°si diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_area}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagf√ºggv√©nyek}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_area_a17542a72fc2a09713d5e9c90c2a99028}{Area} (int x, int y)
+\begin{DoxyCompactList}\small\item\em LÈtrehoz egy ˙j ter¸letet a X vagy O kijelzÈsÈre. \end{DoxyCompactList}\item 
+void \hyperlink{class_area_aedf392939473fbf8e886b3878e411aea}{Set\+Event\+Void} (std\+::function$<$ void(\hyperlink{class_area}{Area} $\ast$)$>$ \hyperlink{structgenv_1_1event}{event})
+\begin{DoxyCompactList}\small\item\em Be·llÌtja az esemÈnyt, ami akkor kˆvetkezik be, ha r·kattintanak. \end{DoxyCompactList}\item 
+void \hyperlink{class_area_a78a2896834ec29e35c1289b7c73e3a98}{Set\+Value} (int value)
+\begin{DoxyCompactList}\small\item\em Be·llÌtja az ÈrtÈkÈt \end{DoxyCompactList}\item 
+void \hyperlink{class_area_a9420b052e63aee231e969aec168dbc03}{Set\+Marker\+Colour} (int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em A kijelzÈs szÌnÈt adja meg. \end{DoxyCompactList}\item 
+int \hyperlink{class_area_aef3bb5bafb65da4ad27b570ec6327be4}{Get\+Value} ()
+\begin{DoxyCompactList}\small\item\em Megadja az aktu·lis ÈrtÈkÈt \end{DoxyCompactList}\item 
+int \hyperlink{class_area_a0e49be1c58b893fe6ad8c68b7ab5c3cb}{Get\+X\+Postion} ()
+\begin{DoxyCompactList}\small\item\em Megadja az x koordin·t·j·t \end{DoxyCompactList}\item 
+int \hyperlink{class_area_a328de42ab1d176e091726f2b459a45be}{Get\+Y\+Position} ()
+\begin{DoxyCompactList}\small\item\em Megadja az y koordin·t·j·t \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_area_ac90399336ed7754946e274e443ed98ff}{Draw} ()
+\begin{DoxyCompactList}\small\item\em Kirajzolja a widgetet. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_area_a8917c7e4715659ae5021d2c9e40127f4}{Handle} (\hyperlink{structgenv_1_1event}{genv\+::event} ev)
+\begin{DoxyCompactList}\small\item\em Kezeli a widgetet az inputnak megfelelıen. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_area_a9d309a54dbc62cd8edd8bc976644090c}{Is\+In\+Line} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Megadja, hogy egy koordin·ta rajta van-\/e a widgeten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Priv√°t attrib√∫tumok}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_area_a7531aac606a8d9fa3ef3e70b28a7375e}{X\+Val}
+\item 
+int \hyperlink{class_area_a791b0f1915a30e990dca964afaaaecc2}{Y\+Val}
+\item 
+int \hyperlink{class_area_a3896accc992855520cb2eabc64ed09d0}{Value}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_area_a5af595519a7061b9053de4a01bc072f6}{Mark\+Colour}
+\item 
+std\+::function$<$ void(\hyperlink{class_area}{Area} $\ast$)$>$ \hyperlink{class_area_a82637253c6ea81b16b0e26db9e9f87a8}{On\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Konstruktorok √©s destruktorok dokument√°ci√≥ja}
+\mbox{\Hypertarget{class_area_a17542a72fc2a09713d5e9c90c2a99028}\label{class_area_a17542a72fc2a09713d5e9c90c2a99028}} 
+\index{Area@{Area}!Area@{Area}}
+\index{Area@{Area}!Area@{Area}}
+\subsubsection{\texorpdfstring{Area()}{Area()}}
+{\footnotesize\ttfamily Area\+::\+Area (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+LÈtrehoz egy ˙j ter¸letet a X vagy O kijelzÈsÈre. 
+
+
+\begin{DoxyParams}{Param√©terek}
+{\em x} & int Az x koordin·ta \\
+\hline
+{\em y} & int Az y koordin·ta \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Tagf√ºggv√©nyek dokument√°ci√≥ja}
+\mbox{\Hypertarget{class_area_ac90399336ed7754946e274e443ed98ff}\label{class_area_ac90399336ed7754946e274e443ed98ff}} 
+\index{Area@{Area}!Draw@{Draw}}
+\index{Draw@{Draw}!Area@{Area}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Area\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Kirajzolja a widgetet. 
+
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+virtual void 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{class_widget_ac4c2063cd671468ad05d84cfe963c032}{Widget}.
+
+\mbox{\Hypertarget{class_area_aef3bb5bafb65da4ad27b570ec6327be4}\label{class_area_aef3bb5bafb65da4ad27b570ec6327be4}} 
+\index{Area@{Area}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Area@{Area}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}}
+{\footnotesize\ttfamily int Area\+::\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megadja az aktu·lis ÈrtÈkÈt 
+
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+int Az aktu·lis ÈrtÈk 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_area_a0e49be1c58b893fe6ad8c68b7ab5c3cb}\label{class_area_a0e49be1c58b893fe6ad8c68b7ab5c3cb}} 
+\index{Area@{Area}!Get\+X\+Postion@{Get\+X\+Postion}}
+\index{Get\+X\+Postion@{Get\+X\+Postion}!Area@{Area}}
+\subsubsection{\texorpdfstring{Get\+X\+Postion()}{GetXPostion()}}
+{\footnotesize\ttfamily int Area\+::\+Get\+X\+Postion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megadja az x koordin·t·j·t 
+
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+int Az x koordin·ta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_area_a328de42ab1d176e091726f2b459a45be}\label{class_area_a328de42ab1d176e091726f2b459a45be}} 
+\index{Area@{Area}!Get\+Y\+Position@{Get\+Y\+Position}}
+\index{Get\+Y\+Position@{Get\+Y\+Position}!Area@{Area}}
+\subsubsection{\texorpdfstring{Get\+Y\+Position()}{GetYPosition()}}
+{\footnotesize\ttfamily int Area\+::\+Get\+Y\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megadja az y koordin·t·j·t 
+
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+int Az y koordin·ta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_area_a8917c7e4715659ae5021d2c9e40127f4}\label{class_area_a8917c7e4715659ae5021d2c9e40127f4}} 
+\index{Area@{Area}!Handle@{Handle}}
+\index{Handle@{Handle}!Area@{Area}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily void Area\+::\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{structgenv_1_1event}{genv\+::event}}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Kezeli a widgetet az inputnak megfelelıen. 
+
+
+\begin{DoxyParams}{Param√©terek}
+{\em ev} & \hyperlink{structgenv_1_1event}{genv\+::event} Az input eventje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+virtual void 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{class_widget_abf512e4606c7a5d44245a9b0246634a0}{Widget}.
+
+\mbox{\Hypertarget{class_area_a9d309a54dbc62cd8edd8bc976644090c}\label{class_area_a9d309a54dbc62cd8edd8bc976644090c}} 
+\index{Area@{Area}!Is\+In\+Line@{Is\+In\+Line}}
+\index{Is\+In\+Line@{Is\+In\+Line}!Area@{Area}}
+\subsubsection{\texorpdfstring{Is\+In\+Line()}{IsInLine()}}
+{\footnotesize\ttfamily bool Area\+::\+Is\+In\+Line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Megadja, hogy egy koordin·ta rajta van-\/e a widgeten. 
+
+
+\begin{DoxyParams}{Param√©terek}
+{\em x} & int Az x koordin·ta \\
+\hline
+{\em y} & int Az y koordin·ta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+virtual bool 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{class_widget_a7a18323ef481add82e5edba5c0c6ec06}{Widget}.
+
+\mbox{\Hypertarget{class_area_aedf392939473fbf8e886b3878e411aea}\label{class_area_aedf392939473fbf8e886b3878e411aea}} 
+\index{Area@{Area}!Set\+Event\+Void@{Set\+Event\+Void}}
+\index{Set\+Event\+Void@{Set\+Event\+Void}!Area@{Area}}
+\subsubsection{\texorpdfstring{Set\+Event\+Void()}{SetEventVoid()}}
+{\footnotesize\ttfamily void Area\+::\+Set\+Event\+Void (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\hyperlink{class_area}{Area} $\ast$)$>$}]{event }\end{DoxyParamCaption})}
+
+
+
+Be·llÌtja az esemÈnyt, ami akkor kˆvetkezik be, ha r·kattintanak. 
+
+
+\begin{DoxyParams}{Param√©terek}
+{\em Area$\ast$} & Saj·t mag·t adja vissza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_area_a9420b052e63aee231e969aec168dbc03}\label{class_area_a9420b052e63aee231e969aec168dbc03}} 
+\index{Area@{Area}!Set\+Marker\+Colour@{Set\+Marker\+Colour}}
+\index{Set\+Marker\+Colour@{Set\+Marker\+Colour}!Area@{Area}}
+\subsubsection{\texorpdfstring{Set\+Marker\+Colour()}{SetMarkerColour()}}
+{\footnotesize\ttfamily void Area\+::\+Set\+Marker\+Colour (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+A kijelzÈs szÌnÈt adja meg. 
+
+
+\begin{DoxyParams}{Param√©terek}
+{\em r} & int A piros ÈrtÈk \\
+\hline
+{\em g} & int A zˆld ÈrtÈk \\
+\hline
+{\em b} & int A kÈk ÈrtÈk \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_area_a78a2896834ec29e35c1289b7c73e3a98}\label{class_area_a78a2896834ec29e35c1289b7c73e3a98}} 
+\index{Area@{Area}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!Area@{Area}}
+\subsubsection{\texorpdfstring{Set\+Value()}{SetValue()}}
+{\footnotesize\ttfamily void Area\+::\+Set\+Value (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Be·llÌtja az ÈrtÈkÈt 
+
+
+\begin{DoxyParams}{Param√©terek}
+{\em value} & int A be·llÌtandÛ ÈrtÈk \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Adattagok dokument√°ci√≥ja}
+\mbox{\Hypertarget{class_area_a5af595519a7061b9053de4a01bc072f6}\label{class_area_a5af595519a7061b9053de4a01bc072f6}} 
+\index{Area@{Area}!Mark\+Colour@{Mark\+Colour}}
+\index{Mark\+Colour@{Mark\+Colour}!Area@{Area}}
+\subsubsection{\texorpdfstring{Mark\+Colour}{MarkColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Area\+::\+Mark\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+A kijelzÈs szÌne \mbox{\Hypertarget{class_area_a82637253c6ea81b16b0e26db9e9f87a8}\label{class_area_a82637253c6ea81b16b0e26db9e9f87a8}} 
+\index{Area@{Area}!On\+Event@{On\+Event}}
+\index{On\+Event@{On\+Event}!Area@{Area}}
+\subsubsection{\texorpdfstring{On\+Event}{OnEvent}}
+{\footnotesize\ttfamily std\+::function$<$void(\hyperlink{class_area}{Area}$\ast$)$>$ Area\+::\+On\+Event\hspace{0.3cm}{\ttfamily [private]}}
+
+Az event hat·s·ra meghÌvÛdÛ esemÈny \mbox{\Hypertarget{class_area_a3896accc992855520cb2eabc64ed09d0}\label{class_area_a3896accc992855520cb2eabc64ed09d0}} 
+\index{Area@{Area}!Value@{Value}}
+\index{Value@{Value}!Area@{Area}}
+\subsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily int Area\+::\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+Az aktu·lis ÈrtÈke \mbox{\Hypertarget{class_area_a7531aac606a8d9fa3ef3e70b28a7375e}\label{class_area_a7531aac606a8d9fa3ef3e70b28a7375e}} 
+\index{Area@{Area}!X\+Val@{X\+Val}}
+\index{X\+Val@{X\+Val}!Area@{Area}}
+\subsubsection{\texorpdfstring{X\+Val}{XVal}}
+{\footnotesize\ttfamily int Area\+::\+X\+Val\hspace{0.3cm}{\ttfamily [private]}}
+
+Az x koordin·ta \mbox{\Hypertarget{class_area_a791b0f1915a30e990dca964afaaaecc2}\label{class_area_a791b0f1915a30e990dca964afaaaecc2}} 
+\index{Area@{Area}!Y\+Val@{Y\+Val}}
+\index{Y\+Val@{Y\+Val}!Area@{Area}}
+\subsubsection{\texorpdfstring{Y\+Val}{YVal}}
+{\footnotesize\ttfamily int Area\+::\+Y\+Val\hspace{0.3cm}{\ttfamily [private]}}
+
+Az y koordin·ta 
+
+Ez a dokument√°ci√≥ az oszt√°lyr√≥l a k√∂vetkez≈ë f√°jlok alapj√°n k√©sz√ºlt\+:\begin{DoxyCompactItemize}
+\item 
+Area.\+h\item 
+Area.\+cpp\end{DoxyCompactItemize}

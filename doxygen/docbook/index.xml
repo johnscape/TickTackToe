@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>Widgets</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="namespacegenv.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Osztályok dokumentációja</title>
+        <xi:include href="class_area.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classasd.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1box.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1box__to.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classgenv_1_1canvas.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1color.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_colour.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1event.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1font.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_game_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classgenv_1_1grinput.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classgenv_1_1groutput.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_g_u_i_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_label.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_level.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1line.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1line__to.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_min_max.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1move.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1move__to.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_number_input.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_radio_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_radio_button_holder.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_selection_box.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1stamp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_step_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structgenv_1_1text.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_widget.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Fájlok dokumentációja</title>
+        <xi:include href="_area_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_area_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="asd_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="asd_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_button_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_button_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_colour_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_colour_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_game_handler_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_game_handler_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="graphics_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_g_u_i_handler_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_g_u_i_handler_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_label_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_label_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_level_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_level_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_min_max_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_min_max_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_number_input_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_number_input_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_radio_button_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_radio_button_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_radio_button_holder_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_radio_button_holder_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_selection_box_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_selection_box_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_widget_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_widget_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structgenv_1_1stamp">
+<title>genv::stamp struct Reference</title>
+        <section>
+            <title>Publikus attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>canvas &amp; c</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int x1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int y1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int x2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int y2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int x3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int y3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1stamp_1a04b980659dede73ee427b386bc1e1d6f">stamp</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; cc, int sx1, int sy1, int xsize, int ysize, int tx1, int ty1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1stamp_1a0f5534869474ebfcc76f0a1b76c002e1">stamp</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; cc, int tx1, int ty1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="structgenv_1_1stamp_1adbf3f164077acc364b8d969790abc355">operator()</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="structgenv_1_1stamp_1a04b980659dede73ee427b386bc1e1d6f">
+                <title>genv::stamp::stamp (canvas &amp;cc, int sx1, int sy1, int xsize, int ysize, int tx1, int ty1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1stamp_1a0f5534869474ebfcc76f0a1b76c002e1">
+                <title>genv::stamp::stamp (canvas &amp;cc, int tx1, int ty1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1stamp_1adbf3f164077acc364b8d969790abc355">
+                <title>void genv::stamp::operator() (canvas &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

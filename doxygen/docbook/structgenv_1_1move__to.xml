@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structgenv_1_1move__to">
+<title>genv::move_to struct Reference</title>
+        <section>
+            <title>Publikus attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int pos_x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int pos_y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1move__to_1a96daf75da25a8eeb6df3110bdce481a2">move_to</link> (
+unsigned x, unsigned y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="structgenv_1_1move__to_1a3321ab8a21292730ad46f62d29ef394f">operator()</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="structgenv_1_1move__to_1a96daf75da25a8eeb6df3110bdce481a2">
+                <title>genv::move_to::move_to (unsigned x, unsigned y)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1move__to_1a3321ab8a21292730ad46f62d29ef394f">
+                <title>void genv::move_to::operator() (canvas &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

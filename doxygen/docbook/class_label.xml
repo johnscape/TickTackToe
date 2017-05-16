@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_label">
+<title>Label class Reference</title>
+        <section>
+            <title>Védett attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * fontColor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string Text</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_label_1a4fcabadbd0cfb0a53b8d1caf306bd5a7">Label</link> (
+int x, int y, int xSize, int ySize, std::string text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_label_1a39e1167a9b5827afd888780973d88894">~Label</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_label_1a184df028b3aa8c7f8dec8ecb90533319">Draw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_label_1a5cf04da7def075453b5c0fda93a1b575">Handle</link> (
+<link linkend="structgenv_1_1event">genv::event</link> ev)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="class_label_1a918ebb45dbaa5484643355cf5ab4be47">IsInLine</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_label_1a0dcc047c736b8c20bcba6796e85f909e">IsTextFits</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_label_1ac22c98a976f1fb6f4b86ee9ac8dd50b2">SetFontColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_label_1a4dcd2036ce1fdd30eb3471e2c842e97d">SetText</link> (
+std::string newText)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+            <simplesect>
+                <title>Colour* Label::fontColor</title>                
+<para>A szöveg színét tárolja </para>
+
+                <para>Definition at line 66 of file Label.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Label.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::string Label::Text</title>                
+<para>Az aktuális szöveget tárolja </para>
+
+                <para>Definition at line 67 of file Label.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Label.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_label_1a4fcabadbd0cfb0a53b8d1caf306bd5a7">
+                <title>Label::Label (int x, int y, int xSize, int ySize, std::string text)</title> <emphasis></emphasis>
+                
+<para>Egy <link linkend="class_label">Label</link> widgetet hoz létre ami egyszerűen egy szöveget tárol és rajzol ki 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Az X pozíciót tárolja </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Az Y pozíciót tátolja </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>xSize</entry>
+                                <entry>
+<para>Az X tengelyen való hosszt tárolja </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ySize</entry>
+                                <entry>
+<para>Az Y tengelyen való magasságot tárolja </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>text</entry>
+                                <entry>
+<para>A kirajzolni kívánt szöveg </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_label_1a39e1167a9b5827afd888780973d88894">
+                <title>Label::~Label ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_label_1a184df028b3aa8c7f8dec8ecb90533319">
+                <title>void Label::Draw ()</title> <emphasis></emphasis>
+                
+<para>Ez a függvény felel a widget kirajzolásáért </para>
+
+            </section>
+            <section xml:id="class_label_1a5cf04da7def075453b5c0fda93a1b575">
+                <title>virtual void Label::Handle (genv::event ev)</title> <emphasis></emphasis>
+                
+<para>Ez a függvény kezeli az eventeket (ebben az oszályban üres, mivel a <link linkend="class_label">Label</link> csak szöveg kijelzsésére használt) 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ev</entry>
+                                <entry>
+<para>Az aktuális event objektum </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_label_1a918ebb45dbaa5484643355cf5ab4be47">
+                <title>bool Label::IsInLine (int x, int y)</title> <emphasis></emphasis>
+                
+<para>Megadja, hogy az egér a saját keretein belül van-e 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Az egér X pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Az egér Y pozíciója </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_label_1a0dcc047c736b8c20bcba6796e85f909e">
+                <title>bool Label::IsTextFits ()</title> <emphasis></emphasis>
+                
+<para>Megadja, hogy az éppen tárolt szöveg elfér-e a widgeten <formalpara><title>Visszatérési érték: </title>
+
+<para>Elfér-e a &quot;Text&quot; a widgeten </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_label_1ac22c98a976f1fb6f4b86ee9ac8dd50b2">
+                <title>void Label::SetFontColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Átálítja az betű színét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>A betű piros értéke </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>A betű zöld értéke </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>A betű kék értéke </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_label_1a4dcd2036ce1fdd30eb3471e2c842e97d">
+                <title>void Label::SetText (std::string newText)</title> <emphasis></emphasis>
+                
+<para>Átálítja az aktuális szöveget 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Paraméterek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>newText</entry>
+                                <entry>
+<para>Az új szöveg </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

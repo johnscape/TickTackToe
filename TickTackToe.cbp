@@ -48,13 +48,6 @@
 		<Unit filename="include/GameHandler.h" />
 		<Unit filename="include/Level.h" />
 		<Unit filename="include/MinMax.h" />
-		<Unit filename="include/NeuralNetwork/ActivationFunction.h" />
-		<Unit filename="include/NeuralNetwork/Backpropagation.h" />
-		<Unit filename="include/NeuralNetwork/DataSet.h" />
-		<Unit filename="include/NeuralNetwork/GeneticAlgorithm.h" />
-		<Unit filename="include/NeuralNetwork/Matrix.h" />
-		<Unit filename="include/NeuralNetwork/NeuralNetwork.h" />
-		<Unit filename="include/NeuralNetwork/TanhFunction.h" />
 		<Unit filename="include/Widgets/Button.h" />
 		<Unit filename="include/Widgets/Colour.h" />
 		<Unit filename="include/Widgets/GUIHandler.h" />
@@ -69,13 +62,6 @@
 		<Unit filename="src/GameHandler.cpp" />
 		<Unit filename="src/Level.cpp" />
 		<Unit filename="src/MinMax.cpp" />
-		<Unit filename="src/NeuralNetwork/ActivationFunction.cpp" />
-		<Unit filename="src/NeuralNetwork/Backpropagation.cpp" />
-		<Unit filename="src/NeuralNetwork/DataSet.cpp" />
-		<Unit filename="src/NeuralNetwork/GeneticAlgorithm.cpp" />
-		<Unit filename="src/NeuralNetwork/Matrix.cpp" />
-		<Unit filename="src/NeuralNetwork/NeuralNetwork.cpp" />
-		<Unit filename="src/NeuralNetwork/TanhFunction.cpp" />
 		<Unit filename="src/Widgets/Button.cpp" />
 		<Unit filename="src/Widgets/Colour.cpp" />
 		<Unit filename="src/Widgets/GUIHandler.cpp" />
@@ -89,6 +75,15 @@
 			<code_completion />
 			<debugger />
 			<envvars />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build extract_private="1" />
+				<doxyfile_warnings />
+				<doxyfile_output latex="1" />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

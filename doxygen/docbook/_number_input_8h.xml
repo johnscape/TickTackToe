@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_number_input_8h">
+    <title>NumberInput.h File Reference</title>
+    <programlisting>#include &quot;graphics.hpp&quot;</programlisting>
+    <programlisting>#include &quot;Label.h&quot;</programlisting>
+    <programlisting>#include &quot;Colour.h&quot;</programlisting>
+    <programlisting>#include &lt;functional&gt;</programlisting>
+        <section>
+            <title> Osztályok </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_number_input">NumberInput</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Részletes leírás</title>
+    <para>Definition in file D:/Atandra/Prog/GIT/TickTackToe/doxygen/NumberInput.h</para>
+    </simplesect>
+</section>

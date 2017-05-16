@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: Area.h ForrÃ¡sfÃ¡jl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- KÃ©szÃ­tette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'KeresÃ©s');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','KeresÃ©s');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Area.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AREA_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AREA_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Widget.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_area.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_area.html">Area</a> : <span class="keyword">public</span> <a class="code" href="class_widget.html">Widget</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_area.html#a17542a72fc2a09713d5e9c90c2a99028">Area</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_area.html">Area</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_area.html#aedf392939473fbf8e886b3878e411aea">SetEventVoid</a>(std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="class_area.html">Area</a>*)&gt; event);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_area.html#a78a2896834ec29e35c1289b7c73e3a98">SetValue</a>(<span class="keywordtype">int</span> value);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_area.html#a9420b052e63aee231e969aec168dbc03">SetMarkerColour</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_area.html#aef3bb5bafb65da4ad27b570ec6327be4">GetValue</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_area.html#a0e49be1c58b893fe6ad8c68b7ab5c3cb">GetXPostion</a>();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_area.html#a328de42ab1d176e091726f2b459a45be">GetYPosition</a>();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_area.html#ac90399336ed7754946e274e443ed98ff">Draw</a>();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_area.html#a8917c7e4715659ae5021d2c9e40127f4">Handle</a>(<a class="code" href="structgenv_1_1event.html">genv::event</a> ev);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_area.html#a9d309a54dbc62cd8edd8bc976644090c">IsInLine</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_area.html#a7531aac606a8d9fa3ef3e70b28a7375e">   96</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_area.html#a7531aac606a8d9fa3ef3e70b28a7375e">XVal</a>;</div><div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_area.html#a791b0f1915a30e990dca964afaaaecc2">   97</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_area.html#a791b0f1915a30e990dca964afaaaecc2">YVal</a>;</div><div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_area.html#a3896accc992855520cb2eabc64ed09d0">   98</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_area.html#a3896accc992855520cb2eabc64ed09d0">Value</a>;</div><div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_area.html#a5af595519a7061b9053de4a01bc072f6">   99</a></span>&#160;        <a class="code" href="class_colour.html">Colour</a> * <a class="code" href="class_area.html#a5af595519a7061b9053de4a01bc072f6">MarkColour</a>;</div><div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_area.html#a82637253c6ea81b16b0e26db9e9f87a8">  100</a></span>&#160;        std::function&lt;void(Area*)&gt; <a class="code" href="class_area.html#a82637253c6ea81b16b0e26db9e9f87a8">OnEvent</a>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // AREA_H</span></div><div class="ttc" id="class_area_html_a328de42ab1d176e091726f2b459a45be"><div class="ttname"><a href="class_area.html#a328de42ab1d176e091726f2b459a45be">Area::GetYPosition</a></div><div class="ttdeci">int GetYPosition()</div><div class="ttdoc">Megadja az y koordinátáját </div><div class="ttdef"><b>Definition:</b> Area.cpp:84</div></div>
+<div class="ttc" id="class_area_html_a82637253c6ea81b16b0e26db9e9f87a8"><div class="ttname"><a href="class_area.html#a82637253c6ea81b16b0e26db9e9f87a8">Area::OnEvent</a></div><div class="ttdeci">std::function&lt; void(Area *)&gt; OnEvent</div><div class="ttdef"><b>Definition:</b> Area.h:100</div></div>
+<div class="ttc" id="structgenv_1_1event_html"><div class="ttname"><a href="structgenv_1_1event.html">genv::event</a></div><div class="ttdef"><b>Definition:</b> graphics.hpp:229</div></div>
+<div class="ttc" id="class_colour_html"><div class="ttname"><a href="class_colour.html">Colour</a></div><div class="ttdef"><b>Definition:</b> Colour.h:5</div></div>
+<div class="ttc" id="class_area_html_a7531aac606a8d9fa3ef3e70b28a7375e"><div class="ttname"><a href="class_area.html#a7531aac606a8d9fa3ef3e70b28a7375e">Area::XVal</a></div><div class="ttdeci">int XVal</div><div class="ttdef"><b>Definition:</b> Area.h:96</div></div>
+<div class="ttc" id="class_area_html_a5af595519a7061b9053de4a01bc072f6"><div class="ttname"><a href="class_area.html#a5af595519a7061b9053de4a01bc072f6">Area::MarkColour</a></div><div class="ttdeci">Colour * MarkColour</div><div class="ttdef"><b>Definition:</b> Area.h:99</div></div>
+<div class="ttc" id="class_area_html_a0e49be1c58b893fe6ad8c68b7ab5c3cb"><div class="ttname"><a href="class_area.html#a0e49be1c58b893fe6ad8c68b7ab5c3cb">Area::GetXPostion</a></div><div class="ttdeci">int GetXPostion()</div><div class="ttdoc">Megadja az x koordinátáját </div><div class="ttdef"><b>Definition:</b> Area.cpp:79</div></div>
+<div class="ttc" id="class_area_html"><div class="ttname"><a href="class_area.html">Area</a></div><div class="ttdef"><b>Definition:</b> Area.h:8</div></div>
+<div class="ttc" id="class_area_html_a9d309a54dbc62cd8edd8bc976644090c"><div class="ttname"><a href="class_area.html#a9d309a54dbc62cd8edd8bc976644090c">Area::IsInLine</a></div><div class="ttdeci">virtual bool IsInLine(int x, int y)</div><div class="ttdoc">Megadja, hogy egy koordináta rajta van-e a widgeten. </div><div class="ttdef"><b>Definition:</b> Area.cpp:52</div></div>
+<div class="ttc" id="class_area_html_ac90399336ed7754946e274e443ed98ff"><div class="ttname"><a href="class_area.html#ac90399336ed7754946e274e443ed98ff">Area::Draw</a></div><div class="ttdeci">virtual void Draw()</div><div class="ttdoc">Kirajzolja a widgetet. </div><div class="ttdef"><b>Definition:</b> Area.cpp:20</div></div>
+<div class="ttc" id="class_area_html_a3896accc992855520cb2eabc64ed09d0"><div class="ttname"><a href="class_area.html#a3896accc992855520cb2eabc64ed09d0">Area::Value</a></div><div class="ttdeci">int Value</div><div class="ttdef"><b>Definition:</b> Area.h:98</div></div>
+<div class="ttc" id="class_area_html_a791b0f1915a30e990dca964afaaaecc2"><div class="ttname"><a href="class_area.html#a791b0f1915a30e990dca964afaaaecc2">Area::YVal</a></div><div class="ttdeci">int YVal</div><div class="ttdef"><b>Definition:</b> Area.h:97</div></div>
+<div class="ttc" id="class_widget_html"><div class="ttname"><a href="class_widget.html">Widget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:6</div></div>
+<div class="ttc" id="class_area_html_aef3bb5bafb65da4ad27b570ec6327be4"><div class="ttname"><a href="class_area.html#aef3bb5bafb65da4ad27b570ec6327be4">Area::GetValue</a></div><div class="ttdeci">int GetValue()</div><div class="ttdoc">Megadja az aktuális értékét </div><div class="ttdef"><b>Definition:</b> Area.cpp:69</div></div>
+<div class="ttc" id="class_area_html_a78a2896834ec29e35c1289b7c73e3a98"><div class="ttname"><a href="class_area.html#a78a2896834ec29e35c1289b7c73e3a98">Area::SetValue</a></div><div class="ttdeci">void SetValue(int value)</div><div class="ttdoc">Beállítja az értékét </div><div class="ttdef"><b>Definition:</b> Area.cpp:64</div></div>
+<div class="ttc" id="class_area_html_a17542a72fc2a09713d5e9c90c2a99028"><div class="ttname"><a href="class_area.html#a17542a72fc2a09713d5e9c90c2a99028">Area::Area</a></div><div class="ttdeci">Area(int x, int y)</div><div class="ttdoc">Létrehoz egy új területet a X vagy O kijelzésére. </div><div class="ttdef"><b>Definition:</b> Area.cpp:6</div></div>
+<div class="ttc" id="class_area_html_aedf392939473fbf8e886b3878e411aea"><div class="ttname"><a href="class_area.html#aedf392939473fbf8e886b3878e411aea">Area::SetEventVoid</a></div><div class="ttdeci">void SetEventVoid(std::function&lt; void(Area *)&gt; event)</div><div class="ttdoc">Beállítja az eseményt, ami akkor következik be, ha rákattintanak. </div><div class="ttdef"><b>Definition:</b> Area.cpp:59</div></div>
+<div class="ttc" id="class_area_html_a8917c7e4715659ae5021d2c9e40127f4"><div class="ttname"><a href="class_area.html#a8917c7e4715659ae5021d2c9e40127f4">Area::Handle</a></div><div class="ttdeci">virtual void Handle(genv::event ev)</div><div class="ttdoc">Kezeli a widgetet az inputnak megfelelõen. </div><div class="ttdef"><b>Definition:</b> Area.cpp:44</div></div>
+<div class="ttc" id="class_area_html_a9420b052e63aee231e969aec168dbc03"><div class="ttname"><a href="class_area.html#a9420b052e63aee231e969aec168dbc03">Area::SetMarkerColour</a></div><div class="ttdeci">void SetMarkerColour(int r, int g, int b)</div><div class="ttdoc">A kijelzés színét adja meg. </div><div class="ttdef"><b>Definition:</b> Area.cpp:74</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+KÃ©szÃ­tette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

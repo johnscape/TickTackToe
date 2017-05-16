@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_number_input">
+<title>NumberInput class Reference</title>
+        <section>
+            <title>PrivÃ¡t attribÃºtumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int CurrentNumber</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int MaximumValue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int MinimumValue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int StepValue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int BigStepValue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool buttonUpClicking</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool buttonDownClicking</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::function&lt; void(NumberInput *)&gt; OnEvent</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * buttonColour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * buttonClickColour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_number_input_1aefdfa77f0126ef899ba0a769f2235342">NumberInput</link> (
+int x, int y, int xSize, int ySize, int startingNumber, int maxValue, int minValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_number_input_1a679177ef48cbe365c0e372893c1944e6">~NumberInput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1ab65631421ec222bb929f74d1782b5c8b">Draw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1a08a2de51093fe35c3c7b9998e88924a9">Handle</link> (
+<link linkend="structgenv_1_1event">genv::event</link> ev)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_number_input_1af364cc666a41dfa189e024464e4bc317">IsInLine</link> (
+int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1a0682f3a3b5f11c791130dccf93fd99e2">SetValue</link> (
+int val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1aef2773ed58e2afdd2db28bcd7adc7502">AdjustValue</link> (
+int val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1a9c4d25e738d515215db9e7cf555564e8">Step</link> (
+bool up, bool big)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1ae64ca90e8c0aa327c859f0635e534e7e">SetMaximumValue</link> (
+int maximum)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1afd331b555cb1fd5b7b302657970fce7c">SetMinimumValue</link> (
+int minimum)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1acec58e03d46e46cddaab1232ad568321">SetStepValue</link> (
+int step)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1a1697046b4e5612acc5235d0fc641cca3">SetBigStepValue</link> (
+int bigstep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1a2c606ddf06df2f60f26a3e4adaa1dd85">SetButtonColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1ae7d315b36400c767cff5c29e23504b5a">SetButtonOnClickColour</link> (
+int r, int g, int b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_number_input_1a4489ce154958175f41d23d1320f982a9">GetCurrentValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1aabb4deeb84de3beeea983541a1cf6d39">SetEventVoid</link> (
+std::function&lt; void(<link linkend="class_number_input">NumberInput</link> *)&gt; event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_number_input_1a1f6bbdba5d2af8b5269d9e00d9d3e1e0">CheckValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentÃ¡ciÃ³ja</title>
+            <simplesect>
+                <title>int NumberInput::CurrentNumber</title>                
+<para>A jelenlegi érték </para>
+
+                <para>Definition at line 111 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int NumberInput::MaximumValue</title>                
+<para>A maximum érték </para>
+
+                <para>Definition at line 112 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int NumberInput::MinimumValue</title>                
+<para>A minimum érték </para>
+
+                <para>Definition at line 113 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int NumberInput::StepValue</title>                
+<para>A kis lépés mértéke </para>
+
+                <para>Definition at line 114 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int NumberInput::BigStepValue</title>                
+<para>A nagy lépés mértéke </para>
+
+                <para>Definition at line 115 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool NumberInput::buttonUpClicking</title>                
+<para>Igaz, amennyiben a felfele gombra éppen rákattintanak </para>
+
+                <para>Definition at line 117 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool NumberInput::buttonDownClicking</title>                
+<para>Igaz, amennyiben a lefele gombra éppen rákattintanak </para>
+
+                <para>Definition at line 118 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* NumberInput::buttonColour</title>                
+<para>A gomb színét tárolja </para>
+
+                <para>Definition at line 127 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* NumberInput::buttonClickColour</title>                
+<para>A gomb kattintáskor látható színét tárolja </para>
+
+                <para>Definition at line 128 of file NumberInput.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NumberInput.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_number_input_1aefdfa77f0126ef899ba0a769f2235342">
+                <title>NumberInput::NumberInput (int x, int y, int xSize, int ySize, int startingNumber, int maxValue, int minValue)</title> <emphasis></emphasis>
+                
+<para>Egy számláló widget aminek az értéke két gombbal, valamint a fel és le nyilakkal és a page up, page down gombokkal szabályozható 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>A widget X pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>A widget Y pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>xSize</entry>
+                                <entry>
+<para>A widget hossza (20 pixel még tartozik a végéhez, ezek a gombok) </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ySize</entry>
+                                <entry>
+<para>A widget magassága </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>startingNumber</entry>
+                                <entry>
+<para>A számláló kezdõ száma </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxValue</entry>
+                                <entry>
+<para>A maximum érték, a számláló nem mehet ezen túl </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>minValue</entry>
+                                <entry>
+<para>A minimum érték, a számláló értéke nem lehet ennél kisebb </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1a679177ef48cbe365c0e372893c1944e6">
+                <title>NumberInput::~NumberInput ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_number_input_1ab65631421ec222bb929f74d1782b5c8b">
+                <title>void NumberInput::Draw ()</title> <emphasis></emphasis>
+                
+<para>Ez felel a widget kirajzolásáért </para>
+
+            </section>
+            <section xml:id="class_number_input_1a08a2de51093fe35c3c7b9998e88924a9">
+                <title>void NumberInput::Handle (genv::event ev)</title> <emphasis></emphasis>
+                
+<para>Ez a függvény kezeli az eventeket 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ev</entry>
+                                <entry>
+<para>Az aktuális event objektum </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1af364cc666a41dfa189e024464e4bc317">
+                <title>bool NumberInput::IsInLine (int x, int y)</title> <emphasis></emphasis>
+                
+<para>Megadja, hogy az egér a saját keretein belül van-e 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Az egér X pozíciója </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Az egér Y pozíciója </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1a0682f3a3b5f11c791130dccf93fd99e2">
+                <title>void NumberInput::SetValue (int val)</title> <emphasis></emphasis>
+                
+<para>Átálítja a számláló értékét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>Az új érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1aef2773ed58e2afdd2db28bcd7adc7502">
+                <title>void NumberInput::AdjustValue (int val)</title> <emphasis></emphasis>
+                
+<para>Hozzáad valamennyit a számláló jelenlegi értékéhez 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>A hpzzáadandó érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1a9c4d25e738d515215db9e7cf555564e8">
+                <title>void NumberInput::Step (bool up, bool big)</title> <emphasis></emphasis>
+                
+<para>A számlálót lépteti kis vagy nagy egységnyivel pozitív vagy negatív irányba 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>up</entry>
+                                <entry>
+<para>Ez adja meg, hogy pozitív irányba lép-e </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>bug</entry>
+                                <entry>
+<para>Ez adja meg, hogy kis vagy nagy egységet lép </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1ae64ca90e8c0aa327c859f0635e534e7e">
+                <title>void NumberInput::SetMaximumValue (int maximum)</title> <emphasis></emphasis>
+                
+<para>Új felsõkorlátot ad a widgetnek 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>maximum</entry>
+                                <entry>
+<para>Az új maximum </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1afd331b555cb1fd5b7b302657970fce7c">
+                <title>void NumberInput::SetMinimumValue (int minimum)</title> <emphasis></emphasis>
+                
+<para>Új alsókorlátot ad a widgetnek 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>minimum</entry>
+                                <entry>
+<para>Az új minimum </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1acec58e03d46e46cddaab1232ad568321">
+                <title>void NumberInput::SetStepValue (int step)</title> <emphasis></emphasis>
+                
+<para>Átálítja a kis egység értékét (amit egy kattintással lép) 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>step</entry>
+                                <entry>
+<para>Az új egység értéke </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1a1697046b4e5612acc5235d0fc641cca3">
+                <title>void NumberInput::SetBigStepValue (int bigstep)</title> <emphasis></emphasis>
+                
+<para>Átálítja a nagy egység értékét (amit a page up/down gombra lép) 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>bigstep</entry>
+                                <entry>
+<para>Az új egység értéke </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1a2c606ddf06df2f60f26a3e4adaa1dd85">
+                <title>void NumberInput::SetButtonColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Átálítja a gomb színét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>Az új piros érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>Az új zöld érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Az új kék érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1ae7d315b36400c767cff5c29e23504b5a">
+                <title>void NumberInput::SetButtonOnClickColour (int r, int g, int b)</title> <emphasis></emphasis>
+                
+<para>Átálítja a gomb kattintáskor látható színét 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>r</entry>
+                                <entry>
+<para>Az új piros érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>g</entry>
+                                <entry>
+<para>Az új zöld érték </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>Az új kék érték </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_number_input_1a4489ce154958175f41d23d1320f982a9">
+                <title>int NumberInput::GetCurrentValue ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_number_input_1aabb4deeb84de3beeea983541a1cf6d39">
+                <title>void NumberInput::SetEventVoid (std::function&lt; void(NumberInput *)&gt; event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_number_input_1a1f6bbdba5d2af8b5269d9e00d9d3e1e0">
+                <title>void NumberInput::CheckValue ()</title> <emphasis></emphasis>
+                
+<para>Ellenõrzi, hogy a jelenlegi érték nem-e lóg ki a határokon </para>
+
+            </section>
+</section>

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: GameHandler.h ForrÃ¡sfÃ¡jl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- KÃ©szÃ­tette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'KeresÃ©s');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','KeresÃ©s');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameHandler.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAMEHANDLER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAMEHANDLER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Widgets/GUIHandler.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Level.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;RadioButtonHolder.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;NumberInput.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Area.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;MinMax.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_game_handler.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_handler.html">GameHandler</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_game_handler.html#accd106fc5bd9a39593514c25c8450de9">GameHandler</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_game_handler.html">GameHandler</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_game_handler.html#a4bbd542d4cba34233dbcc128f096c964">   25</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_game_handler.html#a4bbd542d4cba34233dbcc128f096c964">IsXTurn</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_game_handler.html#ac943feed75c7aa4dafe6da69e72ed387">   26</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_game_handler.html#ac943feed75c7aa4dafe6da69e72ed387">IsPlayerX</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_game_handler.html#a5830f61982613c1d51944d70a4986d12">   27</a></span>&#160;        <a class="code" href="class_g_u_i_handler.html">GUIHandler</a> * <a class="code" href="class_game_handler.html#a5830f61982613c1d51944d70a4986d12">handler</a>;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_game_handler.html#afcc2a593886689300dee26840256d5d3">   28</a></span>&#160;        <a class="code" href="class_level.html">Level</a> * <a class="code" href="class_game_handler.html#afcc2a593886689300dee26840256d5d3">level</a>;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_game_handler.html#abd120bbc9f6aeec14134ccfc7c0733b2">   29</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_game_handler.html#abd120bbc9f6aeec14134ccfc7c0733b2">GameMode</a>;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_game_handler.html#a272db5aaa9ef25477b0104c20e23e1c2">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_game_handler.html#a272db5aaa9ef25477b0104c20e23e1c2">NeedToWin</a>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_game_handler.html#a2fdc95843285fcc78ed2ec99578d4ff6">   31</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_game_handler.html#a2fdc95843285fcc78ed2ec99578d4ff6">LevelSize</a>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_game_handler.html#aa554f59cf468f56bee4dfcec6beeb25e">   33</a></span>&#160;        <a class="code" href="class_area.html">Area</a> *** <a class="code" href="class_game_handler.html#aa554f59cf468f56bee4dfcec6beeb25e">Areas</a>;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_game_handler.html#ab966d28eb81aa09be28c468c147ca975">   34</a></span>&#160;        <a class="code" href="class_label.html">Label</a> * <a class="code" href="class_game_handler.html#ab966d28eb81aa09be28c468c147ca975">turnDisplay</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_game_handler.html#a4b1fd49a8f52cd170e5ff6374f878997">   36</a></span>&#160;        <a class="code" href="class_min_max.html">MinMax</a> * <a class="code" href="class_game_handler.html#a4b1fd49a8f52cd170e5ff6374f878997">ai</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a1c19a06309f4880721a37ad5fe881f69">LoadMainMenu</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a4f4f116c1e7471be9085ce0d8f2ab450">LoadGame</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a7fd389c5fcc29e73a6e155d78dec360b">PlaceAt</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a2249380f0f621aa47424ac8c3e475524">DeleteAreas</a>();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a274e0714b306ef58003c8c9929f5bbed">DisableAreas</a>();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a40e62066a33afbf44bef34bc3c030a73">EnableAreas</a>();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a7f191789c2d981951005e4636cb52b1c">DoAIStep</a>();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_game_handler.html#a1bd8ec1c1a5b75785d7f0805bb2228a6">ShowWinWindow</a>(std::string text);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // GAMEHANDLER_H</span></div><div class="ttc" id="class_game_handler_html_a2fdc95843285fcc78ed2ec99578d4ff6"><div class="ttname"><a href="class_game_handler.html#a2fdc95843285fcc78ed2ec99578d4ff6">GameHandler::LevelSize</a></div><div class="ttdeci">int LevelSize</div><div class="ttdef"><b>Definition:</b> GameHandler.h:31</div></div>
+<div class="ttc" id="class_game_handler_html_a40e62066a33afbf44bef34bc3c030a73"><div class="ttname"><a href="class_game_handler.html#a40e62066a33afbf44bef34bc3c030a73">GameHandler::EnableAreas</a></div><div class="ttdeci">void EnableAreas()</div><div class="ttdoc">Aktiválja az összes &quot;kis négyzetet&quot;, lehet rájuk kattintani. </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:262</div></div>
+<div class="ttc" id="class_game_handler_html_ac943feed75c7aa4dafe6da69e72ed387"><div class="ttname"><a href="class_game_handler.html#ac943feed75c7aa4dafe6da69e72ed387">GameHandler::IsPlayerX</a></div><div class="ttdeci">bool IsPlayerX</div><div class="ttdef"><b>Definition:</b> GameHandler.h:26</div></div>
+<div class="ttc" id="class_game_handler_html_a2249380f0f621aa47424ac8c3e475524"><div class="ttname"><a href="class_game_handler.html#a2249380f0f621aa47424ac8c3e475524">GameHandler::DeleteAreas</a></div><div class="ttdeci">void DeleteAreas()</div><div class="ttdoc">Tölri az összes &quot;kis négyzetet&quot;. </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:232</div></div>
+<div class="ttc" id="class_game_handler_html_a1bd8ec1c1a5b75785d7f0805bb2228a6"><div class="ttname"><a href="class_game_handler.html#a1bd8ec1c1a5b75785d7f0805bb2228a6">GameHandler::ShowWinWindow</a></div><div class="ttdeci">void ShowWinWindow(std::string text)</div><div class="ttdoc">A gyõzelmi ablakot jeleníti meg. </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:291</div></div>
+<div class="ttc" id="class_game_handler_html_ab966d28eb81aa09be28c468c147ca975"><div class="ttname"><a href="class_game_handler.html#ab966d28eb81aa09be28c468c147ca975">GameHandler::turnDisplay</a></div><div class="ttdeci">Label * turnDisplay</div><div class="ttdef"><b>Definition:</b> GameHandler.h:34</div></div>
+<div class="ttc" id="class_game_handler_html_accd106fc5bd9a39593514c25c8450de9"><div class="ttname"><a href="class_game_handler.html#accd106fc5bd9a39593514c25c8450de9">GameHandler::GameHandler</a></div><div class="ttdeci">GameHandler(int x, int y)</div><div class="ttdoc">Létrehozza a játékkezelõt </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:9</div></div>
+<div class="ttc" id="class_game_handler_html_a7fd389c5fcc29e73a6e155d78dec360b"><div class="ttname"><a href="class_game_handler.html#a7fd389c5fcc29e73a6e155d78dec360b">GameHandler::PlaceAt</a></div><div class="ttdeci">void PlaceAt(int x, int y)</div><div class="ttdoc">Az adott kör alapján a megfelelõ koordinátákra elhelyez egy értéket. </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:28</div></div>
+<div class="ttc" id="class_game_handler_html_a5830f61982613c1d51944d70a4986d12"><div class="ttname"><a href="class_game_handler.html#a5830f61982613c1d51944d70a4986d12">GameHandler::handler</a></div><div class="ttdeci">GUIHandler * handler</div><div class="ttdef"><b>Definition:</b> GameHandler.h:27</div></div>
+<div class="ttc" id="class_game_handler_html_a4b1fd49a8f52cd170e5ff6374f878997"><div class="ttname"><a href="class_game_handler.html#a4b1fd49a8f52cd170e5ff6374f878997">GameHandler::ai</a></div><div class="ttdeci">MinMax * ai</div><div class="ttdef"><b>Definition:</b> GameHandler.h:36</div></div>
+<div class="ttc" id="class_game_handler_html_aa554f59cf468f56bee4dfcec6beeb25e"><div class="ttname"><a href="class_game_handler.html#aa554f59cf468f56bee4dfcec6beeb25e">GameHandler::Areas</a></div><div class="ttdeci">Area *** Areas</div><div class="ttdef"><b>Definition:</b> GameHandler.h:33</div></div>
+<div class="ttc" id="class_game_handler_html"><div class="ttname"><a href="class_game_handler.html">GameHandler</a></div><div class="ttdef"><b>Definition:</b> GameHandler.h:10</div></div>
+<div class="ttc" id="class_g_u_i_handler_html"><div class="ttname"><a href="class_g_u_i_handler.html">GUIHandler</a></div><div class="ttdef"><b>Definition:</b> GUIHandler.h:9</div></div>
+<div class="ttc" id="class_game_handler_html_a4bbd542d4cba34233dbcc128f096c964"><div class="ttname"><a href="class_game_handler.html#a4bbd542d4cba34233dbcc128f096c964">GameHandler::IsXTurn</a></div><div class="ttdeci">bool IsXTurn</div><div class="ttdef"><b>Definition:</b> GameHandler.h:25</div></div>
+<div class="ttc" id="class_game_handler_html_a272db5aaa9ef25477b0104c20e23e1c2"><div class="ttname"><a href="class_game_handler.html#a272db5aaa9ef25477b0104c20e23e1c2">GameHandler::NeedToWin</a></div><div class="ttdeci">int NeedToWin</div><div class="ttdef"><b>Definition:</b> GameHandler.h:30</div></div>
+<div class="ttc" id="class_game_handler_html_a7f191789c2d981951005e4636cb52b1c"><div class="ttname"><a href="class_game_handler.html#a7f191789c2d981951005e4636cb52b1c">GameHandler::DoAIStep</a></div><div class="ttdeci">void DoAIStep()</div><div class="ttdoc">A számítógépes játékos lép egyet. </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:273</div></div>
+<div class="ttc" id="class_area_html"><div class="ttname"><a href="class_area.html">Area</a></div><div class="ttdef"><b>Definition:</b> Area.h:8</div></div>
+<div class="ttc" id="class_game_handler_html_a1c19a06309f4880721a37ad5fe881f69"><div class="ttname"><a href="class_game_handler.html#a1c19a06309f4880721a37ad5fe881f69">GameHandler::LoadMainMenu</a></div><div class="ttdeci">void LoadMainMenu()</div><div class="ttdoc">Betölti a fõmenüt </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:59</div></div>
+<div class="ttc" id="class_min_max_html"><div class="ttname"><a href="class_min_max.html">MinMax</a></div><div class="ttdef"><b>Definition:</b> MinMax.h:16</div></div>
+<div class="ttc" id="class_level_html"><div class="ttname"><a href="class_level.html">Level</a></div><div class="ttdef"><b>Definition:</b> Level.h:6</div></div>
+<div class="ttc" id="class_game_handler_html_abd120bbc9f6aeec14134ccfc7c0733b2"><div class="ttname"><a href="class_game_handler.html#abd120bbc9f6aeec14134ccfc7c0733b2">GameHandler::GameMode</a></div><div class="ttdeci">int GameMode</div><div class="ttdef"><b>Definition:</b> GameHandler.h:29</div></div>
+<div class="ttc" id="class_game_handler_html_a274e0714b306ef58003c8c9929f5bbed"><div class="ttname"><a href="class_game_handler.html#a274e0714b306ef58003c8c9929f5bbed">GameHandler::DisableAreas</a></div><div class="ttdeci">void DisableAreas()</div><div class="ttdoc">Deaktiválja az összes &quot;kis négyzetet&quot;, nem lehet rájuk kattintani. </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:251</div></div>
+<div class="ttc" id="class_game_handler_html_a4f4f116c1e7471be9085ce0d8f2ab450"><div class="ttname"><a href="class_game_handler.html#a4f4f116c1e7471be9085ce0d8f2ab450">GameHandler::LoadGame</a></div><div class="ttdeci">void LoadGame()</div><div class="ttdoc">Betölti a játékot. </div><div class="ttdef"><b>Definition:</b> GameHandler.cpp:174</div></div>
+<div class="ttc" id="class_game_handler_html_afcc2a593886689300dee26840256d5d3"><div class="ttname"><a href="class_game_handler.html#afcc2a593886689300dee26840256d5d3">GameHandler::level</a></div><div class="ttdeci">Level * level</div><div class="ttdef"><b>Definition:</b> GameHandler.h:28</div></div>
+<div class="ttc" id="class_label_html"><div class="ttname"><a href="class_label.html">Label</a></div><div class="ttdef"><b>Definition:</b> Label.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+KÃ©szÃ­tette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

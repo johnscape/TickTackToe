@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structgenv_1_1font">
+<title>genv::font struct Reference</title>
+        <section>
+            <title>Publikus attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string font_name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int font_size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool antialias</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1font_1adc633a2154134707b8f04cc87aa5dd01">font</link> (
+const std::string &amp; s, int fs, bool a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="structgenv_1_1font_1a7dc21041fb8e0903e2952910c4dfe797">operator()</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="structgenv_1_1font_1adc633a2154134707b8f04cc87aa5dd01">
+                <title>genv::font::font (const std::string &amp;s, int fs, bool a=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1font_1a7dc21041fb8e0903e2952910c4dfe797">
+                <title>void genv::font::operator() (canvas &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: MinMax osztályreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Publikus tagfüggvények</a> &#124;
+<a href="#pri-methods">Privát tagfüggvények</a> &#124;
+<a href="#pri-attribs">Privát attribútumok</a> &#124;
+<a href="class_min_max-members.html">A tagok teljes listája</a>  </div>
+  <div class="headertitle">
+<div class="title">MinMax osztályreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Publikus tagfüggvények</h2></td></tr>
+<tr class="memitem:a15fb56ebb61d033eced1ae2ae43252a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#a15fb56ebb61d033eced1ae2ae43252a9">MinMax</a> (int deep, <a class="el" href="class_level.html">Level</a> *currentLevel, bool isX)</td></tr>
+<tr class="memdesc:a15fb56ebb61d033eced1ae2ae43252a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Létrehoz egy új MiniMax algoritmus alapján működő számítógépes játékost.  <a href="#a15fb56ebb61d033eced1ae2ae43252a9">Részletek...</a><br /></td></tr>
+<tr class="separator:a15fb56ebb61d033eced1ae2ae43252a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8448a9ea304b2890ddca4a123de5693b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#a8448a9ea304b2890ddca4a123de5693b">Step</a> ()</td></tr>
+<tr class="memdesc:a8448a9ea304b2890ddca4a123de5693b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ez a funckció számolja ki a következõ lépését a MiniMax algoritmusnak.  <a href="#a8448a9ea304b2890ddca4a123de5693b">Részletek...</a><br /></td></tr>
+<tr class="separator:a8448a9ea304b2890ddca4a123de5693b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Privát tagfüggvények</h2></td></tr>
+<tr class="memitem:ab491c411792412ad53665cbce23c0286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_step_data.html">StepData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#ab491c411792412ad53665cbce23c0286">NextStep</a> (int deep, bool isAI)</td></tr>
+<tr class="memdesc:ab491c411792412ad53665cbce23c0286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ez a függvény számolja a következõ lépést, úgy hogy rekurzívan meghívja önmagát.  <a href="#ab491c411792412ad53665cbce23c0286">Részletek...</a><br /></td></tr>
+<tr class="separator:ab491c411792412ad53665cbce23c0286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ae5176daca604a8a949a9a03c10036"><td class="memItemLeft" align="right" valign="top"><a id="a80ae5176daca604a8a949a9a03c10036"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyLevels</b> ()</td></tr>
+<tr class="separator:a80ae5176daca604a8a949a9a03c10036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Privát attribútumok</h2></td></tr>
+<tr class="memitem:a6da4ca45e19de6c1bdbe8a5a3d4b7da8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#a6da4ca45e19de6c1bdbe8a5a3d4b7da8">IsX</a></td></tr>
+<tr class="separator:a6da4ca45e19de6c1bdbe8a5a3d4b7da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6972ddd2c6a41089c586220563e07e25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level.html">Level</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#a6972ddd2c6a41089c586220563e07e25">playingLevel</a></td></tr>
+<tr class="separator:a6972ddd2c6a41089c586220563e07e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1b3631d9cf8c6efec0c7bf16c7d846"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level.html">Level</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#a2b1b3631d9cf8c6efec0c7bf16c7d846">computingLevel</a></td></tr>
+<tr class="separator:a2b1b3631d9cf8c6efec0c7bf16c7d846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb13756ec099292e262724f16d39a88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#a9bb13756ec099292e262724f16d39a88">MaxSteps</a></td></tr>
+<tr class="separator:a9bb13756ec099292e262724f16d39a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a2e347bd948d37b96a6694e6ee4a5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_min_max.html#ab1a2e347bd948d37b96a6694e6ee4a5b">MapSize</a></td></tr>
+<tr class="separator:ab1a2e347bd948d37b96a6694e6ee4a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0740177bb8a63569fca8a05f880d912f"><td class="memItemLeft" align="right" valign="top"><a id="a0740177bb8a63569fca8a05f880d912f"></a>
+std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><b>Writer</b></td></tr>
+<tr class="separator:a0740177bb8a63569fca8a05f880d912f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Konstruktorok és destruktorok dokumentációja</h2>
+<a id="a15fb56ebb61d033eced1ae2ae43252a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15fb56ebb61d033eced1ae2ae43252a9">&#9670;&nbsp;</a></span>MinMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MinMax::MinMax </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_level.html">Level</a> *&#160;</td>
+          <td class="paramname"><em>currentLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Létrehoz egy új MiniMax algoritmus alapján működő számítógépes játékost. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deep</td><td>int Ezzel lehet megadni, hogy maximum hány lépést számoljon előre </td></tr>
+    <tr><td class="paramname">currentLevel</td><td>Level* Ez a aktuális pályára mutató mutató </td></tr>
+    <tr><td class="paramname">isX</td><td>bool Ez adja meg, hogy a gépi játékos az X-el játszik-e </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Tagfüggvények dokumentációja</h2>
+<a id="ab491c411792412ad53665cbce23c0286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab491c411792412ad53665cbce23c0286">&#9670;&nbsp;</a></span>NextStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_step_data.html">StepData</a> MinMax::NextStep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isAI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ez a függvény számolja a következõ lépést, úgy hogy rekurzívan meghívja önmagát. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deep</td><td>int Az aktuális érték, hogy hány lépést számolt elõre </td></tr>
+    <tr><td class="paramname">isAI</td><td>bool Megadja, hogy az aktuális lépés neki tesz jót, vagy a játékosnal </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd><a class="el" href="struct_step_data.html">StepData</a> Megadja a lépés helyét, és a maximálisan szerzett pontot </dd></dl>
+
+</div>
+</div>
+<a id="a8448a9ea304b2890ddca4a123de5693b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8448a9ea304b2890ddca4a123de5693b">&#9670;&nbsp;</a></span>Step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MinMax::Step </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ez a funckció számolja ki a következõ lépését a MiniMax algoritmusnak. </p>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Adattagok dokumentációja</h2>
+<a id="a2b1b3631d9cf8c6efec0c7bf16c7d846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1b3631d9cf8c6efec0c7bf16c7d846">&#9670;&nbsp;</a></span>computingLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_level.html">Level</a>* MinMax::computingLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ezen a pályán számolja a lépéseit, így nem kell az éles pályán megtenni a próbalépéseket </p>
+
+</div>
+</div>
+<a id="a6da4ca45e19de6c1bdbe8a5a3d4b7da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da4ca45e19de6c1bdbe8a5a3d4b7da8">&#9670;&nbsp;</a></span>IsX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MinMax::IsX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ez a változó tárolja, hogy a gép 'X' szerint játszik-e </p>
+
+</div>
+</div>
+<a id="ab1a2e347bd948d37b96a6694e6ee4a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a2e347bd948d37b96a6694e6ee4a5b">&#9670;&nbsp;</a></span>MapSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MinMax::MapSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ez a változó tárolja a pálya méretét, így nem kell újra és újra lekérni </p>
+
+</div>
+</div>
+<a id="a9bb13756ec099292e262724f16d39a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb13756ec099292e262724f16d39a88">&#9670;&nbsp;</a></span>MaxSteps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MinMax::MaxSteps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ez a változó adja meg, hogy maximum hány lépést számolhat elõre. Minnél nagyobb annál pontosabban lép, de a számolás hosszúsága exponenciálisan nõ </p>
+
+</div>
+</div>
+<a id="a6972ddd2c6a41089c586220563e07e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6972ddd2c6a41089c586220563e07e25">&#9670;&nbsp;</a></span>playingLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_level.html">Level</a>* MinMax::playingLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ez a mutató mutat a valódi pályára, amin a játék zajlik </p>
+
+</div>
+</div>
+<hr/>Ez a dokumentáció az osztályról a következő fájlok alapján készült:<ul>
+<li><a class="el" href="_min_max_8h_source.html">MinMax.h</a></li>
+<li>MinMax.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

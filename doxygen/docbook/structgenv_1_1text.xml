@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structgenv_1_1text">
+<title>genv::text struct Reference</title>
+        <section>
+            <title>Publikus attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string str</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1text_1ae187a9809090986ac3a852df95dab0e9">text</link> (
+const std::string &amp; s)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="structgenv_1_1text_1a6c076c54816998e68c70c246f230303c">text</link> (
+char c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="structgenv_1_1text_1ae878f27480e2b3cebc61268268477b95">operator()</link> (
+<link linkend="classgenv_1_1canvas">canvas</link> &amp; out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="structgenv_1_1text_1ae187a9809090986ac3a852df95dab0e9">
+                <title>genv::text::text (const std::string &amp;s)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1text_1a6c076c54816998e68c70c246f230303c">
+                <title>genv::text::text (char c)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="structgenv_1_1text_1ae878f27480e2b3cebc61268268477b95">
+                <title>void genv::text::operator() (canvas &amp;out)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

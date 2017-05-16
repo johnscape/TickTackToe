@@ -1,0 +1,322 @@
+\hypertarget{class_number_input}{}\section{Number\+Input osztÃ¡lyreferencia}
+\label{class_number_input}\index{Number\+Input@{Number\+Input}}
+A Number\+Input osztÃ¡ly szÃ¡rmazÃ¡si diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_number_input}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_number_input_aefdfa77f0126ef899ba0a769f2235342}{Number\+Input} (int x, int y, int x\+Size, int y\+Size, int starting\+Number, int max\+Value, int min\+Value)
+\item 
+void \hyperlink{class_number_input_ab65631421ec222bb929f74d1782b5c8b}{Draw} ()
+\item 
+void \hyperlink{class_number_input_a08a2de51093fe35c3c7b9998e88924a9}{Handle} (\hyperlink{structgenv_1_1event}{genv\+::event} ev)
+\item 
+bool \hyperlink{class_number_input_af364cc666a41dfa189e024464e4bc317}{Is\+In\+Line} (int x, int y)
+\item 
+void \hyperlink{class_number_input_a0682f3a3b5f11c791130dccf93fd99e2}{Set\+Value} (int val)
+\item 
+void \hyperlink{class_number_input_aef2773ed58e2afdd2db28bcd7adc7502}{Adjust\+Value} (int val)
+\item 
+void \hyperlink{class_number_input_a9c4d25e738d515215db9e7cf555564e8}{Step} (bool up, bool big)
+\item 
+void \hyperlink{class_number_input_ae64ca90e8c0aa327c859f0635e534e7e}{Set\+Maximum\+Value} (int maximum)
+\item 
+void \hyperlink{class_number_input_afd331b555cb1fd5b7b302657970fce7c}{Set\+Minimum\+Value} (int minimum)
+\item 
+void \hyperlink{class_number_input_acec58e03d46e46cddaab1232ad568321}{Set\+Step\+Value} (int step)
+\item 
+void \hyperlink{class_number_input_a1697046b4e5612acc5235d0fc641cca3}{Set\+Big\+Step\+Value} (int bigstep)
+\item 
+void \hyperlink{class_number_input_a2c606ddf06df2f60f26a3e4adaa1dd85}{Set\+Button\+Colour} (int r, int g, int b)
+\item 
+void \hyperlink{class_number_input_ae7d315b36400c767cff5c29e23504b5a}{Set\+Button\+On\+Click\+Colour} (int r, int g, int b)
+\item 
+\mbox{\Hypertarget{class_number_input_a4489ce154958175f41d23d1320f982a9}\label{class_number_input_a4489ce154958175f41d23d1320f982a9}} 
+int {\bfseries Get\+Current\+Value} ()
+\item 
+\mbox{\Hypertarget{class_number_input_aabb4deeb84de3beeea983541a1cf6d39}\label{class_number_input_aabb4deeb84de3beeea983541a1cf6d39}} 
+void {\bfseries Set\+Event\+Void} (std\+::function$<$ void(\hyperlink{class_number_input}{Number\+Input} $\ast$)$>$ \hyperlink{structgenv_1_1event}{event})
+\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_number_input_a1f6bbdba5d2af8b5269d9e00d9d3e1e0}{Check\+Value} ()
+\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t attribÃºtumok}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_number_input_a95cf7c8f0185f0682a601302a811d2eb}{Current\+Number}
+\item 
+int \hyperlink{class_number_input_a55812397e1446404f7303b1603f52594}{Maximum\+Value}
+\item 
+int \hyperlink{class_number_input_af0b3680c0e74abe946bdc888858272fb}{Minimum\+Value}
+\item 
+int \hyperlink{class_number_input_a22772460b68ff126b8c289290ed09697}{Step\+Value}
+\item 
+int \hyperlink{class_number_input_a2e2ed204923756a047800cefb9572b6d}{Big\+Step\+Value}
+\item 
+bool \hyperlink{class_number_input_a0f32b7a17629ee4cf733fc0548ea2e66}{button\+Up\+Clicking}
+\item 
+bool \hyperlink{class_number_input_a98ab70cc84c3b5d6f134a039cf660f71}{button\+Down\+Clicking}
+\item 
+\mbox{\Hypertarget{class_number_input_abb2632847adce3030fbb0f5d471a2850}\label{class_number_input_abb2632847adce3030fbb0f5d471a2850}} 
+std\+::function$<$ void(\hyperlink{class_number_input}{Number\+Input} $\ast$)$>$ {\bfseries On\+Event}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_number_input_a6da104a673a46ff122cb89a5caed6679}{button\+Colour}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_number_input_a46fe428af7fba158eb550639a1a5edc9}{button\+Click\+Colour}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Konstruktorok Ã©s destruktorok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_number_input_aefdfa77f0126ef899ba0a769f2235342}\label{class_number_input_aefdfa77f0126ef899ba0a769f2235342}} 
+\index{Number\+Input@{Number\+Input}!Number\+Input@{Number\+Input}}
+\index{Number\+Input@{Number\+Input}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Number\+Input()}{NumberInput()}}
+{\footnotesize\ttfamily Number\+Input\+::\+Number\+Input (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x\+Size,  }\item[{int}]{y\+Size,  }\item[{int}]{starting\+Number,  }\item[{int}]{max\+Value,  }\item[{int}]{min\+Value }\end{DoxyParamCaption})}
+
+Egy számláló widget aminek az értéke két gombbal, valamint a fel és le nyilakkal és a page up, page down gombokkal szabályozható 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & A widget X pozíciója \\
+\hline
+{\em y} & A widget Y pozíciója \\
+\hline
+{\em x\+Size} & A widget hossza (20 pixel még tartozik a végéhez, ezek a gombok) \\
+\hline
+{\em y\+Size} & A widget magassága \\
+\hline
+{\em starting\+Number} & A számláló kezdõ száma \\
+\hline
+{\em max\+Value} & A maximum érték, a számláló nem mehet ezen túl \\
+\hline
+{\em min\+Value} & A minimum érték, a számláló értéke nem lehet ennél kisebb \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_number_input_aef2773ed58e2afdd2db28bcd7adc7502}\label{class_number_input_aef2773ed58e2afdd2db28bcd7adc7502}} 
+\index{Number\+Input@{Number\+Input}!Adjust\+Value@{Adjust\+Value}}
+\index{Adjust\+Value@{Adjust\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Adjust\+Value()}{AdjustValue()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Adjust\+Value (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+Hozzáad valamennyit a számláló jelenlegi értékéhez 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em val} & A hpzzáadandó érték \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_a1f6bbdba5d2af8b5269d9e00d9d3e1e0}\label{class_number_input_a1f6bbdba5d2af8b5269d9e00d9d3e1e0}} 
+\index{Number\+Input@{Number\+Input}!Check\+Value@{Check\+Value}}
+\index{Check\+Value@{Check\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Check\+Value()}{CheckValue()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Check\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Ellenõrzi, hogy a jelenlegi érték nem-\/e lóg ki a határokon \mbox{\Hypertarget{class_number_input_ab65631421ec222bb929f74d1782b5c8b}\label{class_number_input_ab65631421ec222bb929f74d1782b5c8b}} 
+\index{Number\+Input@{Number\+Input}!Draw@{Draw}}
+\index{Draw@{Draw}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ez felel a widget kirajzolásáért 
+
+ÃšjraimplementÃ¡lt Å‘sÃ¶k\+: \hyperlink{class_label_a184df028b3aa8c7f8dec8ecb90533319}{Label}.
+
+\mbox{\Hypertarget{class_number_input_a08a2de51093fe35c3c7b9998e88924a9}\label{class_number_input_a08a2de51093fe35c3c7b9998e88924a9}} 
+\index{Number\+Input@{Number\+Input}!Handle@{Handle}}
+\index{Handle@{Handle}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{structgenv_1_1event}{genv\+::event}}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ez a függvény kezeli az eventeket 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em ev} & Az aktuális event objektum \\
+\hline
+\end{DoxyParams}
+
+
+ÃšjraimplementÃ¡lt Å‘sÃ¶k\+: \hyperlink{class_label_a5cf04da7def075453b5c0fda93a1b575}{Label}.
+
+\mbox{\Hypertarget{class_number_input_af364cc666a41dfa189e024464e4bc317}\label{class_number_input_af364cc666a41dfa189e024464e4bc317}} 
+\index{Number\+Input@{Number\+Input}!Is\+In\+Line@{Is\+In\+Line}}
+\index{Is\+In\+Line@{Is\+In\+Line}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Is\+In\+Line()}{IsInLine()}}
+{\footnotesize\ttfamily bool Number\+Input\+::\+Is\+In\+Line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Megadja, hogy az egér a saját keretein belül van-\/e 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & Az egér X pozíciója \\
+\hline
+{\em y} & Az egér Y pozíciója \\
+\hline
+\end{DoxyParams}
+
+
+ÃšjraimplementÃ¡lt Å‘sÃ¶k\+: \hyperlink{class_label_a918ebb45dbaa5484643355cf5ab4be47}{Label}.
+
+\mbox{\Hypertarget{class_number_input_a1697046b4e5612acc5235d0fc641cca3}\label{class_number_input_a1697046b4e5612acc5235d0fc641cca3}} 
+\index{Number\+Input@{Number\+Input}!Set\+Big\+Step\+Value@{Set\+Big\+Step\+Value}}
+\index{Set\+Big\+Step\+Value@{Set\+Big\+Step\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Set\+Big\+Step\+Value()}{SetBigStepValue()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Set\+Big\+Step\+Value (\begin{DoxyParamCaption}\item[{int}]{bigstep }\end{DoxyParamCaption})}
+
+Átálítja a nagy egység értékét (amit a page up/down gombra lép) 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em bigstep} & Az új egység értéke \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_a2c606ddf06df2f60f26a3e4adaa1dd85}\label{class_number_input_a2c606ddf06df2f60f26a3e4adaa1dd85}} 
+\index{Number\+Input@{Number\+Input}!Set\+Button\+Colour@{Set\+Button\+Colour}}
+\index{Set\+Button\+Colour@{Set\+Button\+Colour}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Set\+Button\+Colour()}{SetButtonColour()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Set\+Button\+Colour (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Átálítja a gomb színét 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em r} & Az új piros érték \\
+\hline
+{\em g} & Az új zöld érték \\
+\hline
+{\em b} & Az új kék érték \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_ae7d315b36400c767cff5c29e23504b5a}\label{class_number_input_ae7d315b36400c767cff5c29e23504b5a}} 
+\index{Number\+Input@{Number\+Input}!Set\+Button\+On\+Click\+Colour@{Set\+Button\+On\+Click\+Colour}}
+\index{Set\+Button\+On\+Click\+Colour@{Set\+Button\+On\+Click\+Colour}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Set\+Button\+On\+Click\+Colour()}{SetButtonOnClickColour()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Set\+Button\+On\+Click\+Colour (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Átálítja a gomb kattintáskor látható színét 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em r} & Az új piros érték \\
+\hline
+{\em g} & Az új zöld érték \\
+\hline
+{\em b} & Az új kék érték \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_ae64ca90e8c0aa327c859f0635e534e7e}\label{class_number_input_ae64ca90e8c0aa327c859f0635e534e7e}} 
+\index{Number\+Input@{Number\+Input}!Set\+Maximum\+Value@{Set\+Maximum\+Value}}
+\index{Set\+Maximum\+Value@{Set\+Maximum\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Set\+Maximum\+Value()}{SetMaximumValue()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Set\+Maximum\+Value (\begin{DoxyParamCaption}\item[{int}]{maximum }\end{DoxyParamCaption})}
+
+Új felsõkorlátot ad a widgetnek 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em maximum} & Az új maximum \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_afd331b555cb1fd5b7b302657970fce7c}\label{class_number_input_afd331b555cb1fd5b7b302657970fce7c}} 
+\index{Number\+Input@{Number\+Input}!Set\+Minimum\+Value@{Set\+Minimum\+Value}}
+\index{Set\+Minimum\+Value@{Set\+Minimum\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Set\+Minimum\+Value()}{SetMinimumValue()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Set\+Minimum\+Value (\begin{DoxyParamCaption}\item[{int}]{minimum }\end{DoxyParamCaption})}
+
+Új alsókorlátot ad a widgetnek 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em minimum} & Az új minimum \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_acec58e03d46e46cddaab1232ad568321}\label{class_number_input_acec58e03d46e46cddaab1232ad568321}} 
+\index{Number\+Input@{Number\+Input}!Set\+Step\+Value@{Set\+Step\+Value}}
+\index{Set\+Step\+Value@{Set\+Step\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Set\+Step\+Value()}{SetStepValue()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Set\+Step\+Value (\begin{DoxyParamCaption}\item[{int}]{step }\end{DoxyParamCaption})}
+
+Átálítja a kis egység értékét (amit egy kattintással lép) 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em step} & Az új egység értéke \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_a0682f3a3b5f11c791130dccf93fd99e2}\label{class_number_input_a0682f3a3b5f11c791130dccf93fd99e2}} 
+\index{Number\+Input@{Number\+Input}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Set\+Value()}{SetValue()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Set\+Value (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+Átálítja a számláló értékét 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em val} & Az új érték \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_number_input_a9c4d25e738d515215db9e7cf555564e8}\label{class_number_input_a9c4d25e738d515215db9e7cf555564e8}} 
+\index{Number\+Input@{Number\+Input}!Step@{Step}}
+\index{Step@{Step}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily void Number\+Input\+::\+Step (\begin{DoxyParamCaption}\item[{bool}]{up,  }\item[{bool}]{big }\end{DoxyParamCaption})}
+
+A számlálót lépteti kis vagy nagy egységnyivel pozitív vagy negatív irányba 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em up} & Ez adja meg, hogy pozitív irányba lép-\/e \\
+\hline
+{\em bug} & Ez adja meg, hogy kis vagy nagy egységet lép \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Adattagok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_number_input_a2e2ed204923756a047800cefb9572b6d}\label{class_number_input_a2e2ed204923756a047800cefb9572b6d}} 
+\index{Number\+Input@{Number\+Input}!Big\+Step\+Value@{Big\+Step\+Value}}
+\index{Big\+Step\+Value@{Big\+Step\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Big\+Step\+Value}{BigStepValue}}
+{\footnotesize\ttfamily int Number\+Input\+::\+Big\+Step\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+A nagy lépés mértéke \mbox{\Hypertarget{class_number_input_a46fe428af7fba158eb550639a1a5edc9}\label{class_number_input_a46fe428af7fba158eb550639a1a5edc9}} 
+\index{Number\+Input@{Number\+Input}!button\+Click\+Colour@{button\+Click\+Colour}}
+\index{button\+Click\+Colour@{button\+Click\+Colour}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{button\+Click\+Colour}{buttonClickColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Number\+Input\+::button\+Click\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+A gomb kattintáskor látható színét tárolja \mbox{\Hypertarget{class_number_input_a6da104a673a46ff122cb89a5caed6679}\label{class_number_input_a6da104a673a46ff122cb89a5caed6679}} 
+\index{Number\+Input@{Number\+Input}!button\+Colour@{button\+Colour}}
+\index{button\+Colour@{button\+Colour}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{button\+Colour}{buttonColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Number\+Input\+::button\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+A gomb színét tárolja \mbox{\Hypertarget{class_number_input_a98ab70cc84c3b5d6f134a039cf660f71}\label{class_number_input_a98ab70cc84c3b5d6f134a039cf660f71}} 
+\index{Number\+Input@{Number\+Input}!button\+Down\+Clicking@{button\+Down\+Clicking}}
+\index{button\+Down\+Clicking@{button\+Down\+Clicking}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{button\+Down\+Clicking}{buttonDownClicking}}
+{\footnotesize\ttfamily bool Number\+Input\+::button\+Down\+Clicking\hspace{0.3cm}{\ttfamily [private]}}
+
+Igaz, amennyiben a lefele gombra éppen rákattintanak \mbox{\Hypertarget{class_number_input_a0f32b7a17629ee4cf733fc0548ea2e66}\label{class_number_input_a0f32b7a17629ee4cf733fc0548ea2e66}} 
+\index{Number\+Input@{Number\+Input}!button\+Up\+Clicking@{button\+Up\+Clicking}}
+\index{button\+Up\+Clicking@{button\+Up\+Clicking}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{button\+Up\+Clicking}{buttonUpClicking}}
+{\footnotesize\ttfamily bool Number\+Input\+::button\+Up\+Clicking\hspace{0.3cm}{\ttfamily [private]}}
+
+Igaz, amennyiben a felfele gombra éppen rákattintanak \mbox{\Hypertarget{class_number_input_a95cf7c8f0185f0682a601302a811d2eb}\label{class_number_input_a95cf7c8f0185f0682a601302a811d2eb}} 
+\index{Number\+Input@{Number\+Input}!Current\+Number@{Current\+Number}}
+\index{Current\+Number@{Current\+Number}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Current\+Number}{CurrentNumber}}
+{\footnotesize\ttfamily int Number\+Input\+::\+Current\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+A jelenlegi érték \mbox{\Hypertarget{class_number_input_a55812397e1446404f7303b1603f52594}\label{class_number_input_a55812397e1446404f7303b1603f52594}} 
+\index{Number\+Input@{Number\+Input}!Maximum\+Value@{Maximum\+Value}}
+\index{Maximum\+Value@{Maximum\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Maximum\+Value}{MaximumValue}}
+{\footnotesize\ttfamily int Number\+Input\+::\+Maximum\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+A maximum érték \mbox{\Hypertarget{class_number_input_af0b3680c0e74abe946bdc888858272fb}\label{class_number_input_af0b3680c0e74abe946bdc888858272fb}} 
+\index{Number\+Input@{Number\+Input}!Minimum\+Value@{Minimum\+Value}}
+\index{Minimum\+Value@{Minimum\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Minimum\+Value}{MinimumValue}}
+{\footnotesize\ttfamily int Number\+Input\+::\+Minimum\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+A minimum érték \mbox{\Hypertarget{class_number_input_a22772460b68ff126b8c289290ed09697}\label{class_number_input_a22772460b68ff126b8c289290ed09697}} 
+\index{Number\+Input@{Number\+Input}!Step\+Value@{Step\+Value}}
+\index{Step\+Value@{Step\+Value}!Number\+Input@{Number\+Input}}
+\subsubsection{\texorpdfstring{Step\+Value}{StepValue}}
+{\footnotesize\ttfamily int Number\+Input\+::\+Step\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+A kis lépés mértéke 
+
+Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt\+:\begin{DoxyCompactItemize}
+\item 
+Number\+Input.\+h\item 
+Number\+Input.\+cpp\end{DoxyCompactItemize}

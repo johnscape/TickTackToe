@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Widgets: RadioButtonHolder.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Widgets
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RadioButtonHolder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RADIOBUTTONHOLDER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RADIOBUTTONHOLDER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Widget.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;RadioButton.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_radio_button_holder.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_radio_button_holder.html">RadioButtonHolder</a> : <span class="keyword">public</span> <a class="code" href="class_widget.html">Widget</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_radio_button_holder.html#ab100a3d26a036b76ead2bcd4331e8552">RadioButtonHolder</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_radio_button_holder.html">RadioButtonHolder</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_radio_button_holder.html#ab9ac730a7440439eb73b892f193741ae">AddRadioButton</a>(<a class="code" href="class_radio_button.html">RadioButton</a>* button);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_radio_button_holder.html#a217e5620f70f0d2633e70896ad166f70">RemoveRadioButton</a>(<a class="code" href="class_radio_button.html">RadioButton</a>* button);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_radio_button_holder.html#a217e5620f70f0d2633e70896ad166f70">RemoveRadioButton</a>(<span class="keywordtype">int</span> place);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_radio_button_holder.html#ad185ab84d978e645eac54f236069705b">GetCurrentlySelected</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_radio_button_holder.html#a5ed73396ddd57f3de474a7487429bae3">CurrentlySelectedValue</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_radio_button_holder.html#a1b15e73021c8e2022d43b12f4246182d">SetEventVoid</a>(std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="class_radio_button_holder.html">RadioButtonHolder</a>*)&gt; event);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_radio_button_holder.html#a70d6ba1724bdb68afe351d0474cbd767">Draw</a>();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_radio_button_holder.html#a7b4ed9e75eef252ad20c3cbcb8547981">Handle</a>(<a class="code" href="structgenv_1_1event.html">genv::event</a> ev);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_radio_button_holder.html#aa6d6fe7d9eb9ce9c2628f432ef129e01">IsInLine</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_radio_button_holder.html#aaed6e22df55ff0174b150c675caff07a">   93</a></span>&#160;        std::vector&lt;RadioButton*&gt; <a class="code" href="class_radio_button_holder.html#aaed6e22df55ff0174b150c675caff07a">radioButtons</a>;</div><div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_radio_button_holder.html#ac2ecfd4a57032afaa6455f9b559a00b3">   94</a></span>&#160;        std::function&lt;void(RadioButtonHolder*)&gt; <a class="code" href="class_radio_button_holder.html#ac2ecfd4a57032afaa6455f9b559a00b3">OnEvent</a>;</div><div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_radio_button_holder.html#a115a7d96d3c3a7a97d3e9bc4d04b50e0">   95</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_radio_button_holder.html#a115a7d96d3c3a7a97d3e9bc4d04b50e0">ButtonCount</a>;</div><div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_radio_button_holder.html#a72c73d2f99d20384f334903cec24040e">   96</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_radio_button_holder.html#a72c73d2f99d20384f334903cec24040e">CurrentlySelected</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_radio_button_holder.html#aeca94b584cd2a969f38f587f08ff43df">CheckNull</a>();</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif // RADIOBUTTONHOLDER_H</span></div><div class="ttc" id="class_radio_button_holder_html_aaed6e22df55ff0174b150c675caff07a"><div class="ttname"><a href="class_radio_button_holder.html#aaed6e22df55ff0174b150c675caff07a">RadioButtonHolder::radioButtons</a></div><div class="ttdeci">std::vector&lt; RadioButton * &gt; radioButtons</div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.h:93</div></div>
+<div class="ttc" id="class_radio_button_holder_html_a115a7d96d3c3a7a97d3e9bc4d04b50e0"><div class="ttname"><a href="class_radio_button_holder.html#a115a7d96d3c3a7a97d3e9bc4d04b50e0">RadioButtonHolder::ButtonCount</a></div><div class="ttdeci">int ButtonCount</div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.h:95</div></div>
+<div class="ttc" id="class_radio_button_holder_html_ad185ab84d978e645eac54f236069705b"><div class="ttname"><a href="class_radio_button_holder.html#ad185ab84d978e645eac54f236069705b">RadioButtonHolder::GetCurrentlySelected</a></div><div class="ttdeci">int GetCurrentlySelected()</div><div class="ttdoc">Megadja a jelenleg kiválasztott gomb sorszámát. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:90</div></div>
+<div class="ttc" id="class_radio_button_holder_html_aa6d6fe7d9eb9ce9c2628f432ef129e01"><div class="ttname"><a href="class_radio_button_holder.html#aa6d6fe7d9eb9ce9c2628f432ef129e01">RadioButtonHolder::IsInLine</a></div><div class="ttdeci">virtual bool IsInLine(int x, int y)</div><div class="ttdoc">Megadja, hogy egy koordináta rajta van-e a widgeten. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:50</div></div>
+<div class="ttc" id="class_radio_button_holder_html_a1b15e73021c8e2022d43b12f4246182d"><div class="ttname"><a href="class_radio_button_holder.html#a1b15e73021c8e2022d43b12f4246182d">RadioButtonHolder::SetEventVoid</a></div><div class="ttdeci">void SetEventVoid(std::function&lt; void(RadioButtonHolder *)&gt; event)</div><div class="ttdoc">Egy gomra történő kattintáskor meghívandó esemény. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:101</div></div>
+<div class="ttc" id="structgenv_1_1event_html"><div class="ttname"><a href="structgenv_1_1event.html">genv::event</a></div><div class="ttdef"><b>Definition:</b> graphics.hpp:229</div></div>
+<div class="ttc" id="class_radio_button_holder_html_aeca94b584cd2a969f38f587f08ff43df"><div class="ttname"><a href="class_radio_button_holder.html#aeca94b584cd2a969f38f587f08ff43df">RadioButtonHolder::CheckNull</a></div><div class="ttdeci">void CheckNull()</div><div class="ttdoc">Ellenőrzi, hogy vannak-e gombok. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:95</div></div>
+<div class="ttc" id="class_radio_button_holder_html_a5ed73396ddd57f3de474a7487429bae3"><div class="ttname"><a href="class_radio_button_holder.html#a5ed73396ddd57f3de474a7487429bae3">RadioButtonHolder::CurrentlySelectedValue</a></div><div class="ttdeci">int CurrentlySelectedValue()</div><div class="ttdoc">Megadja a jelenleg kiválasztott gomb értékét. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:106</div></div>
+<div class="ttc" id="class_radio_button_html"><div class="ttname"><a href="class_radio_button.html">RadioButton</a></div><div class="ttdef"><b>Definition:</b> RadioButton.h:8</div></div>
+<div class="ttc" id="class_radio_button_holder_html_a70d6ba1724bdb68afe351d0474cbd767"><div class="ttname"><a href="class_radio_button_holder.html#a70d6ba1724bdb68afe351d0474cbd767">RadioButtonHolder::Draw</a></div><div class="ttdeci">virtual void Draw()</div><div class="ttdoc">Kirajzolja a widgeteket. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:18</div></div>
+<div class="ttc" id="class_radio_button_holder_html_a7b4ed9e75eef252ad20c3cbcb8547981"><div class="ttname"><a href="class_radio_button_holder.html#a7b4ed9e75eef252ad20c3cbcb8547981">RadioButtonHolder::Handle</a></div><div class="ttdeci">virtual void Handle(genv::event ev)</div><div class="ttdoc">Kezeli a widgeteket az inputnak megfelelõen. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:24</div></div>
+<div class="ttc" id="class_radio_button_holder_html_ab9ac730a7440439eb73b892f193741ae"><div class="ttname"><a href="class_radio_button_holder.html#ab9ac730a7440439eb73b892f193741ae">RadioButtonHolder::AddRadioButton</a></div><div class="ttdeci">void AddRadioButton(RadioButton *button)</div><div class="ttdoc">A listához ad egy új gombot. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:61</div></div>
+<div class="ttc" id="class_radio_button_holder_html_ab100a3d26a036b76ead2bcd4331e8552"><div class="ttname"><a href="class_radio_button_holder.html#ab100a3d26a036b76ead2bcd4331e8552">RadioButtonHolder::RadioButtonHolder</a></div><div class="ttdeci">RadioButtonHolder()</div><div class="ttdoc">Létrehot egy kiválasztó gomb tartó objektumot. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:3</div></div>
+<div class="ttc" id="class_radio_button_holder_html_ac2ecfd4a57032afaa6455f9b559a00b3"><div class="ttname"><a href="class_radio_button_holder.html#ac2ecfd4a57032afaa6455f9b559a00b3">RadioButtonHolder::OnEvent</a></div><div class="ttdeci">std::function&lt; void(RadioButtonHolder *)&gt; OnEvent</div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.h:94</div></div>
+<div class="ttc" id="class_widget_html"><div class="ttname"><a href="class_widget.html">Widget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:6</div></div>
+<div class="ttc" id="class_radio_button_holder_html_a217e5620f70f0d2633e70896ad166f70"><div class="ttname"><a href="class_radio_button_holder.html#a217e5620f70f0d2633e70896ad166f70">RadioButtonHolder::RemoveRadioButton</a></div><div class="ttdeci">void RemoveRadioButton(RadioButton *button)</div><div class="ttdoc">Eltávolít egy gombot. </div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.cpp:67</div></div>
+<div class="ttc" id="class_radio_button_holder_html_a72c73d2f99d20384f334903cec24040e"><div class="ttname"><a href="class_radio_button_holder.html#a72c73d2f99d20384f334903cec24040e">RadioButtonHolder::CurrentlySelected</a></div><div class="ttdeci">int CurrentlySelected</div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.h:96</div></div>
+<div class="ttc" id="class_radio_button_holder_html"><div class="ttname"><a href="class_radio_button_holder.html">RadioButtonHolder</a></div><div class="ttdef"><b>Definition:</b> RadioButtonHolder.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

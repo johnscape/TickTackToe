@@ -1,0 +1,271 @@
+\hypertarget{class_radio_button_holder}{}\section{Radio\+Button\+Holder osztályreferencia}
+\label{class_radio_button_holder}\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+A Radio\+Button\+Holder osztály származási diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_radio_button_holder}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_radio_button_holder_ab100a3d26a036b76ead2bcd4331e8552}{Radio\+Button\+Holder} ()
+\begin{DoxyCompactList}\small\item\em Létrehot egy kiválasztó gomb tartó objektumot. \end{DoxyCompactList}\item 
+void \hyperlink{class_radio_button_holder_ab9ac730a7440439eb73b892f193741ae}{Add\+Radio\+Button} (\hyperlink{class_radio_button}{Radio\+Button} $\ast$button)
+\begin{DoxyCompactList}\small\item\em A listához ad egy új gombot. \end{DoxyCompactList}\item 
+void \hyperlink{class_radio_button_holder_a217e5620f70f0d2633e70896ad166f70}{Remove\+Radio\+Button} (\hyperlink{class_radio_button}{Radio\+Button} $\ast$button)
+\begin{DoxyCompactList}\small\item\em Eltávolít egy gombot. \end{DoxyCompactList}\item 
+void \hyperlink{class_radio_button_holder_a8a44f58d480a8c1b4822adb9e9df0c98}{Remove\+Radio\+Button} (int place)
+\begin{DoxyCompactList}\small\item\em Eltávolít egy gombot. \end{DoxyCompactList}\item 
+int \hyperlink{class_radio_button_holder_ad185ab84d978e645eac54f236069705b}{Get\+Currently\+Selected} ()
+\begin{DoxyCompactList}\small\item\em Megadja a jelenleg kiválasztott gomb sorszámát. \end{DoxyCompactList}\item 
+int \hyperlink{class_radio_button_holder_a5ed73396ddd57f3de474a7487429bae3}{Currently\+Selected\+Value} ()
+\begin{DoxyCompactList}\small\item\em Megadja a jelenleg kiválasztott gomb értékét. \end{DoxyCompactList}\item 
+void \hyperlink{class_radio_button_holder_a1b15e73021c8e2022d43b12f4246182d}{Set\+Event\+Void} (std\+::function$<$ void(\hyperlink{class_radio_button_holder}{Radio\+Button\+Holder} $\ast$)$>$ event)
+\begin{DoxyCompactList}\small\item\em Egy gomra történő kattintáskor meghívandó esemény. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_radio_button_holder_a70d6ba1724bdb68afe351d0474cbd767}{Draw} ()
+\begin{DoxyCompactList}\small\item\em Kirajzolja a widgeteket. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_radio_button_holder_a7b4ed9e75eef252ad20c3cbcb8547981}{Handle} (\hyperlink{structgenv_1_1event}{genv\+::event} ev)
+\begin{DoxyCompactList}\small\item\em Kezeli a widgeteket az inputnak megfelelõen. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_radio_button_holder_aa6d6fe7d9eb9ce9c2628f432ef129e01}{Is\+In\+Line} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Megadja, hogy egy koordináta rajta van-\/e a widgeten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privát tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_radio_button_holder_aeca94b584cd2a969f38f587f08ff43df}{Check\+Null} ()
+\begin{DoxyCompactList}\small\item\em Ellenőrzi, hogy vannak-\/e gombok. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privát attribútumok}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_radio_button}{Radio\+Button} $\ast$ $>$ \hyperlink{class_radio_button_holder_aaed6e22df55ff0174b150c675caff07a}{radio\+Buttons}
+\item 
+std\+::function$<$ void(\hyperlink{class_radio_button_holder}{Radio\+Button\+Holder} $\ast$)$>$ \hyperlink{class_radio_button_holder_ac2ecfd4a57032afaa6455f9b559a00b3}{On\+Event}
+\item 
+int \hyperlink{class_radio_button_holder_a115a7d96d3c3a7a97d3e9bc4d04b50e0}{Button\+Count}
+\item 
+int \hyperlink{class_radio_button_holder_a72c73d2f99d20384f334903cec24040e}{Currently\+Selected}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{class_radio_button_holder_ab100a3d26a036b76ead2bcd4331e8552}\label{class_radio_button_holder_ab100a3d26a036b76ead2bcd4331e8552}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Radio\+Button\+Holder()}{RadioButtonHolder()}}
+{\footnotesize\ttfamily Radio\+Button\+Holder\+::\+Radio\+Button\+Holder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Létrehot egy kiválasztó gomb tartó objektumot. 
+
+
+
+\subsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_radio_button_holder_ab9ac730a7440439eb73b892f193741ae}\label{class_radio_button_holder_ab9ac730a7440439eb73b892f193741ae}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Add\+Radio\+Button@{Add\+Radio\+Button}}
+\index{Add\+Radio\+Button@{Add\+Radio\+Button}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Add\+Radio\+Button()}{AddRadioButton()}}
+{\footnotesize\ttfamily void Radio\+Button\+Holder\+::\+Add\+Radio\+Button (\begin{DoxyParamCaption}\item[{\hyperlink{class_radio_button}{Radio\+Button} $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+A listához ad egy új gombot. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em button} & Radio\+Button$\ast$ Az új gomn \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_radio_button_holder_aeca94b584cd2a969f38f587f08ff43df}\label{class_radio_button_holder_aeca94b584cd2a969f38f587f08ff43df}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Check\+Null@{Check\+Null}}
+\index{Check\+Null@{Check\+Null}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Check\+Null()}{CheckNull()}}
+{\footnotesize\ttfamily void Radio\+Button\+Holder\+::\+Check\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ellenőrzi, hogy vannak-\/e gombok. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_radio_button_holder_a5ed73396ddd57f3de474a7487429bae3}\label{class_radio_button_holder_a5ed73396ddd57f3de474a7487429bae3}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Currently\+Selected\+Value@{Currently\+Selected\+Value}}
+\index{Currently\+Selected\+Value@{Currently\+Selected\+Value}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Currently\+Selected\+Value()}{CurrentlySelectedValue()}}
+{\footnotesize\ttfamily int Radio\+Button\+Holder\+::\+Currently\+Selected\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megadja a jelenleg kiválasztott gomb értékét. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+int A jelenleg kiválasztott gomb értéke 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_radio_button_holder_a70d6ba1724bdb68afe351d0474cbd767}\label{class_radio_button_holder_a70d6ba1724bdb68afe351d0474cbd767}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Draw@{Draw}}
+\index{Draw@{Draw}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Radio\+Button\+Holder\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Kirajzolja a widgeteket. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+virtual void 
+\end{DoxyReturn}
+
+
+Megvalósítja a következőket\+: \hyperlink{class_widget_ac4c2063cd671468ad05d84cfe963c032}{Widget}.
+
+\mbox{\Hypertarget{class_radio_button_holder_ad185ab84d978e645eac54f236069705b}\label{class_radio_button_holder_ad185ab84d978e645eac54f236069705b}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Get\+Currently\+Selected@{Get\+Currently\+Selected}}
+\index{Get\+Currently\+Selected@{Get\+Currently\+Selected}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Get\+Currently\+Selected()}{GetCurrentlySelected()}}
+{\footnotesize\ttfamily int Radio\+Button\+Holder\+::\+Get\+Currently\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Megadja a jelenleg kiválasztott gomb sorszámát. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+int A jelenleg kiválasztott gomb sorszáma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_radio_button_holder_a7b4ed9e75eef252ad20c3cbcb8547981}\label{class_radio_button_holder_a7b4ed9e75eef252ad20c3cbcb8547981}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Handle@{Handle}}
+\index{Handle@{Handle}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily void Radio\+Button\+Holder\+::\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{structgenv_1_1event}{genv\+::event}}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Kezeli a widgeteket az inputnak megfelelõen. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em ev} & \hyperlink{structgenv_1_1event}{genv\+::event} Az input eventje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+virtual void 
+\end{DoxyReturn}
+
+
+Megvalósítja a következőket\+: \hyperlink{class_widget_abf512e4606c7a5d44245a9b0246634a0}{Widget}.
+
+\mbox{\Hypertarget{class_radio_button_holder_aa6d6fe7d9eb9ce9c2628f432ef129e01}\label{class_radio_button_holder_aa6d6fe7d9eb9ce9c2628f432ef129e01}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Is\+In\+Line@{Is\+In\+Line}}
+\index{Is\+In\+Line@{Is\+In\+Line}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Is\+In\+Line()}{IsInLine()}}
+{\footnotesize\ttfamily bool Radio\+Button\+Holder\+::\+Is\+In\+Line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Megadja, hogy egy koordináta rajta van-\/e a widgeten. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em x} & int Az x koordináta \\
+\hline
+{\em y} & int Az y koordináta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+virtual bool 
+\end{DoxyReturn}
+
+
+Megvalósítja a következőket\+: \hyperlink{class_widget_a7a18323ef481add82e5edba5c0c6ec06}{Widget}.
+
+\mbox{\Hypertarget{class_radio_button_holder_a217e5620f70f0d2633e70896ad166f70}\label{class_radio_button_holder_a217e5620f70f0d2633e70896ad166f70}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Remove\+Radio\+Button@{Remove\+Radio\+Button}}
+\index{Remove\+Radio\+Button@{Remove\+Radio\+Button}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Remove\+Radio\+Button()}{RemoveRadioButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Radio\+Button\+Holder\+::\+Remove\+Radio\+Button (\begin{DoxyParamCaption}\item[{\hyperlink{class_radio_button}{Radio\+Button} $\ast$}]{button }\end{DoxyParamCaption})}
+
+
+
+Eltávolít egy gombot. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em button} & Radio\+Button$\ast$ Az eltávolítandó gomb \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_radio_button_holder_a8a44f58d480a8c1b4822adb9e9df0c98}\label{class_radio_button_holder_a8a44f58d480a8c1b4822adb9e9df0c98}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Remove\+Radio\+Button@{Remove\+Radio\+Button}}
+\index{Remove\+Radio\+Button@{Remove\+Radio\+Button}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Remove\+Radio\+Button()}{RemoveRadioButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Radio\+Button\+Holder\+::\+Remove\+Radio\+Button (\begin{DoxyParamCaption}\item[{int}]{place }\end{DoxyParamCaption})}
+
+
+
+Eltávolít egy gombot. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em place} & int Az eltávolítandó gomb sorszáma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_radio_button_holder_a1b15e73021c8e2022d43b12f4246182d}\label{class_radio_button_holder_a1b15e73021c8e2022d43b12f4246182d}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Set\+Event\+Void@{Set\+Event\+Void}}
+\index{Set\+Event\+Void@{Set\+Event\+Void}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Set\+Event\+Void()}{SetEventVoid()}}
+{\footnotesize\ttfamily void Radio\+Button\+Holder\+::\+Set\+Event\+Void (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\hyperlink{class_radio_button_holder}{Radio\+Button\+Holder} $\ast$)$>$}]{event }\end{DoxyParamCaption})}
+
+
+
+Egy gomra történő kattintáskor meghívandó esemény. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em Radio\+Button\+Holder$\ast$} & A meghívandó esemény \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Adattagok dokumentációja}
+\mbox{\Hypertarget{class_radio_button_holder_a115a7d96d3c3a7a97d3e9bc4d04b50e0}\label{class_radio_button_holder_a115a7d96d3c3a7a97d3e9bc4d04b50e0}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Button\+Count@{Button\+Count}}
+\index{Button\+Count@{Button\+Count}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Button\+Count}{ButtonCount}}
+{\footnotesize\ttfamily int Radio\+Button\+Holder\+::\+Button\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+A gombok száma \mbox{\Hypertarget{class_radio_button_holder_a72c73d2f99d20384f334903cec24040e}\label{class_radio_button_holder_a72c73d2f99d20384f334903cec24040e}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!Currently\+Selected@{Currently\+Selected}}
+\index{Currently\+Selected@{Currently\+Selected}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{Currently\+Selected}{CurrentlySelected}}
+{\footnotesize\ttfamily int Radio\+Button\+Holder\+::\+Currently\+Selected\hspace{0.3cm}{\ttfamily [private]}}
+
+A jeleneg kiválasztott gomb sorszáma \mbox{\Hypertarget{class_radio_button_holder_ac2ecfd4a57032afaa6455f9b559a00b3}\label{class_radio_button_holder_ac2ecfd4a57032afaa6455f9b559a00b3}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!On\+Event@{On\+Event}}
+\index{On\+Event@{On\+Event}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{On\+Event}{OnEvent}}
+{\footnotesize\ttfamily std\+::function$<$void(\hyperlink{class_radio_button_holder}{Radio\+Button\+Holder}$\ast$)$>$ Radio\+Button\+Holder\+::\+On\+Event\hspace{0.3cm}{\ttfamily [private]}}
+
+A meghíndó esemény \mbox{\Hypertarget{class_radio_button_holder_aaed6e22df55ff0174b150c675caff07a}\label{class_radio_button_holder_aaed6e22df55ff0174b150c675caff07a}} 
+\index{Radio\+Button\+Holder@{Radio\+Button\+Holder}!radio\+Buttons@{radio\+Buttons}}
+\index{radio\+Buttons@{radio\+Buttons}!Radio\+Button\+Holder@{Radio\+Button\+Holder}}
+\subsubsection{\texorpdfstring{radio\+Buttons}{radioButtons}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_radio_button}{Radio\+Button}$\ast$$>$ Radio\+Button\+Holder\+::radio\+Buttons\hspace{0.3cm}{\ttfamily [private]}}
+
+A tárolt gombok listája 
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+Radio\+Button\+Holder.\+h\item 
+Radio\+Button\+Holder.\+cpp\end{DoxyCompactItemize}

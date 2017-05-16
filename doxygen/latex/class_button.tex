@@ -1,0 +1,162 @@
+\hypertarget{class_button}{}\section{Button osztályreferencia}
+\label{class_button}\index{Button@{Button}}
+A Button osztály származási diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_button}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_button_a33553572657626500239c144f1bbc04f}{Button} (int x, int y, int x\+Size, int y\+Size, std\+::string text, std\+::function$<$ void()$>$ fv)
+\begin{DoxyCompactList}\small\item\em Létrehoz egy új gombot. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_button_a6aaa2b781c933a296f41a8eca890eb1f}{Draw} ()
+\begin{DoxyCompactList}\small\item\em Kirajzolja a widgetet. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_button_a72dc68b7a78edfebe904bf489d6e03fb}{Handle} (\hyperlink{structgenv_1_1event}{genv\+::event} ev)
+\begin{DoxyCompactList}\small\item\em Kezeli a widgetet az inputnak megfelelõen. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_button_a61832186fb0cf58c4c1c6fbbe572b61c}{Is\+In\+Line} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Megadja, hogy egy koordináta rajta van-\/e a widgeten. \end{DoxyCompactList}\item 
+void \hyperlink{class_button_aa9bb1fc7a079ef575f255f9c7e4fcfbb}{Set\+On\+Click\+Color} (int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em A kattintáskor látható színt változtatja meg. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privát attribútumok}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void()$>$ \hyperlink{class_button_ac125da6324c6d2e107eea9072a6eb351}{Function}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_button_a16b3b12b5112e4e9fe88e8f84f4a6dcc}{On\+Click\+Color}
+\item 
+bool \hyperlink{class_button_a166458b3e6dc6161b64f65a30a8cb31c}{is\+Clicking}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{class_button_a33553572657626500239c144f1bbc04f}\label{class_button_a33553572657626500239c144f1bbc04f}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x\+Size,  }\item[{int}]{y\+Size,  }\item[{std\+::string}]{text,  }\item[{std\+::function$<$ void()$>$}]{fv }\end{DoxyParamCaption})}
+
+
+
+Létrehoz egy új gombot. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+\hyperlink{class_button}{Button}(int x, int y, int x\+Size, int y\+Size, std\+::string text, 
+\end{DoxyReturn}
+
+
+\subsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_button_a6aaa2b781c933a296f41a8eca890eb1f}\label{class_button_a6aaa2b781c933a296f41a8eca890eb1f}} 
+\index{Button@{Button}!Draw@{Draw}}
+\index{Draw@{Draw}!Button@{Button}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Button\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Kirajzolja a widgetet. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+virtual void 
+\end{DoxyReturn}
+
+
+Újraimplementált ősök\+: \hyperlink{class_label_a184df028b3aa8c7f8dec8ecb90533319}{Label}.
+
+\mbox{\Hypertarget{class_button_a72dc68b7a78edfebe904bf489d6e03fb}\label{class_button_a72dc68b7a78edfebe904bf489d6e03fb}} 
+\index{Button@{Button}!Handle@{Handle}}
+\index{Handle@{Handle}!Button@{Button}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily void Button\+::\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{structgenv_1_1event}{genv\+::event}}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Kezeli a widgetet az inputnak megfelelõen. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em ev} & \hyperlink{structgenv_1_1event}{genv\+::event} Az input eventje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+virtual void 
+\end{DoxyReturn}
+
+
+Újraimplementált ősök\+: \hyperlink{class_label_a5cf04da7def075453b5c0fda93a1b575}{Label}.
+
+\mbox{\Hypertarget{class_button_a61832186fb0cf58c4c1c6fbbe572b61c}\label{class_button_a61832186fb0cf58c4c1c6fbbe572b61c}} 
+\index{Button@{Button}!Is\+In\+Line@{Is\+In\+Line}}
+\index{Is\+In\+Line@{Is\+In\+Line}!Button@{Button}}
+\subsubsection{\texorpdfstring{Is\+In\+Line()}{IsInLine()}}
+{\footnotesize\ttfamily bool Button\+::\+Is\+In\+Line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Megadja, hogy egy koordináta rajta van-\/e a widgeten. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em x} & int Az x koordináta \\
+\hline
+{\em y} & int Az y koordináta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+virtual bool 
+\end{DoxyReturn}
+
+
+Újraimplementált ősök\+: \hyperlink{class_label_a918ebb45dbaa5484643355cf5ab4be47}{Label}.
+
+\mbox{\Hypertarget{class_button_aa9bb1fc7a079ef575f255f9c7e4fcfbb}\label{class_button_aa9bb1fc7a079ef575f255f9c7e4fcfbb}} 
+\index{Button@{Button}!Set\+On\+Click\+Color@{Set\+On\+Click\+Color}}
+\index{Set\+On\+Click\+Color@{Set\+On\+Click\+Color}!Button@{Button}}
+\subsubsection{\texorpdfstring{Set\+On\+Click\+Color()}{SetOnClickColor()}}
+{\footnotesize\ttfamily void Button\+::\+Set\+On\+Click\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+A kattintáskor látható színt változtatja meg. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em r} & int Az új szín piros értéke \\
+\hline
+{\em g} & int Az új szín zöld értéke \\
+\hline
+{\em b} & int Az új szín kék értéke \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Adattagok dokumentációja}
+\mbox{\Hypertarget{class_button_ac125da6324c6d2e107eea9072a6eb351}\label{class_button_ac125da6324c6d2e107eea9072a6eb351}} 
+\index{Button@{Button}!Function@{Function}}
+\index{Function@{Function}!Button@{Button}}
+\subsubsection{\texorpdfstring{Function}{Function}}
+{\footnotesize\ttfamily std\+::function$<$void()$>$ Button\+::\+Function\hspace{0.3cm}{\ttfamily [private]}}
+
+A kattintáskor meghívandó funció \mbox{\Hypertarget{class_button_a166458b3e6dc6161b64f65a30a8cb31c}\label{class_button_a166458b3e6dc6161b64f65a30a8cb31c}} 
+\index{Button@{Button}!is\+Clicking@{is\+Clicking}}
+\index{is\+Clicking@{is\+Clicking}!Button@{Button}}
+\subsubsection{\texorpdfstring{is\+Clicking}{isClicking}}
+{\footnotesize\ttfamily bool Button\+::is\+Clicking\hspace{0.3cm}{\ttfamily [private]}}
+
+Le van-\/e nyomva a gomb \mbox{\Hypertarget{class_button_a16b3b12b5112e4e9fe88e8f84f4a6dcc}\label{class_button_a16b3b12b5112e4e9fe88e8f84f4a6dcc}} 
+\index{Button@{Button}!On\+Click\+Color@{On\+Click\+Color}}
+\index{On\+Click\+Color@{On\+Click\+Color}!Button@{Button}}
+\subsubsection{\texorpdfstring{On\+Click\+Color}{OnClickColor}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Button\+::\+On\+Click\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+A kattintáskor látható szín 
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+Button.\+h\item 
+Button.\+cpp\end{DoxyCompactItemize}

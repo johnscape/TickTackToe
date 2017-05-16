@@ -1,0 +1,130 @@
+\hypertarget{class_min_max}{}\section{Min\+Max osztályreferencia}
+\label{class_min_max}\index{Min\+Max@{Min\+Max}}
+\subsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_min_max_a15fb56ebb61d033eced1ae2ae43252a9}{Min\+Max} (int deep, \hyperlink{class_level}{Level} $\ast$current\+Level, bool isX)
+\begin{DoxyCompactList}\small\item\em Létrehoz egy új Mini\+Max algoritmus alapján működő számítógépes játékost. \end{DoxyCompactList}\item 
+void \hyperlink{class_min_max_a8448a9ea304b2890ddca4a123de5693b}{Step} ()
+\begin{DoxyCompactList}\small\item\em Ez a funckció számolja ki a következõ lépését a Mini\+Max algoritmusnak. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Privát tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_step_data}{Step\+Data} \hyperlink{class_min_max_ab491c411792412ad53665cbce23c0286}{Next\+Step} (int deep, bool is\+AI)
+\begin{DoxyCompactList}\small\item\em Ez a függvény számolja a következõ lépést, úgy hogy rekurzívan meghívja önmagát. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_min_max_a80ae5176daca604a8a949a9a03c10036}\label{class_min_max_a80ae5176daca604a8a949a9a03c10036}} 
+void {\bfseries Copy\+Levels} ()
+\end{DoxyCompactItemize}
+\subsection*{Privát attribútumok}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_min_max_a6da4ca45e19de6c1bdbe8a5a3d4b7da8}{IsX}
+\item 
+\hyperlink{class_level}{Level} $\ast$ \hyperlink{class_min_max_a6972ddd2c6a41089c586220563e07e25}{playing\+Level}
+\item 
+\hyperlink{class_level}{Level} $\ast$ \hyperlink{class_min_max_a2b1b3631d9cf8c6efec0c7bf16c7d846}{computing\+Level}
+\item 
+int \hyperlink{class_min_max_a9bb13756ec099292e262724f16d39a88}{Max\+Steps}
+\item 
+int \hyperlink{class_min_max_ab1a2e347bd948d37b96a6694e6ee4a5b}{Map\+Size}
+\item 
+\mbox{\Hypertarget{class_min_max_a0740177bb8a63569fca8a05f880d912f}\label{class_min_max_a0740177bb8a63569fca8a05f880d912f}} 
+std\+::ofstream {\bfseries Writer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{class_min_max_a15fb56ebb61d033eced1ae2ae43252a9}\label{class_min_max_a15fb56ebb61d033eced1ae2ae43252a9}} 
+\index{Min\+Max@{Min\+Max}!Min\+Max@{Min\+Max}}
+\index{Min\+Max@{Min\+Max}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{Min\+Max()}{MinMax()}}
+{\footnotesize\ttfamily Min\+Max\+::\+Min\+Max (\begin{DoxyParamCaption}\item[{int}]{deep,  }\item[{\hyperlink{class_level}{Level} $\ast$}]{current\+Level,  }\item[{bool}]{isX }\end{DoxyParamCaption})}
+
+
+
+Létrehoz egy új Mini\+Max algoritmus alapján működő számítógépes játékost. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em deep} & int Ezzel lehet megadni, hogy maximum hány lépést számoljon előre \\
+\hline
+{\em current\+Level} & Level$\ast$ Ez a aktuális pályára mutató mutató \\
+\hline
+{\em isX} & bool Ez adja meg, hogy a gépi játékos az X-\/el játszik-\/e \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_min_max_ab491c411792412ad53665cbce23c0286}\label{class_min_max_ab491c411792412ad53665cbce23c0286}} 
+\index{Min\+Max@{Min\+Max}!Next\+Step@{Next\+Step}}
+\index{Next\+Step@{Next\+Step}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{Next\+Step()}{NextStep()}}
+{\footnotesize\ttfamily \hyperlink{struct_step_data}{Step\+Data} Min\+Max\+::\+Next\+Step (\begin{DoxyParamCaption}\item[{int}]{deep,  }\item[{bool}]{is\+AI }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ez a függvény számolja a következõ lépést, úgy hogy rekurzívan meghívja önmagát. 
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em deep} & int Az aktuális érték, hogy hány lépést számolt elõre \\
+\hline
+{\em is\+AI} & bool Megadja, hogy az aktuális lépés neki tesz jót, vagy a játékosnal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+\hyperlink{struct_step_data}{Step\+Data} Megadja a lépés helyét, és a maximálisan szerzett pontot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_min_max_a8448a9ea304b2890ddca4a123de5693b}\label{class_min_max_a8448a9ea304b2890ddca4a123de5693b}} 
+\index{Min\+Max@{Min\+Max}!Step@{Step}}
+\index{Step@{Step}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily void Min\+Max\+::\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ez a funckció számolja ki a következõ lépését a Mini\+Max algoritmusnak. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Adattagok dokumentációja}
+\mbox{\Hypertarget{class_min_max_a2b1b3631d9cf8c6efec0c7bf16c7d846}\label{class_min_max_a2b1b3631d9cf8c6efec0c7bf16c7d846}} 
+\index{Min\+Max@{Min\+Max}!computing\+Level@{computing\+Level}}
+\index{computing\+Level@{computing\+Level}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{computing\+Level}{computingLevel}}
+{\footnotesize\ttfamily \hyperlink{class_level}{Level}$\ast$ Min\+Max\+::computing\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+Ezen a pályán számolja a lépéseit, így nem kell az éles pályán megtenni a próbalépéseket \mbox{\Hypertarget{class_min_max_a6da4ca45e19de6c1bdbe8a5a3d4b7da8}\label{class_min_max_a6da4ca45e19de6c1bdbe8a5a3d4b7da8}} 
+\index{Min\+Max@{Min\+Max}!IsX@{IsX}}
+\index{IsX@{IsX}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{IsX}{IsX}}
+{\footnotesize\ttfamily bool Min\+Max\+::\+IsX\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez a változó tárolja, hogy a gép \textquotesingle{}X\textquotesingle{} szerint játszik-\/e \mbox{\Hypertarget{class_min_max_ab1a2e347bd948d37b96a6694e6ee4a5b}\label{class_min_max_ab1a2e347bd948d37b96a6694e6ee4a5b}} 
+\index{Min\+Max@{Min\+Max}!Map\+Size@{Map\+Size}}
+\index{Map\+Size@{Map\+Size}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{Map\+Size}{MapSize}}
+{\footnotesize\ttfamily int Min\+Max\+::\+Map\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez a változó tárolja a pálya méretét, így nem kell újra és újra lekérni \mbox{\Hypertarget{class_min_max_a9bb13756ec099292e262724f16d39a88}\label{class_min_max_a9bb13756ec099292e262724f16d39a88}} 
+\index{Min\+Max@{Min\+Max}!Max\+Steps@{Max\+Steps}}
+\index{Max\+Steps@{Max\+Steps}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{Max\+Steps}{MaxSteps}}
+{\footnotesize\ttfamily int Min\+Max\+::\+Max\+Steps\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez a változó adja meg, hogy maximum hány lépést számolhat elõre. Minnél nagyobb annál pontosabban lép, de a számolás hosszúsága exponenciálisan nõ \mbox{\Hypertarget{class_min_max_a6972ddd2c6a41089c586220563e07e25}\label{class_min_max_a6972ddd2c6a41089c586220563e07e25}} 
+\index{Min\+Max@{Min\+Max}!playing\+Level@{playing\+Level}}
+\index{playing\+Level@{playing\+Level}!Min\+Max@{Min\+Max}}
+\subsubsection{\texorpdfstring{playing\+Level}{playingLevel}}
+{\footnotesize\ttfamily \hyperlink{class_level}{Level}$\ast$ Min\+Max\+::playing\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez a mutató mutat a valódi pályára, amin a játék zajlik 
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+Min\+Max.\+h\item 
+Min\+Max.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{class_label}{}\section{Label osztályreferencia}
+\label{class_label}\index{Label@{Label}}
+A Label osztály származási diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_label}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_label_a4fcabadbd0cfb0a53b8d1caf306bd5a7}{Label} (int x, int y, int x\+Size, int y\+Size, std\+::string \hyperlink{structgenv_1_1text}{text})
+\item 
+virtual void \hyperlink{class_label_a184df028b3aa8c7f8dec8ecb90533319}{Draw} ()
+\item 
+virtual void \hyperlink{class_label_a5cf04da7def075453b5c0fda93a1b575}{Handle} (\hyperlink{structgenv_1_1event}{genv\+::event} ev)
+\item 
+virtual bool \hyperlink{class_label_a918ebb45dbaa5484643355cf5ab4be47}{Is\+In\+Line} (int x, int y)
+\item 
+bool \hyperlink{class_label_a0dcc047c736b8c20bcba6796e85f909e}{Is\+Text\+Fits} ()
+\item 
+void \hyperlink{class_label_ac22c98a976f1fb6f4b86ee9ac8dd50b2}{Set\+Font\+Colour} (int r, int g, int b)
+\item 
+void \hyperlink{class_label_a4dcd2036ce1fdd30eb3471e2c842e97d}{Set\+Text} (std\+::string new\+Text)
+\end{DoxyCompactItemize}
+\subsection*{Védett attribútumok}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_label_a72057af57385e0e88577cae1ae35af66}{font\+Color}
+\item 
+std\+::string \hyperlink{class_label_a74410e9b43ea90d40c828008e5904f95}{Text}
+\end{DoxyCompactItemize}
+
+
+\subsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{class_label_a4fcabadbd0cfb0a53b8d1caf306bd5a7}\label{class_label_a4fcabadbd0cfb0a53b8d1caf306bd5a7}} 
+\index{Label@{Label}!Label@{Label}}
+\index{Label@{Label}!Label@{Label}}
+\subsubsection{\texorpdfstring{Label()}{Label()}}
+{\footnotesize\ttfamily Label\+::\+Label (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x\+Size,  }\item[{int}]{y\+Size,  }\item[{std\+::string}]{text }\end{DoxyParamCaption})}
+
+Egy \hyperlink{class_label}{Label} widgetet hoz létre ami egyszerűen egy szöveget tárol és rajzol ki 
+\begin{DoxyParams}{Paraméterek}
+{\em x} & Az X pozíciót tárolja \\
+\hline
+{\em y} & Az Y pozíciót tátolja \\
+\hline
+{\em x\+Size} & Az X tengelyen való hosszt tárolja \\
+\hline
+{\em y\+Size} & Az Y tengelyen való magasságot tárolja \\
+\hline
+{\em text} & A kirajzolni kívánt szöveg \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_label_a184df028b3aa8c7f8dec8ecb90533319}\label{class_label_a184df028b3aa8c7f8dec8ecb90533319}} 
+\index{Label@{Label}!Draw@{Draw}}
+\index{Draw@{Draw}!Label@{Label}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Label\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ez a függvény felel a widget kirajzolásáért 
+
+Megvalósítja a következőket\+: \hyperlink{class_widget_ac4c2063cd671468ad05d84cfe963c032}{Widget}.
+
+
+
+Újraimplementáló leszármazottak\+: \hyperlink{class_radio_button_a296e30588da8a4767164c2dfc5d25a71}{Radio\+Button}, \hyperlink{class_number_input_ab65631421ec222bb929f74d1782b5c8b}{Number\+Input}, \hyperlink{class_selection_box_a1c0b7b6c851180450964a4df0c7c15e8}{Selection\+Box} és \hyperlink{class_button_a6aaa2b781c933a296f41a8eca890eb1f}{Button}.
+
+\mbox{\Hypertarget{class_label_a5cf04da7def075453b5c0fda93a1b575}\label{class_label_a5cf04da7def075453b5c0fda93a1b575}} 
+\index{Label@{Label}!Handle@{Handle}}
+\index{Handle@{Handle}!Label@{Label}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily virtual void Label\+::\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{structgenv_1_1event}{genv\+::event}}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Ez a függvény kezeli az eventeket (ebben az oszályban üres, mivel a \hyperlink{class_label}{Label} csak szöveg kijelzsésére használt) 
+\begin{DoxyParams}{Paraméterek}
+{\em ev} & Az aktuális event objektum \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \hyperlink{class_widget_abf512e4606c7a5d44245a9b0246634a0}{Widget}.
+
+
+
+Újraimplementáló leszármazottak\+: \hyperlink{class_radio_button_a9287d026f57bdfedd878269ec4648135}{Radio\+Button}, \hyperlink{class_button_a72dc68b7a78edfebe904bf489d6e03fb}{Button}, \hyperlink{class_number_input_a08a2de51093fe35c3c7b9998e88924a9}{Number\+Input} és \hyperlink{class_selection_box_a4762480ce86018d74c0cfa271c9cce11}{Selection\+Box}.
+
+\mbox{\Hypertarget{class_label_a918ebb45dbaa5484643355cf5ab4be47}\label{class_label_a918ebb45dbaa5484643355cf5ab4be47}} 
+\index{Label@{Label}!Is\+In\+Line@{Is\+In\+Line}}
+\index{Is\+In\+Line@{Is\+In\+Line}!Label@{Label}}
+\subsubsection{\texorpdfstring{Is\+In\+Line()}{IsInLine()}}
+{\footnotesize\ttfamily bool Label\+::\+Is\+In\+Line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Megadja, hogy az egér a saját keretein belül van-\/e 
+\begin{DoxyParams}{Paraméterek}
+{\em x} & Az egér X pozíciója \\
+\hline
+{\em y} & Az egér Y pozíciója \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \hyperlink{class_widget_a7a18323ef481add82e5edba5c0c6ec06}{Widget}.
+
+
+
+Újraimplementáló leszármazottak\+: \hyperlink{class_radio_button_a94ab27ee37cdd639a185cb746ad7b32f}{Radio\+Button}, \hyperlink{class_button_a61832186fb0cf58c4c1c6fbbe572b61c}{Button}, \hyperlink{class_number_input_af364cc666a41dfa189e024464e4bc317}{Number\+Input} és \hyperlink{class_selection_box_a0378e1ec035f90dd04efac5d6a2c7132}{Selection\+Box}.
+
+\mbox{\Hypertarget{class_label_a0dcc047c736b8c20bcba6796e85f909e}\label{class_label_a0dcc047c736b8c20bcba6796e85f909e}} 
+\index{Label@{Label}!Is\+Text\+Fits@{Is\+Text\+Fits}}
+\index{Is\+Text\+Fits@{Is\+Text\+Fits}!Label@{Label}}
+\subsubsection{\texorpdfstring{Is\+Text\+Fits()}{IsTextFits()}}
+{\footnotesize\ttfamily bool Label\+::\+Is\+Text\+Fits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Megadja, hogy az éppen tárolt szöveg elfér-\/e a widgeten \begin{DoxyReturn}{Visszatérési érték}
+Elfér-\/e a \char`\"{}\+Text\char`\"{} a widgeten 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_label_ac22c98a976f1fb6f4b86ee9ac8dd50b2}\label{class_label_ac22c98a976f1fb6f4b86ee9ac8dd50b2}} 
+\index{Label@{Label}!Set\+Font\+Colour@{Set\+Font\+Colour}}
+\index{Set\+Font\+Colour@{Set\+Font\+Colour}!Label@{Label}}
+\subsubsection{\texorpdfstring{Set\+Font\+Colour()}{SetFontColour()}}
+{\footnotesize\ttfamily void Label\+::\+Set\+Font\+Colour (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Átálítja az betű színét 
+\begin{DoxyParams}{Paraméterek}
+{\em r} & A betű piros értéke \\
+\hline
+{\em g} & A betű zöld értéke \\
+\hline
+{\em b} & A betű kék értéke \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_label_a4dcd2036ce1fdd30eb3471e2c842e97d}\label{class_label_a4dcd2036ce1fdd30eb3471e2c842e97d}} 
+\index{Label@{Label}!Set\+Text@{Set\+Text}}
+\index{Set\+Text@{Set\+Text}!Label@{Label}}
+\subsubsection{\texorpdfstring{Set\+Text()}{SetText()}}
+{\footnotesize\ttfamily void Label\+::\+Set\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Text }\end{DoxyParamCaption})}
+
+Átálítja az aktuális szöveget 
+\begin{DoxyParams}{Paraméterek}
+{\em new\+Text} & Az új szöveg \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Adattagok dokumentációja}
+\mbox{\Hypertarget{class_label_a72057af57385e0e88577cae1ae35af66}\label{class_label_a72057af57385e0e88577cae1ae35af66}} 
+\index{Label@{Label}!font\+Color@{font\+Color}}
+\index{font\+Color@{font\+Color}!Label@{Label}}
+\subsubsection{\texorpdfstring{font\+Color}{fontColor}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ Label\+::font\+Color\hspace{0.3cm}{\ttfamily [protected]}}
+
+A szöveg színét tárolja \mbox{\Hypertarget{class_label_a74410e9b43ea90d40c828008e5904f95}\label{class_label_a74410e9b43ea90d40c828008e5904f95}} 
+\index{Label@{Label}!Text@{Text}}
+\index{Text@{Text}!Label@{Label}}
+\subsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily std\+::string Label\+::\+Text\hspace{0.3cm}{\ttfamily [protected]}}
+
+Az aktuális szöveget tárolja 
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+Label.\+h\item 
+Label.\+cpp\end{DoxyCompactItemize}

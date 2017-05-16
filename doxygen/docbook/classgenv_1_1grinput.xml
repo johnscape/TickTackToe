@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classgenv_1_1grinput">
+<title>genv::grinput class Reference</title>
+        <section>
+            <title>Privát attribútumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool quit</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classgenv_1_1grinput">grinput</link> &amp; <link linkend="classgenv_1_1grinput_1aa338fbab6e9e363edcccf05ca83c93ab">instance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classgenv_1_1grinput">grinput</link> &amp; <link linkend="classgenv_1_1grinput_1ae4f9d54544e151699f217bdf02243114">wait_event</link> (
+<link linkend="structgenv_1_1event">event</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classgenv_1_1grinput_1acc7dfa69bbba1020b0400b1684a92516">timer</link> (
+int wait)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classgenv_1_1grinput_1a1213762545b4bf7b798216a63ff0130f">operator const void *</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classgenv_1_1grinput_1af27ab10ea76c0e76613a361e5211d25d">grinput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentációja</title>
+        </section>
+            <section xml:id="classgenv_1_1grinput_1aa338fbab6e9e363edcccf05ca83c93ab">
+                <title>static grinput&amp; genv::grinput::instance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1grinput_1ae4f9d54544e151699f217bdf02243114">
+                <title>grinput&amp; genv::grinput::wait_event (event &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1grinput_1acc7dfa69bbba1020b0400b1684a92516">
+                <title>void genv::grinput::timer (int wait)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1grinput_1a1213762545b4bf7b798216a63ff0130f">
+                <title>genv::grinput::operator const void * () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classgenv_1_1grinput_1af27ab10ea76c0e76613a361e5211d25d">
+                <title>genv::grinput::grinput ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,182 @@
+\hypertarget{class_g_u_i_handler}{}\section{G\+U\+I\+Handler osztÃ¡lyreferencia}
+\label{class_g_u_i_handler}\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsection*{Publikus tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_u_i_handler_a5f7c105ce1232b512206e7720c91d5e3}{G\+U\+I\+Handler} (int \&xx, int \&yy)
+\item 
+void \hyperlink{class_g_u_i_handler_ab25716ff908ac3258a11ceff6511c1a8}{Add\+Widget} (\hyperlink{class_widget}{Widget} $\ast$w)
+\item 
+void \hyperlink{class_g_u_i_handler_a1aab537eafbed97a0b5fc3d766c3a0f8}{Remove\+Widget} (int num)
+\item 
+void \hyperlink{class_g_u_i_handler_aab8a99ca72267874a44658289b549475}{Remove\+Widget} (\hyperlink{class_widget}{Widget} $\ast$w)
+\item 
+\mbox{\Hypertarget{class_g_u_i_handler_a37fa59c3f059dbabf71cde6c512ed7a7}\label{class_g_u_i_handler_a37fa59c3f059dbabf71cde6c512ed7a7}} 
+void {\bfseries Delete\+All\+Widget} ()
+\item 
+void \hyperlink{class_g_u_i_handler_a2682b297a7ec68033772358add0b6ca5}{Start} (bool exit\+On\+Escape, int timer)
+\item 
+\mbox{\Hypertarget{class_g_u_i_handler_ad02a7d1ca919b024bff2c7448eb03b1f}\label{class_g_u_i_handler_ad02a7d1ca919b024bff2c7448eb03b1f}} 
+void {\bfseries Exit} ()
+\item 
+\mbox{\Hypertarget{class_g_u_i_handler_a142790c8f0c34233d839afc497bc0a73}\label{class_g_u_i_handler_a142790c8f0c34233d839afc497bc0a73}} 
+bool {\bfseries Get\+Is\+Running} ()
+\item 
+\mbox{\Hypertarget{class_g_u_i_handler_ae2e564681e3a523af1d66ee17aa1c72c}\label{class_g_u_i_handler_ae2e564681e3a523af1d66ee17aa1c72c}} 
+int {\bfseries Get\+Widget\+Number} (\hyperlink{class_widget}{Widget} $\ast$a)
+\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_g_u_i_handler_a62e6efe1f011584f34ec69b20b585c18}{Draw} ()
+\item 
+void \hyperlink{class_g_u_i_handler_a8ea722319827ba27eb941151c562539f}{Handle} (\hyperlink{structgenv_1_1event}{genv\+::event} ev)
+\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t attribÃºtumok}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_widget}{Widget} $\ast$ $>$ \hyperlink{class_g_u_i_handler_a393237de816334de912d1b113ee1fcc5}{Widgets}
+\item 
+int \hyperlink{class_g_u_i_handler_ac16356b3284231bdd602f3b0176955fe}{Selected\+Widget}
+\item 
+\hyperlink{class_colour}{Colour} $\ast$ \hyperlink{class_g_u_i_handler_af084b370233fa8e3bda14b9a35828eb6}{bg\+Colour}
+\item 
+int \hyperlink{class_g_u_i_handler_ac0cbeb259e73abcbe34888ca5ff4a248}{WindowX}
+\item 
+int \hyperlink{class_g_u_i_handler_aa4ee4e5b027093bd990e7f06e12c35b5}{WindowY}
+\item 
+\mbox{\Hypertarget{class_g_u_i_handler_a5dd2d0cb24cf73d4a7487c25a2a13f61}\label{class_g_u_i_handler_a5dd2d0cb24cf73d4a7487c25a2a13f61}} 
+bool {\bfseries Exiting}
+\item 
+\mbox{\Hypertarget{class_g_u_i_handler_a28ce7aa5216fc6082537a0b598aba67e}\label{class_g_u_i_handler_a28ce7aa5216fc6082537a0b598aba67e}} 
+bool {\bfseries Is\+Running}
+\item 
+bool \hyperlink{class_g_u_i_handler_af864fc3eb860de1b198cf857dc120db9}{is\+Escape\+Exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Konstruktorok Ã©s destruktorok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_g_u_i_handler_a5f7c105ce1232b512206e7720c91d5e3}\label{class_g_u_i_handler_a5f7c105ce1232b512206e7720c91d5e3}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{G\+U\+I\+Handler()}{GUIHandler()}}
+{\footnotesize\ttfamily G\+U\+I\+Handler\+::\+G\+U\+I\+Handler (\begin{DoxyParamCaption}\item[{int \&}]{xx,  }\item[{int \&}]{yy }\end{DoxyParamCaption})}
+
+Ez az osztály kezeli az összes widgetet 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em xx} & az ablak szélessége \\
+\hline
+{\em yy} & az ablak magassága \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_g_u_i_handler_ab25716ff908ac3258a11ceff6511c1a8}\label{class_g_u_i_handler_ab25716ff908ac3258a11ceff6511c1a8}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Add\+Widget@{Add\+Widget}}
+\index{Add\+Widget@{Add\+Widget}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Add\+Widget()}{AddWidget()}}
+{\footnotesize\ttfamily void G\+U\+I\+Handler\+::\+Add\+Widget (\begin{DoxyParamCaption}\item[{\hyperlink{class_widget}{Widget} $\ast$}]{w }\end{DoxyParamCaption})}
+
+Ezzel a függvvénnyel lehet új widgetet hozzádani az osztályhoz 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em w} & egy mutató a hozzádani kívánt widgetre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_handler_a62e6efe1f011584f34ec69b20b585c18}\label{class_g_u_i_handler_a62e6efe1f011584f34ec69b20b585c18}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Draw@{Draw}}
+\index{Draw@{Draw}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void G\+U\+I\+Handler\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez a függvény felel a képernyõ törléséért és a widgetek kirajzolásáért \mbox{\Hypertarget{class_g_u_i_handler_a8ea722319827ba27eb941151c562539f}\label{class_g_u_i_handler_a8ea722319827ba27eb941151c562539f}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Handle@{Handle}}
+\index{Handle@{Handle}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily void G\+U\+I\+Handler\+::\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{structgenv_1_1event}{genv\+::event}}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez a függvény kezeli az inputokat 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em ev} & a megkapott eventet tárolja \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_handler_a1aab537eafbed97a0b5fc3d766c3a0f8}\label{class_g_u_i_handler_a1aab537eafbed97a0b5fc3d766c3a0f8}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Remove\+Widget@{Remove\+Widget}}
+\index{Remove\+Widget@{Remove\+Widget}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Remove\+Widget()}{RemoveWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void G\+U\+I\+Handler\+::\+Remove\+Widget (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+Ez a függvény az adott pozícion levõ widgetet távolítja el az osztályból, es törli a képernyõrõl 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em num} & adja meg a vektorban levõ sorszámát a törölni kívánt vektornak \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_handler_aab8a99ca72267874a44658289b549475}\label{class_g_u_i_handler_aab8a99ca72267874a44658289b549475}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Remove\+Widget@{Remove\+Widget}}
+\index{Remove\+Widget@{Remove\+Widget}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Remove\+Widget()}{RemoveWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void G\+U\+I\+Handler\+::\+Remove\+Widget (\begin{DoxyParamCaption}\item[{\hyperlink{class_widget}{Widget} $\ast$}]{w }\end{DoxyParamCaption})}
+
+Ez a függvény törli a megadott widgetet az osztályból, ha létezik 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em w} & a törölni kívánt widget \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_u_i_handler_a2682b297a7ec68033772358add0b6ca5}\label{class_g_u_i_handler_a2682b297a7ec68033772358add0b6ca5}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Start@{Start}}
+\index{Start@{Start}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void G\+U\+I\+Handler\+::\+Start (\begin{DoxyParamCaption}\item[{bool}]{exit\+On\+Escape,  }\item[{int}]{timer }\end{DoxyParamCaption})}
+
+Ez a függvény indítja el a fõ ciklust ami kezeli az inputot és a widgeteket 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em exit\+On\+Escape} & ha igazra van állitva a grafikus felületbõl ki lehet lépni az Esc billentyû lenyomásával \\
+\hline
+{\em timer} & megadja, hogy hány milliszekundomonként rajzolja újra a képernyõt \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Adattagok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_g_u_i_handler_af084b370233fa8e3bda14b9a35828eb6}\label{class_g_u_i_handler_af084b370233fa8e3bda14b9a35828eb6}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!bg\+Colour@{bg\+Colour}}
+\index{bg\+Colour@{bg\+Colour}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{bg\+Colour}{bgColour}}
+{\footnotesize\ttfamily \hyperlink{class_colour}{Colour}$\ast$ G\+U\+I\+Handler\+::bg\+Colour\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez az ablak háttérszínét adja meg \mbox{\Hypertarget{class_g_u_i_handler_af864fc3eb860de1b198cf857dc120db9}\label{class_g_u_i_handler_af864fc3eb860de1b198cf857dc120db9}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!is\+Escape\+Exit@{is\+Escape\+Exit}}
+\index{is\+Escape\+Exit@{is\+Escape\+Exit}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{is\+Escape\+Exit}{isEscapeExit}}
+{\footnotesize\ttfamily bool G\+U\+I\+Handler\+::is\+Escape\+Exit\hspace{0.3cm}{\ttfamily [private]}}
+
+Ezzel ellenõrzöm, hogy ki kell-\/e lépni az Esc billentyû lenyomására \mbox{\Hypertarget{class_g_u_i_handler_ac16356b3284231bdd602f3b0176955fe}\label{class_g_u_i_handler_ac16356b3284231bdd602f3b0176955fe}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Selected\+Widget@{Selected\+Widget}}
+\index{Selected\+Widget@{Selected\+Widget}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Selected\+Widget}{SelectedWidget}}
+{\footnotesize\ttfamily int G\+U\+I\+Handler\+::\+Selected\+Widget\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez az éppen kiválasztott widget sorszámát tárolja \mbox{\Hypertarget{class_g_u_i_handler_a393237de816334de912d1b113ee1fcc5}\label{class_g_u_i_handler_a393237de816334de912d1b113ee1fcc5}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!Widgets@{Widgets}}
+\index{Widgets@{Widgets}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{Widgets}{Widgets}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_widget}{Widget}$\ast$$>$ G\+U\+I\+Handler\+::\+Widgets\hspace{0.3cm}{\ttfamily [private]}}
+
+Ez a vektor tárolja a widgeteket \mbox{\Hypertarget{class_g_u_i_handler_ac0cbeb259e73abcbe34888ca5ff4a248}\label{class_g_u_i_handler_ac0cbeb259e73abcbe34888ca5ff4a248}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!WindowX@{WindowX}}
+\index{WindowX@{WindowX}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{WindowX}{WindowX}}
+{\footnotesize\ttfamily int G\+U\+I\+Handler\+::\+WindowX\hspace{0.3cm}{\ttfamily [private]}}
+
+Ebben tárolom az ablak szélességét \mbox{\Hypertarget{class_g_u_i_handler_aa4ee4e5b027093bd990e7f06e12c35b5}\label{class_g_u_i_handler_aa4ee4e5b027093bd990e7f06e12c35b5}} 
+\index{G\+U\+I\+Handler@{G\+U\+I\+Handler}!WindowY@{WindowY}}
+\index{WindowY@{WindowY}!G\+U\+I\+Handler@{G\+U\+I\+Handler}}
+\subsubsection{\texorpdfstring{WindowY}{WindowY}}
+{\footnotesize\ttfamily int G\+U\+I\+Handler\+::\+WindowY\hspace{0.3cm}{\ttfamily [private]}}
+
+Ebben tárolom az ablak magasságát 
+
+Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt\+:\begin{DoxyCompactItemize}
+\item 
+G\+U\+I\+Handler.\+h\item 
+G\+U\+I\+Handler.\+cpp\end{DoxyCompactItemize}

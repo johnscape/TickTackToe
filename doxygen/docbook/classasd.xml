@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classasd">
+<title>asd class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classasd_1afd1065ac0a05a6607b27c1452c0fd14f">asd</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classasd_1ab3065aa10e5fc6aaab3d3a7d0aa99d49">~asd</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classasd_1afd1065ac0a05a6607b27c1452c0fd14f">
+                <title>asd::asd ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classasd_1ab3065aa10e5fc6aaab3d3a7d0aa99d49">
+                <title>asd::~asd ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,257 @@
+\hypertarget{class_game_handler}{}\section{Game\+Handler osztÃ¡lyreferencia}
+\label{class_game_handler}\index{Game\+Handler@{Game\+Handler}}
+\subsection*{Publikus tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_handler_accd106fc5bd9a39593514c25c8450de9}{Game\+Handler} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Létrehozza a játékkezelõt \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_game_handler_a1c19a06309f4880721a37ad5fe881f69}{Load\+Main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Betölti a fõmenüt \end{DoxyCompactList}\item 
+void \hyperlink{class_game_handler_a4f4f116c1e7471be9085ce0d8f2ab450}{Load\+Game} ()
+\begin{DoxyCompactList}\small\item\em Betölti a játékot. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_handler_a7fd389c5fcc29e73a6e155d78dec360b}{Place\+At} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Az adott kör alapján a megfelelõ koordinátákra elhelyez egy értéket. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_handler_a2249380f0f621aa47424ac8c3e475524}{Delete\+Areas} ()
+\begin{DoxyCompactList}\small\item\em Tölri az összes \char`\"{}kis négyzetet\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_handler_a274e0714b306ef58003c8c9929f5bbed}{Disable\+Areas} ()
+\begin{DoxyCompactList}\small\item\em Deaktiválja az összes \char`\"{}kis négyzetet\char`\"{}, nem lehet rájuk kattintani. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_handler_a40e62066a33afbf44bef34bc3c030a73}{Enable\+Areas} ()
+\begin{DoxyCompactList}\small\item\em Aktiválja az összes \char`\"{}kis négyzetet\char`\"{}, lehet rájuk kattintani. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_handler_a7f191789c2d981951005e4636cb52b1c}{Do\+A\+I\+Step} ()
+\begin{DoxyCompactList}\small\item\em A számítógépes játékos lép egyet. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_handler_a1bd8ec1c1a5b75785d7f0805bb2228a6}{Show\+Win\+Window} (std\+::string text)
+\begin{DoxyCompactList}\small\item\em A gyõzelmi ablakot jeleníti meg. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{PrivÃ¡t attribÃºtumok}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_game_handler_a4bbd542d4cba34233dbcc128f096c964}{Is\+X\+Turn}
+\item 
+bool \hyperlink{class_game_handler_ac943feed75c7aa4dafe6da69e72ed387}{Is\+PlayerX}
+\item 
+\hyperlink{class_g_u_i_handler}{G\+U\+I\+Handler} $\ast$ \hyperlink{class_game_handler_a5830f61982613c1d51944d70a4986d12}{handler}
+\item 
+\hyperlink{class_level}{Level} $\ast$ \hyperlink{class_game_handler_afcc2a593886689300dee26840256d5d3}{level}
+\item 
+int \hyperlink{class_game_handler_abd120bbc9f6aeec14134ccfc7c0733b2}{Game\+Mode}
+\item 
+int \hyperlink{class_game_handler_a272db5aaa9ef25477b0104c20e23e1c2}{Need\+To\+Win}
+\item 
+int \hyperlink{class_game_handler_a2fdc95843285fcc78ed2ec99578d4ff6}{Level\+Size}
+\item 
+\hyperlink{class_area}{Area} $\ast$$\ast$$\ast$ \hyperlink{class_game_handler_aa554f59cf468f56bee4dfcec6beeb25e}{Areas}
+\item 
+\hyperlink{class_label}{Label} $\ast$ \hyperlink{class_game_handler_ab966d28eb81aa09be28c468c147ca975}{turn\+Display}
+\item 
+\hyperlink{class_min_max}{Min\+Max} $\ast$ \hyperlink{class_game_handler_a4b1fd49a8f52cd170e5ff6374f878997}{ai}
+\end{DoxyCompactItemize}
+
+
+\subsection{Konstruktorok Ã©s destruktorok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_game_handler_accd106fc5bd9a39593514c25c8450de9}\label{class_game_handler_accd106fc5bd9a39593514c25c8450de9}} 
+\index{Game\+Handler@{Game\+Handler}!Game\+Handler@{Game\+Handler}}
+\index{Game\+Handler@{Game\+Handler}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Game\+Handler()}{GameHandler()}}
+{\footnotesize\ttfamily Game\+Handler\+::\+Game\+Handler (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Létrehozza a játékkezelõt 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & int A képernyõ szélessége \\
+\hline
+{\em y} & int A képernyõ magassága \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_game_handler_a2249380f0f621aa47424ac8c3e475524}\label{class_game_handler_a2249380f0f621aa47424ac8c3e475524}} 
+\index{Game\+Handler@{Game\+Handler}!Delete\+Areas@{Delete\+Areas}}
+\index{Delete\+Areas@{Delete\+Areas}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Delete\+Areas()}{DeleteAreas()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Delete\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tölri az összes \char`\"{}kis négyzetet\char`\"{}. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_handler_a274e0714b306ef58003c8c9929f5bbed}\label{class_game_handler_a274e0714b306ef58003c8c9929f5bbed}} 
+\index{Game\+Handler@{Game\+Handler}!Disable\+Areas@{Disable\+Areas}}
+\index{Disable\+Areas@{Disable\+Areas}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Disable\+Areas()}{DisableAreas()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Disable\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Deaktiválja az összes \char`\"{}kis négyzetet\char`\"{}, nem lehet rájuk kattintani. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_handler_a7f191789c2d981951005e4636cb52b1c}\label{class_game_handler_a7f191789c2d981951005e4636cb52b1c}} 
+\index{Game\+Handler@{Game\+Handler}!Do\+A\+I\+Step@{Do\+A\+I\+Step}}
+\index{Do\+A\+I\+Step@{Do\+A\+I\+Step}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Do\+A\+I\+Step()}{DoAIStep()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Do\+A\+I\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A számítógépes játékos lép egyet. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_handler_a40e62066a33afbf44bef34bc3c030a73}\label{class_game_handler_a40e62066a33afbf44bef34bc3c030a73}} 
+\index{Game\+Handler@{Game\+Handler}!Enable\+Areas@{Enable\+Areas}}
+\index{Enable\+Areas@{Enable\+Areas}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Enable\+Areas()}{EnableAreas()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Enable\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aktiválja az összes \char`\"{}kis négyzetet\char`\"{}, lehet rájuk kattintani. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_handler_a4f4f116c1e7471be9085ce0d8f2ab450}\label{class_game_handler_a4f4f116c1e7471be9085ce0d8f2ab450}} 
+\index{Game\+Handler@{Game\+Handler}!Load\+Game@{Load\+Game}}
+\index{Load\+Game@{Load\+Game}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Load\+Game()}{LoadGame()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Load\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Betölti a játékot. 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_handler_a1c19a06309f4880721a37ad5fe881f69}\label{class_game_handler_a1c19a06309f4880721a37ad5fe881f69}} 
+\index{Game\+Handler@{Game\+Handler}!Load\+Main\+Menu@{Load\+Main\+Menu}}
+\index{Load\+Main\+Menu@{Load\+Main\+Menu}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Load\+Main\+Menu()}{LoadMainMenu()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Load\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Betölti a fõmenüt 
+
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_handler_a7fd389c5fcc29e73a6e155d78dec360b}\label{class_game_handler_a7fd389c5fcc29e73a6e155d78dec360b}} 
+\index{Game\+Handler@{Game\+Handler}!Place\+At@{Place\+At}}
+\index{Place\+At@{Place\+At}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Place\+At()}{PlaceAt()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Place\+At (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Az adott kör alapján a megfelelõ koordinátákra elhelyez egy értéket. 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em x} & int Az x koordináta \\
+\hline
+{\em y} & int Az y koordináta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_handler_a1bd8ec1c1a5b75785d7f0805bb2228a6}\label{class_game_handler_a1bd8ec1c1a5b75785d7f0805bb2228a6}} 
+\index{Game\+Handler@{Game\+Handler}!Show\+Win\+Window@{Show\+Win\+Window}}
+\index{Show\+Win\+Window@{Show\+Win\+Window}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Show\+Win\+Window()}{ShowWinWindow()}}
+{\footnotesize\ttfamily void Game\+Handler\+::\+Show\+Win\+Window (\begin{DoxyParamCaption}\item[{std\+::string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A gyõzelmi ablakot jeleníti meg. 
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em text} & std\+::string A szöveg arról, hogy ki nyert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Adattagok dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_game_handler_a4b1fd49a8f52cd170e5ff6374f878997}\label{class_game_handler_a4b1fd49a8f52cd170e5ff6374f878997}} 
+\index{Game\+Handler@{Game\+Handler}!ai@{ai}}
+\index{ai@{ai}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{ai}{ai}}
+{\footnotesize\ttfamily \hyperlink{class_min_max}{Min\+Max}$\ast$ Game\+Handler\+::ai\hspace{0.3cm}{\ttfamily [private]}}
+
+A számítógépes játékos \mbox{\Hypertarget{class_game_handler_aa554f59cf468f56bee4dfcec6beeb25e}\label{class_game_handler_aa554f59cf468f56bee4dfcec6beeb25e}} 
+\index{Game\+Handler@{Game\+Handler}!Areas@{Areas}}
+\index{Areas@{Areas}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Areas}{Areas}}
+{\footnotesize\ttfamily \hyperlink{class_area}{Area}$\ast$$\ast$$\ast$ Game\+Handler\+::\+Areas\hspace{0.3cm}{\ttfamily [private]}}
+
+A játék közben látható négyzeteket itt tárolom \mbox{\Hypertarget{class_game_handler_abd120bbc9f6aeec14134ccfc7c0733b2}\label{class_game_handler_abd120bbc9f6aeec14134ccfc7c0733b2}} 
+\index{Game\+Handler@{Game\+Handler}!Game\+Mode@{Game\+Mode}}
+\index{Game\+Mode@{Game\+Mode}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Game\+Mode}{GameMode}}
+{\footnotesize\ttfamily int Game\+Handler\+::\+Game\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+A játékmód \mbox{\Hypertarget{class_game_handler_a5830f61982613c1d51944d70a4986d12}\label{class_game_handler_a5830f61982613c1d51944d70a4986d12}} 
+\index{Game\+Handler@{Game\+Handler}!handler@{handler}}
+\index{handler@{handler}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{handler}{handler}}
+{\footnotesize\ttfamily \hyperlink{class_g_u_i_handler}{G\+U\+I\+Handler}$\ast$ Game\+Handler\+::handler\hspace{0.3cm}{\ttfamily [private]}}
+
+A grafikai widget kezelõ \mbox{\Hypertarget{class_game_handler_ac943feed75c7aa4dafe6da69e72ed387}\label{class_game_handler_ac943feed75c7aa4dafe6da69e72ed387}} 
+\index{Game\+Handler@{Game\+Handler}!Is\+PlayerX@{Is\+PlayerX}}
+\index{Is\+PlayerX@{Is\+PlayerX}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Is\+PlayerX}{IsPlayerX}}
+{\footnotesize\ttfamily bool Game\+Handler\+::\+Is\+PlayerX\hspace{0.3cm}{\ttfamily [private]}}
+
+Megadja, hogy az elsõ játékos x-\/el játszik-\/e \mbox{\Hypertarget{class_game_handler_a4bbd542d4cba34233dbcc128f096c964}\label{class_game_handler_a4bbd542d4cba34233dbcc128f096c964}} 
+\index{Game\+Handler@{Game\+Handler}!Is\+X\+Turn@{Is\+X\+Turn}}
+\index{Is\+X\+Turn@{Is\+X\+Turn}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Is\+X\+Turn}{IsXTurn}}
+{\footnotesize\ttfamily bool Game\+Handler\+::\+Is\+X\+Turn\hspace{0.3cm}{\ttfamily [private]}}
+
+Megadja, hogy X következik-\/e \mbox{\Hypertarget{class_game_handler_afcc2a593886689300dee26840256d5d3}\label{class_game_handler_afcc2a593886689300dee26840256d5d3}} 
+\index{Game\+Handler@{Game\+Handler}!level@{level}}
+\index{level@{level}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \hyperlink{class_level}{Level}$\ast$ Game\+Handler\+::level\hspace{0.3cm}{\ttfamily [private]}}
+
+A pálya \mbox{\Hypertarget{class_game_handler_a2fdc95843285fcc78ed2ec99578d4ff6}\label{class_game_handler_a2fdc95843285fcc78ed2ec99578d4ff6}} 
+\index{Game\+Handler@{Game\+Handler}!Level\+Size@{Level\+Size}}
+\index{Level\+Size@{Level\+Size}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Level\+Size}{LevelSize}}
+{\footnotesize\ttfamily int Game\+Handler\+::\+Level\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+Pálya mérete \mbox{\Hypertarget{class_game_handler_a272db5aaa9ef25477b0104c20e23e1c2}\label{class_game_handler_a272db5aaa9ef25477b0104c20e23e1c2}} 
+\index{Game\+Handler@{Game\+Handler}!Need\+To\+Win@{Need\+To\+Win}}
+\index{Need\+To\+Win@{Need\+To\+Win}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{Need\+To\+Win}{NeedToWin}}
+{\footnotesize\ttfamily int Game\+Handler\+::\+Need\+To\+Win\hspace{0.3cm}{\ttfamily [private]}}
+
+Pontszám a gyõzelemhez \mbox{\Hypertarget{class_game_handler_ab966d28eb81aa09be28c468c147ca975}\label{class_game_handler_ab966d28eb81aa09be28c468c147ca975}} 
+\index{Game\+Handler@{Game\+Handler}!turn\+Display@{turn\+Display}}
+\index{turn\+Display@{turn\+Display}!Game\+Handler@{Game\+Handler}}
+\subsubsection{\texorpdfstring{turn\+Display}{turnDisplay}}
+{\footnotesize\ttfamily \hyperlink{class_label}{Label}$\ast$ Game\+Handler\+::turn\+Display\hspace{0.3cm}{\ttfamily [private]}}
+
+A jelenelgi lépés kijelzõje 
+
+Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Handler.\+h\item 
+Game\+Handler.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_g_u_i_handler">
+<title>GUIHandler class Reference</title>
+        <section>
+            <title>PrivÃ¡t attribÃºtumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Widget * &gt; Widgets</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int SelectedWidget</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Colour * bgColour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int WindowX</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int WindowY</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool Exiting</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool IsRunning</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isEscapeExit</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_g_u_i_handler_1a5f7c105ce1232b512206e7720c91d5e3">GUIHandler</link> (
+int &amp; xx, int &amp; yy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_g_u_i_handler_1aa6efb166bdf1aa62f41d850b0eb4ad37">~GUIHandler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1ab25716ff908ac3258a11ceff6511c1a8">AddWidget</link> (
+<link linkend="class_widget">Widget</link> * w)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1a1aab537eafbed97a0b5fc3d766c3a0f8">RemoveWidget</link> (
+int num)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1aab8a99ca72267874a44658289b549475">RemoveWidget</link> (
+<link linkend="class_widget">Widget</link> * w)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1a37fa59c3f059dbabf71cde6c512ed7a7">DeleteAllWidget</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1a2682b297a7ec68033772358add0b6ca5">Start</link> (
+bool exitOnEscape, int timer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1ad02a7d1ca919b024bff2c7448eb03b1f">Exit</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_g_u_i_handler_1a142790c8f0c34233d839afc497bc0a73">GetIsRunning</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_g_u_i_handler_1ae2e564681e3a523af1d66ee17aa1c72c">GetWidgetNumber</link> (
+<link linkend="class_widget">Widget</link> * a)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1a62e6efe1f011584f34ec69b20b585c18">Draw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_g_u_i_handler_1a8ea722319827ba27eb941151c562539f">Handle</link> (
+<link linkend="structgenv_1_1event">genv::event</link> ev)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentÃ¡ciÃ³ja</title>
+            <simplesect>
+                <title>std::vector&lt;Widget*&gt; GUIHandler::Widgets</title>                
+<para>Ez a vektor tárolja a widgeteket </para>
+
+                <para>Definition at line 58 of file GUIHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GUIHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int GUIHandler::SelectedWidget</title>                
+<para>Ez az éppen kiválasztott widget sorszámát tárolja </para>
+
+                <para>Definition at line 59 of file GUIHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GUIHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Colour* GUIHandler::bgColour</title>                
+<para>Ez az ablak háttérszínét adja meg </para>
+
+                <para>Definition at line 60 of file GUIHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GUIHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int GUIHandler::WindowX</title>                
+<para>Ebben tárolom az ablak szélességét </para>
+
+                <para>Definition at line 61 of file GUIHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GUIHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int GUIHandler::WindowY</title>                
+<para>Ebben tárolom az ablak magasságát </para>
+
+                <para>Definition at line 62 of file GUIHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GUIHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool GUIHandler::isEscapeExit</title>                
+<para>Ezzel ellenõrzöm, hogy ki kell-e lépni az Esc billentyû lenyomására </para>
+
+                <para>Definition at line 66 of file GUIHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GUIHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_g_u_i_handler_1a5f7c105ce1232b512206e7720c91d5e3">
+                <title>GUIHandler::GUIHandler (int &amp;xx, int &amp;yy)</title> <emphasis></emphasis>
+                
+<para>Ez az osztály kezeli az összes widgetet 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>xx</entry>
+                                <entry>
+<para>az ablak szélessége </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>yy</entry>
+                                <entry>
+<para>az ablak magassága </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_g_u_i_handler_1aa6efb166bdf1aa62f41d850b0eb4ad37">
+                <title>GUIHandler::~GUIHandler ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_g_u_i_handler_1ab25716ff908ac3258a11ceff6511c1a8">
+                <title>void GUIHandler::AddWidget (Widget *w)</title> <emphasis></emphasis>
+                
+<para>Ezzel a függvvénnyel lehet új widgetet hozzádani az osztályhoz 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>egy mutató a hozzádani kívánt widgetre </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_g_u_i_handler_1a1aab537eafbed97a0b5fc3d766c3a0f8">
+                <title>void GUIHandler::RemoveWidget (int num)</title> <emphasis></emphasis>
+                
+<para>Ez a függvény az adott pozícion levõ widgetet távolítja el az osztályból, es törli a képernyõrõl 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>num</entry>
+                                <entry>
+<para>adja meg a vektorban levõ sorszámát a törölni kívánt vektornak </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_g_u_i_handler_1aab8a99ca72267874a44658289b549475">
+                <title>void GUIHandler::RemoveWidget (Widget *w)</title> <emphasis></emphasis>
+                
+<para>Ez a függvény törli a megadott widgetet az osztályból, ha létezik 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>a törölni kívánt widget </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_g_u_i_handler_1a37fa59c3f059dbabf71cde6c512ed7a7">
+                <title>void GUIHandler::DeleteAllWidget ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_g_u_i_handler_1a2682b297a7ec68033772358add0b6ca5">
+                <title>void GUIHandler::Start (bool exitOnEscape, int timer)</title> <emphasis></emphasis>
+                
+<para>Ez a függvény indítja el a fõ ciklust ami kezeli az inputot és a widgeteket 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>exitOnEscape</entry>
+                                <entry>
+<para>ha igazra van állitva a grafikus felületbõl ki lehet lépni az Esc billentyû lenyomásával </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>timer</entry>
+                                <entry>
+<para>megadja, hogy hány milliszekundomonként rajzolja újra a képernyõt </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_g_u_i_handler_1ad02a7d1ca919b024bff2c7448eb03b1f">
+                <title>void GUIHandler::Exit ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_g_u_i_handler_1a142790c8f0c34233d839afc497bc0a73">
+                <title>bool GUIHandler::GetIsRunning ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_g_u_i_handler_1ae2e564681e3a523af1d66ee17aa1c72c">
+                <title>int GUIHandler::GetWidgetNumber (Widget *a)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_g_u_i_handler_1a62e6efe1f011584f34ec69b20b585c18">
+                <title>void GUIHandler::Draw ()</title> <emphasis></emphasis>
+                
+<para>Ez a függvény felel a képernyõ törléséért és a widgetek kirajzolásáért </para>
+
+            </section>
+            <section xml:id="class_g_u_i_handler_1a8ea722319827ba27eb941151c562539f">
+                <title>void GUIHandler::Handle (genv::event ev)</title> <emphasis></emphasis>
+                
+<para>Ez a függvény kezeli az inputokat 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ev</entry>
+                                <entry>
+<para>a megkapott eventet tárolja </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

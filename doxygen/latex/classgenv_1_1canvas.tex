@@ -1,0 +1,118 @@
+\hypertarget{classgenv_1_1canvas}{}\section{genv\+:\+:canvas osztályreferencia}
+\label{classgenv_1_1canvas}\index{genv\+::canvas@{genv\+::canvas}}
+A genv\+:\+:canvas osztály származási diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgenv_1_1canvas}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_ae4210ffb2450a3ba02df10dc54e51450}\label{classgenv_1_1canvas_ae4210ffb2450a3ba02df10dc54e51450}} 
+{\bfseries canvas} (int w, int h)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a86451ee2e5574e00d3afc56333f531e4}\label{classgenv_1_1canvas_a86451ee2e5574e00d3afc56333f531e4}} 
+{\bfseries canvas} (const \hyperlink{classgenv_1_1canvas}{canvas} \&c)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_ab39f2907cf7fda9c27246e9e644877e8}\label{classgenv_1_1canvas_ab39f2907cf7fda9c27246e9e644877e8}} 
+\hyperlink{classgenv_1_1canvas}{genv\+::canvas} \& {\bfseries operator=} (const \hyperlink{classgenv_1_1canvas}{genv\+::canvas} \&c)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_aeb1d899ae60e28a104923d3b63266638}\label{classgenv_1_1canvas_aeb1d899ae60e28a104923d3b63266638}} 
+bool {\bfseries open} (unsigned width, unsigned height)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a8f1a7098176b298409a1aeb9dfdb6333}\label{classgenv_1_1canvas_a8f1a7098176b298409a1aeb9dfdb6333}} 
+bool {\bfseries save} (const std\+::string \&file) const
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a05e9e3bc7664435b02175325e667ffcc}\label{classgenv_1_1canvas_a05e9e3bc7664435b02175325e667ffcc}} 
+void {\bfseries transparent} (bool t)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a085f91bf2c74631935ba2fe7cc0a6002}\label{classgenv_1_1canvas_a085f91bf2c74631935ba2fe7cc0a6002}} 
+void {\bfseries set\+\_\+color} (int r, int g, int b)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a03b50301a46098ee2e0ba4e4203e3995}\label{classgenv_1_1canvas_a03b50301a46098ee2e0ba4e4203e3995}} 
+bool {\bfseries move\+\_\+point} (int x, int y)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a767d2a082da511ab6e84d4d7b98360be}\label{classgenv_1_1canvas_a767d2a082da511ab6e84d4d7b98360be}} 
+void {\bfseries draw\+\_\+dot} ()
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a89a4e72f7064389cbe9418646863e919}\label{classgenv_1_1canvas_a89a4e72f7064389cbe9418646863e919}} 
+void {\bfseries draw\+\_\+line} (int x, int y)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_aea31b05cd41534691b329bd1545eeb84}\label{classgenv_1_1canvas_aea31b05cd41534691b329bd1545eeb84}} 
+void {\bfseries draw\+\_\+box} (int x, int y)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a6c6b77a47bde4163919ad44dfa6e0638}\label{classgenv_1_1canvas_a6c6b77a47bde4163919ad44dfa6e0638}} 
+void {\bfseries draw\+\_\+text} (const std\+::string \&str)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a94bad016a557ab62c7019ca25647bc0c}\label{classgenv_1_1canvas_a94bad016a557ab62c7019ca25647bc0c}} 
+void {\bfseries blitfrom} (const \hyperlink{classgenv_1_1canvas}{canvas} \&c, short x1, short y1, unsigned short x2, unsigned short y2, short x3, short y3)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a8ecb2e0d7f15f8a4875e04f747762a13}\label{classgenv_1_1canvas_a8ecb2e0d7f15f8a4875e04f747762a13}} 
+bool {\bfseries load\+\_\+font} (const std\+::string \&fname, int fontsize=16, bool antialias=true)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_ad57cbfa2d960d827e5f689c508255254}\label{classgenv_1_1canvas_ad57cbfa2d960d827e5f689c508255254}} 
+void {\bfseries set\+\_\+antialias} (bool antialias)
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_ad220ddfad4b67f2e24e2699e2ad7f91e}\label{classgenv_1_1canvas_ad220ddfad4b67f2e24e2699e2ad7f91e}} 
+int {\bfseries x} () const
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a56c80674a756a69f09c0ce63bf17402d}\label{classgenv_1_1canvas_a56c80674a756a69f09c0ce63bf17402d}} 
+int {\bfseries y} () const
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a21c0c57177ee0e47eb444a6bae8b7da5}\label{classgenv_1_1canvas_a21c0c57177ee0e47eb444a6bae8b7da5}} 
+int {\bfseries cascent} () const
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_ae90f845816ac7045be771cca107f6f73}\label{classgenv_1_1canvas_ae90f845816ac7045be771cca107f6f73}} 
+int {\bfseries cdescent} () const
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a79b09f2fa46b713164ddc326fb5c7c31}\label{classgenv_1_1canvas_a79b09f2fa46b713164ddc326fb5c7c31}} 
+int {\bfseries twidth} (const std\+::string \&s) const
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a04bc3204672ade4baa0a13a10a43d9e2}\label{classgenv_1_1canvas_a04bc3204672ade4baa0a13a10a43d9e2}} 
+virtual void {\bfseries refresh} ()
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a6a4a48ca686c16460d0c42e9d8c2ea3c}\label{classgenv_1_1canvas_a6a4a48ca686c16460d0c42e9d8c2ea3c}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries call\+\_\+with\+\_\+rel} (T meth, int vec\+\_\+x, int vec\+\_\+y)
+\end{DoxyCompactItemize}
+\subsection*{Védett tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a7d2385f86f8e25db8c3a9254037e42df}\label{classgenv_1_1canvas_a7d2385f86f8e25db8c3a9254037e42df}} 
+{\footnotesize template$<$typename T $>$ }\\int {\bfseries sgn} (const T \&a)
+\end{DoxyCompactItemize}
+\subsection*{Védett attribútumok}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a4b7ebfdeae85fea93d7d42627e7a4919}\label{classgenv_1_1canvas_a4b7ebfdeae85fea93d7d42627e7a4919}} 
+short {\bfseries pt\+\_\+x}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_ab6429e418598bad6fe741dbe91f5be6b}\label{classgenv_1_1canvas_ab6429e418598bad6fe741dbe91f5be6b}} 
+short {\bfseries pt\+\_\+y}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a6ca0cd219fcf31c40782584639d2529a}\label{classgenv_1_1canvas_a6ca0cd219fcf31c40782584639d2529a}} 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries buf}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a016e8269b583c1cee52b462ddcf12da9}\label{classgenv_1_1canvas_a016e8269b583c1cee52b462ddcf12da9}} 
+int {\bfseries draw\+\_\+clr}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a3c35d75d98e09c7a631cdba7ad80ed7e}\label{classgenv_1_1canvas_a3c35d75d98e09c7a631cdba7ad80ed7e}} 
+bool {\bfseries transp}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a2c732f76f91edcc63269a964a87d4e99}\label{classgenv_1_1canvas_a2c732f76f91edcc63269a964a87d4e99}} 
+\+\_\+\+T\+T\+F\+\_\+\+Font $\ast$ {\bfseries font}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a4def7539f99a07252d83a2ebe11c5116}\label{classgenv_1_1canvas_a4def7539f99a07252d83a2ebe11c5116}} 
+bool {\bfseries antialiastext}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a9d432f9f584dfe620becf4fe30ea5fb9}\label{classgenv_1_1canvas_a9d432f9f584dfe620becf4fe30ea5fb9}} 
+std\+::string {\bfseries loaded\+\_\+font\+\_\+file\+\_\+name}
+\item 
+\mbox{\Hypertarget{classgenv_1_1canvas_a53d8e4a8b3d3d88330783b999be8e6ef}\label{classgenv_1_1canvas_a53d8e4a8b3d3d88330783b999be8e6ef}} 
+int {\bfseries font\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+Ez a dokumentáció az osztályról a következő fájl alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+graphics.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_level_8cpp">
+    <title>Level.cpp File Reference</title>
+    <programlisting>#include &quot;Level.h&quot;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <simplesect>
+        <title>Részletes leírás</title>
+    <para>Definition in file D:/Atandra/Prog/GIT/TickTackToe/doxygen/Level.cpp</para>
+    </simplesect>
+</section>

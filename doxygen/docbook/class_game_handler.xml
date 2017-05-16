@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_game_handler">
+<title>GameHandler class Reference</title>
+        <section>
+            <title>PrivÃ¡t attribÃºtumok</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool IsXTurn</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool IsPlayerX</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GUIHandler * handler</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Level * level</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int GameMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int NeedToWin</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int LevelSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Area *** Areas</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Label * turnDisplay</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MinMax * ai</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_game_handler_1accd106fc5bd9a39593514c25c8450de9">GameHandler</link> (
+int x, int y)<para><emphasis>Létrehozza a játékkezelõt</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_game_handler_1a37e9acdced835f48a2bb2a00cb322635">~GameHandler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a1c19a06309f4880721a37ad5fe881f69">LoadMainMenu</link> (
+)<para><emphasis>Betölti a fõmenüt</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a4f4f116c1e7471be9085ce0d8f2ab450">LoadGame</link> (
+)<para><emphasis>Betölti a játékot.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a7fd389c5fcc29e73a6e155d78dec360b">PlaceAt</link> (
+int x, int y)<para><emphasis>Az adott kör alapján a megfelelõ koordinátákra elhelyez egy értéket.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a2249380f0f621aa47424ac8c3e475524">DeleteAreas</link> (
+)<para><emphasis>Tölri az összes &quot;kis négyzetet&quot;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a274e0714b306ef58003c8c9929f5bbed">DisableAreas</link> (
+)<para><emphasis>Deaktiválja az összes &quot;kis négyzetet&quot;, nem lehet rájuk kattintani.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a40e62066a33afbf44bef34bc3c030a73">EnableAreas</link> (
+)<para><emphasis>Aktiválja az összes &quot;kis négyzetet&quot;, lehet rájuk kattintani.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a7f191789c2d981951005e4636cb52b1c">DoAIStep</link> (
+)<para><emphasis>A számítógépes játékos lép egyet.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_game_handler_1a1bd8ec1c1a5b75785d7f0805bb2228a6">ShowWinWindow</link> (
+std::string text)<para><emphasis>A gyõzelmi ablakot jeleníti meg.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Adattagok dokumentÃ¡ciÃ³ja</title>
+            <simplesect>
+                <title>bool GameHandler::IsXTurn</title>                
+<para>Megadja, hogy X következik-e </para>
+
+                <para>Definition at line 25 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>bool GameHandler::IsPlayerX</title>                
+<para>Megadja, hogy az elsõ játékos x-el játszik-e </para>
+
+                <para>Definition at line 26 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>GUIHandler* GameHandler::handler</title>                
+<para>A grafikai widget kezelõ </para>
+
+                <para>Definition at line 27 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Level* GameHandler::level</title>                
+<para>A pálya </para>
+
+                <para>Definition at line 28 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int GameHandler::GameMode</title>                
+<para>A játékmód </para>
+
+                <para>Definition at line 29 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int GameHandler::NeedToWin</title>                
+<para>Pontszám a gyõzelemhez </para>
+
+                <para>Definition at line 30 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int GameHandler::LevelSize</title>                
+<para>Pálya mérete </para>
+
+                <para>Definition at line 31 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Area*** GameHandler::Areas</title>                
+<para>A játék közben látható négyzeteket itt tárolom </para>
+
+                <para>Definition at line 33 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>Label* GameHandler::turnDisplay</title>                
+<para>A jelenelgi lépés kijelzõje </para>
+
+                <para>Definition at line 34 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>MinMax* GameHandler::ai</title>                
+<para>A számítógépes játékos </para>
+
+                <para>Definition at line 36 of file GameHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>GameHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_game_handler_1accd106fc5bd9a39593514c25c8450de9">
+                <title>GameHandler::GameHandler (int x, int y)</title> <emphasis>Létrehozza a játékkezelõt</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int A képernyõ szélessége </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int A képernyõ magassága </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_game_handler_1a37e9acdced835f48a2bb2a00cb322635">
+                <title>GameHandler::~GameHandler ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_game_handler_1a1c19a06309f4880721a37ad5fe881f69">
+                <title>void GameHandler::LoadMainMenu ()</title> <emphasis>Betölti a fõmenüt</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_game_handler_1a4f4f116c1e7471be9085ce0d8f2ab450">
+                <title>void GameHandler::LoadGame ()</title> <emphasis>Betölti a játékot.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_game_handler_1a7fd389c5fcc29e73a6e155d78dec360b">
+                <title>void GameHandler::PlaceAt (int x, int y)</title> <emphasis>Az adott kör alapján a megfelelõ koordinátákra elhelyez egy értéket.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>int Az x koordináta </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>int Az y koordináta </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_game_handler_1a2249380f0f621aa47424ac8c3e475524">
+                <title>void GameHandler::DeleteAreas ()</title> <emphasis>Tölri az összes &quot;kis négyzetet&quot;.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_game_handler_1a274e0714b306ef58003c8c9929f5bbed">
+                <title>void GameHandler::DisableAreas ()</title> <emphasis>Deaktiválja az összes &quot;kis négyzetet&quot;, nem lehet rájuk kattintani.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_game_handler_1a40e62066a33afbf44bef34bc3c030a73">
+                <title>void GameHandler::EnableAreas ()</title> <emphasis>Aktiválja az összes &quot;kis négyzetet&quot;, lehet rájuk kattintani.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_game_handler_1a7f191789c2d981951005e4636cb52b1c">
+                <title>void GameHandler::DoAIStep ()</title> <emphasis>A számítógépes játékos lép egyet.</emphasis>
+                
+<para><formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_game_handler_1a1bd8ec1c1a5b75785d7f0805bb2228a6">
+                <title>void GameHandler::ShowWinWindow (std::string text)</title> <emphasis>A gyõzelmi ablakot jeleníti meg.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>ParamÃ©terek                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>text</entry>
+                                <entry>
+<para>std::string A szöveg arról, hogy ki nyert </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>VisszatÃ©rÃ©si Ã©rtÃ©k: </title>
+
+<para>void </para>
+</formalpara>
+</para>
+
+            </section>
+</section>
